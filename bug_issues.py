@@ -345,8 +345,8 @@ def save_results(stats, df, output_dir):
 
 def main():
     # 设置要分析的仓库
-    owner = "openfga"  # 替换为目标仓库的所有者
-    repo = "openfga"  # 替换为目标仓库的名称
+    owner = "openfga"
+    repo = "openfga"
 
     # 创建分析器
     analyzer = GitHubBugAnalyzer(owner, repo)
@@ -364,3 +364,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
