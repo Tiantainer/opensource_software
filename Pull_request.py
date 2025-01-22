@@ -4,7 +4,7 @@ from collections import Counter, defaultdict
 from datetime import datetime
 import os
 import time
-
+# 代码中要用到token，一定要换成自己的token才能运行
 
 class GitHubPRAnalyzer:
     def __init__(self, owner: str, repo: str, token: str = None):
@@ -49,7 +49,7 @@ class GitHubPRAnalyzer:
             response = requests.get(url, headers=self.headers, params=params)
 
             if response.status_code != 200:
-                print(f"获取数据失败: {response.status_code}")
+                print(f"获取数据失败: {response.status_code}")# !=200即未成功
                 break
 
             page_prs = response.json()
@@ -252,12 +252,11 @@ def save_results(stats, df, output_dir):
 
 
 def main():
-    # 设置GitHub仓库信息
     owner = "openfga"
     repo = "openfga"
 
-    # 如果有GitHub token，可以在这里设置
-    token = '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'  # 替换为你的GitHub token
+    # GitHub token，运行时一定要换成自己的token，token在GitHub上生成
+    token = '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'  # 替换为你的GitHub token
 
     # 创建分析器
     analyzer = GitHubPRAnalyzer(owner, repo, token)
