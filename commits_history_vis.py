@@ -1,8 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from datetime import datetime
-
 
 def translate_chinese_to_english(text):
     """将所有中文文本转换为英文"""
@@ -35,10 +33,10 @@ def clean_data(commit_details):
 
 
 def visualize_git_analysis(data_dir):
-    """可视化Git仓库分析结果"""
+    """可视化Github仓库分析结果"""
     # 设置样式
     plt.style.use('seaborn')
-    plt.rcParams['font.family'] = 'DejaVu Sans'  # 使用更通用的字体
+    plt.rcParams['font.family'] = 'DejaVu Sans'  # 更通用的字体
 
     # 读取和清理数据
     commit_details = pd.read_csv(f"{data_dir}/commit_details.csv")
