@@ -33,20 +33,6 @@ def plot_components(data_dir):
     plt.show()
 
 
-# def plot_severity(data_dir):
-#     """绘制严重程度分布饼图"""
-#     plt.rcParams['font.sans-serif'] = ['SimHei']
-#     plt.rcParams['axes.unicode_minus'] = False
-#
-#     # 读取数据
-#     severity = pd.read_csv(f"{data_dir}/severity.csv")
-#
-#     # 创建饼图
-#     plt.figure(figsize=(10, 8))
-#     plt.pie(severity['Count'], labels=severity['Name'], autopct='%1.1f%%')
-#     plt.title('Bug严重程度分布')
-#     plt.show()
-
 
 def plot_status(data_dir):
     """绘制Bug状态分布饼图"""
@@ -112,7 +98,6 @@ def main():
     # 绘制各个图表
     plot_bug_types(data_dir)
     plot_components(data_dir)
-    #plot_severity(data_dir)
     plot_status(data_dir)
     plot_monthly_trend(data_dir)
     plot_reporters(data_dir)
@@ -120,3 +105,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
