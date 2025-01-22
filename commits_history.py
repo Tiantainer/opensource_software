@@ -3,7 +3,7 @@ from collections import Counter
 import pandas as pd
 import os
 def analyze_git_repo(repo_path):
-    """分析Git仓库的提交历史"""
+    """分析Github仓库的提交历史"""
     try:
         print("开始分析仓库...")
         repo = Repo(repo_path)
@@ -20,7 +20,7 @@ def analyze_git_repo(repo_path):
             try:
                 # 将时区感知的datetime转换为UTC时间
                 commit_date = pd.to_datetime(commit.authored_datetime).tz_convert('UTC')
-                # 尝试获取文件变更统计，如果失败则使用默认值
+                # 获取文件变更统计，如果失败则使用默认值
                 try:
                     stats = commit.stats.total
                     files_changed = stats.get('files', 0)
@@ -142,7 +142,7 @@ def analyze_git_repo(repo_path):
 
 
 def main():
-    repo_path = "D:/test/openfga"# 代码地址
+    repo_path = "D:/test/openfga"# 代码地址（即把GitHub上的项目拉下来后存放的位置），原项目地址：https://github.com/openfga/openfga
     results = analyze_git_repo(repo_path)
     if results:
         print("\n分析完成!")
