@@ -1,6 +1,6 @@
 # 开源软件基础项目
 
-本项目包含六个 Python 文件，用于分析和可视化 GitHub 仓库的提交历史、Bug 报告和 Pull Request（PR）数据。以下是每个文件的详细说明以及如何运行这些代码的指南。
+本项目包含十个 Python 文件，用于分析和可视化 GitHub 仓库的提交历史、Bug 报告、Pull Request（PR）数据、贡献者活动以及代码质量。以下是每个文件的详细说明以及如何运行这些代码的指南。
 
 ## 文件结构
 
@@ -11,7 +11,11 @@
 ├── commits_history.py       # 分析 Git 仓库的提交历史
 ├── commits_history_vis.py   # 可视化提交历史分析结果
 ├── Pull_request.py          # 分析 GitHub 仓库的 Pull Request
-└── Pull_request_vis.py      # 可视化 Pull Request 分析结果
+├── Pull_request_vis.py      # 可视化 Pull Request 分析结果
+├── contributor_activity.py  # 分析 GitHub 仓库的贡献者活动
+├── Contributor_activity_vis.py  # 可视化贡献者活动分析结果
+├── Code_quality_analyzer.py # 生成模拟的代码质量数据
+└── Code_quality_visualizer.py # 分析和可视化代码质量数据
 ```
 
 ## 文件功能说明
@@ -76,6 +80,38 @@
   - 绘制 PR 创建时间线。
   - 绘制变更热力图。
 - **依赖库**: `pandas`, `matplotlib`, `seaborn`, `os`
+
+### 7. `contributor_activity.py`
+- **功能**: 分析 GitHub 仓库的贡献者活动。
+- **主要功能**:
+  - 获取指定仓库的贡献者列表。
+  - 统计贡献者的提交次数、活动趋势等信息。
+  - 保存分析结果为 CSV 文件。
+- **依赖库**: `requests`, `pandas`, `collections`, `datetime`, `os`, `time`
+
+### 8. `Contributor_activity_vis.py`
+- **功能**: 可视化贡献者活动分析结果。
+- **主要功能**:
+  - 绘制贡献者贡献分布饼图。
+  - 绘制贡献者贡献排名柱状图（前 10 名）。
+  - 绘制贡献者活动趋势折线图。
+  - 绘制贡献者活动时间分布直方图（24 小时）。
+- **依赖库**: `pandas`, `matplotlib`, `seaborn`
+
+### 9. `Code_quality_analyzer.py`
+- **功能**: 生成模拟的代码质量数据。
+- **主要功能**:
+  - 生成模拟的代码复杂度、问题数量、测试覆盖率等数据。
+  - 按模块生成单独的 CSV 文件。
+  - 保存模拟数据为 CSV 文件。
+- **依赖库**: `pandas`, `os`, `datetime`, `random`
+
+### 10. `Code_quality_visualizer.py`
+- **功能**: 分析和可视化代码质量数据。
+- **主要功能**:
+  - 分析代码质量数据并生成模块统计、贡献者统计、问题类型分布等。
+  - 保存分析结果为 CSV 文件。
+- **依赖库**: `pandas`, `os`
 
 ---
 
@@ -145,6 +181,40 @@ token = 'your_github_token_here'
    python Pull_request_vis.py
    ```
 3. 可视化结果将通过 `matplotlib` 显示。
+
+#### 运行 `contributor_activity.py`
+1. 打开终端或命令行。
+2. 导航到项目目录。
+3. 运行以下命令：
+   ```bash
+   python contributor_activity.py
+   ```
+4. 分析结果将保存到 `D:/test/openfga_contributor_analysis` 目录中。
+
+#### 运行 `Contributor_activity_vis.py`
+1. 确保已经运行过 `contributor_activity.py` 并生成了分析结果。
+2. 运行以下命令：
+   ```bash
+   python Contributor_activity_vis.py
+   ```
+3. 可视化结果将通过 `matplotlib` 显示。
+
+#### 运行 `Code_quality_analyzer.py`
+1. 打开终端或命令行。
+2. 导航到项目目录。
+3. 运行以下命令：
+   ```bash
+   python Code_quality_analyzer.py
+   ```
+4. 模拟数据将保存到 `D:/test/openfga_code_quality` 目录中。
+
+#### 运行 `Code_quality_visualizer.py`
+1. 确保已经运行过 `Code_quality_analyzer.py` 并生成了模拟数据。
+2. 运行以下命令：
+   ```bash
+   python Code_quality_visualizer.py
+   ```
+3. 分析结果将保存到 `D:/test/openfga_code_quality/analysis_results` 目录中。
 
 ---
 
