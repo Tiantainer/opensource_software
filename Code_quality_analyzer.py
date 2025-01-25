@@ -15,40 +15,54 @@ class CodeQualityAnalyzer:
         self.output_dir = output_dir
         os.makedirs(self.output_dir, exist_ok=True)
 
+    def save_module_csv(self, quality_data):
+        """
+        按模块生成单独的 CSV 文件
+        :param quality_data: 代码质量数据
+        """
+        modules = quality_data['module'].unique()
+        for module in modules:
+            module_data = quality_data[quality_data['module'] == module]
+            file_path = os.path.join(self.output_dir, f"{module}_code_quality.csv")
+            module_data.to_csv(file_path, index=False)
+            print(f"模块数据已保存到: {file_path}")
+
     def generate_mock_data(self):
         """
-        生成模拟代码质量数据，便于展示趋势
+        生成模拟代码质量数据
         """
         print("生成模拟代码质量数据...")
         data = []
-        for i in range(12):  # 模拟12个月的代码质量数据
-            month = datetime(2025, i + 1, 1)
-            complexity = random.uniform(5, 15)  # 代码复杂度
-            issues = random.randint(50, 150)   # 未解决的问题
-            coverage = random.uniform(60, 90)  # 代码覆盖率（百分比）
-            data.append({
-                "date": month,
-                "complexity": complexity,
-                "issues": issues,
-                "coverage": coverage
-            })
-        df = pd.DataFrame(data)
-        df.to_csv(os.path.join(self.output_dir, f"{self.repo_name}_code_quality.csv"), index=False)
-        print(f"模拟数据已保存到 {self.output_dir}")
+        modules = ['module1', 'module2', 'module3']
+        contributors = ['Alice', 'Bob', 'Charlie']
+        issue_types = ['Bug', 'Performance', 'Maintainability']
 
-    def analyze_quality(self):
-        """
-        分析代码质量数据
-        """
-        file_path = os.path.join(self.output_dir, f"{self.repo_name}_code_quality.csv")
-        if not os.path.exists(file_path):
-            print(f"代码质量数据文件不存在: {file_path}")
-            return None
+        for i in range(12):  # 模拟12个月的数据
+            for module in modules:
+                for contributor in contributors:
+                    month = datetime(2025, i + 1, 1)
+                    complexity = random.uniform(5, 15)
+                    issues = random.randint(50, 150)
+                    coverage = random.uniform(60, 90)
+                    issue_type = random.choice(issue_types)
+                    data.append({
+                        "date": month,
+                        "module": module,
+                        "contributor": contributor,
+                        "complexity": complexity,
+                        "issues": issues,
+                        "coverage": coverage,
+                        "issue_type": issue_type
+                    })
 
-        quality_data = pd.read_csv(file_path)
-        quality_data['date'] = pd.to_datetime(quality_data['date'])
-        print(f"加载了 {len(quality_data)} 条代码质量记录")
-        return quality_data
+        quality_data = pd.DataFrame(data)
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        file_path = os.path.join(self.output_dir, f"{self.repo_name}_code_quality_{timestamp}.csv")
+        quality_data.to_csv(file_path, index=False)
+        print(f"整体数据已保存到: {file_path}")
+
+        # 按模块生成 CSV 文件
+        self.save_module_csv(quality_data)
 
 
 def main():
@@ -57,10 +71,6 @@ def main():
 
     analyzer = CodeQualityAnalyzer(repo_name, output_dir)
     analyzer.generate_mock_data()  # 生成模拟数据
-    quality_data = analyzer.analyze_quality()
-
-    if quality_data is not None:
-        print(quality_data.head())  # 打印前几条数据
 
 
 if __name__ == "__main__":
