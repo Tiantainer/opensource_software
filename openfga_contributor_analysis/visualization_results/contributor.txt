@@ -1,0 +1,109 @@
+(bug) D:\大三上资料\开源软件基础\opensource_software-main>python Contributor_activity.py
+开始获取 openfga/openfga 的贡献者活动数据...
+共获取到 78 个贡献者
+
+成功处理 78 个贡献者活动数据
+
+=== 贡献者活动分析结果 ===
+
+总贡献者数: 78
+
+贡献者活动分布:
+miparnisari: 333 次贡献 (25.8%)
+dependabot[bot]: 289 次贡献 (22.4%)
+jon-whit: 189 次贡献 (14.7%)
+adriantam: 107 次贡献 (8.3%)
+jpadilla: 59 次贡献 (4.6%)
+justincoh: 31 次贡献 (2.4%)
+willvedd: 28 次贡献 (2.2%)
+elbuo8: 28 次贡献 (2.2%)
+rhamzeh: 27 次贡献 (2.1%)
+tranngoclam: 20 次贡献 (1.6%)
+aaguiarz: 20 次贡献 (1.6%)
+Siddhant-K-code: 13 次贡献 (1.0%)
+senojj: 11 次贡献 (0.9%)
+sergiught: 11 次贡献 (0.9%)
+ewanharris: 11 次贡献 (0.9%)
+poovamraj: 10 次贡献 (0.8%)
+DanCech: 8 次贡献 (0.6%)
+cikasfm: 6 次贡献 (0.5%)
+Vic-Dev: 5 次贡献 (0.4%)
+00chorch: 4 次贡献 (0.3%)
+matthewpereira: 4 次贡献 (0.3%)
+smeadows-okta: 4 次贡献 (0.3%)
+evansims: 3 次贡献 (0.2%)
+ilaleksin: 3 次贡献 (0.2%)
+jimmyjames: 3 次贡献 (0.2%)
+MidasLamb: 3 次贡献 (0.2%)
+siiddhantt: 2 次贡献 (0.2%)
+sanketrai1: 2 次贡献 (0.2%)
+chenrui333: 2 次贡献 (0.2%)
+matoous: 2 次贡献 (0.2%)
+JAORMX: 2 次贡献 (0.2%)
+curfew-marathon: 2 次贡献 (0.2%)
+harshabangi: 2 次贡献 (0.2%)
+dblclik: 2 次贡献 (0.2%)
+lj365: 1 次贡献 (0.1%)
+martin31821: 1 次贡献 (0.1%)
+matldupont: 1 次贡献 (0.1%)
+lekaf974: 1 次贡献 (0.1%)
+Madraceee: 1 次贡献 (0.1%)
+ovindu-a: 1 次贡献 (0.1%)
+vil02: 1 次贡献 (0.1%)
+raj-saxena: 1 次贡献 (0.1%)
+renan-r-santos: 1 次贡献 (0.1%)
+ryanpq: 1 次贡献 (0.1%)
+golanglemonade: 1 次贡献 (0.1%)
+Saurabhkr952: 1 次贡献 (0.1%)
+stgraber: 1 次贡献 (0.1%)
+sujitha-av: 1 次贡献 (0.1%)
+tylernix: 1 次贡献 (0.1%)
+razorness: 1 次贡献 (0.1%)
+le-yams: 1 次贡献 (0.1%)
+Zach-Johnson: 1 次贡献 (0.1%)
+zackliston: 1 次贡献 (0.1%)
+arrlancore: 1 次贡献 (0.1%)
+jingchu000: 1 次贡献 (0.1%)
+lalalalatt: 1 次贡献 (0.1%)
+alexanderzobnin: 1 次贡献 (0.1%)
+alexandrebrg: 1 次贡献 (0.1%)
+Azanul: 1 次贡献 (0.1%)
+ChinoUkaegbu: 1 次贡献 (0.1%)
+cmmoran: 1 次贡献 (0.1%)
+dschenkelman: 1 次贡献 (0.1%)
+suttod: 1 次贡献 (0.1%)
+edwin-Marrima: 1 次贡献 (0.1%)
+Juneezee: 1 次贡献 (0.1%)
+gabrielbussolo: 1 次贡献 (0.1%)
+jbrooks2-godaddy: 1 次贡献 (0.1%)
+jmiettinen: 1 次贡献 (0.1%)
+shamus: 1 次贡献 (0.1%)
+unknwon: 1 次贡献 (0.1%)
+Code2Life: 1 次贡献 (0.1%)
+jgraeger: 1 次贡献 (0.1%)
+jcchavezs: 1 次贡献 (0.1%)
+booniepepper: 1 次贡献 (0.1%)
+kalleep: 1 次贡献 (0.1%)
+kdubb: 1 次贡献 (0.1%)
+KlausVii: 1 次贡献 (0.1%)
+liamgallear: 1 次贡献 (0.1%)
+
+首次贡献日期:
+miparnisari: 2024-05-03
+jon-whit: 2023-02-07
+adriantam: 2023-02-03
+jpadilla: 2023-08-08
+justincoh: 2024-09-23
+willvedd: 2023-12-21
+elbuo8: 2022-06-16
+
+最近贡献日期:
+miparnisari: 2025-01-24
+jon-whit: 2024-06-17
+adriantam: 2025-01-22
+jpadilla: 2024-12-06
+justincoh: 2025-01-23
+willvedd: 2024-09-06
+elbuo8: 2024-12-17
+
+分析结果已保存到: ./openfga_contributor_analysis
