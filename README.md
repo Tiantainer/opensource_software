@@ -255,6 +255,7 @@ token = 'your_github_token_here'
    ```
 3. 可视化结果将通过 `matplotlib` 显示。
 
+#### 运行 `issue_comments.py`
 ---
 
 ## 注意事项
