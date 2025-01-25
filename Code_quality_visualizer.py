@@ -1,7 +1,6 @@
 import pandas as pd
 import os
 
-
 def analyze_and_save(data_dir):
     """
     分析代码质量数据并保存结果为多个 CSV 文件
