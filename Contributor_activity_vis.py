@@ -1,114 +1,63 @@
-import requests
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from collections import Counter
-from datetime import datetime
-import time
+import os
 
 
-class GitHubContributorActivityAnalyzer:
-    def __init__(self, owner: str, repo: str, token: str = None):
-        """
-        初始化GitHub贡献者活动分析器
-        :param owner: 仓库所有者
-        :param repo: 仓库名称
-        :param token: GitHub API token（可选）
-        """
-        self.owner = owner
-        self.repo = repo
-        self.headers = {'Authorization': f'token {token}'} if token else {}
-        self.base_url = f'https://api.github.com/repos/{owner}/{repo}'
+def visualize_contributor_activity(data_dir):
+    """
+    可视化贡献者活动数据
+    :param data_dir: 包含贡献者活动数据的目录
+    """
+    # 设置样式
+    sns.set_theme(style="whitegrid")
+    plt.rcParams['font.family'] = 'DejaVu Sans'  # 更通用的字体
 
-    def get_contributors_activity(self):
-        """获取贡献者活动数据"""
-        print(f"开始获取 {self.owner}/{self.repo} 的贡献者活动数据...")
-        contributors_activity = []
-        url = f'{self.base_url}/contributors'
-        response = requests.get(url, headers=self.headers)
+    # 创建保存图片的目录
+    output_dir = os.path.join(data_dir, "visualization_results")
+    os.makedirs(output_dir, exist_ok=True)
 
-        if response.status_code != 200:
-            print(f"获取数据失败: {response.status_code}")
-            return []
+    # 读取贡献者活动数据
+    contributor_stats_path = os.path.join(data_dir, "contributor_details.csv")
+    if not os.path.exists(contributor_stats_path):
+        print(f"文件不存在: {contributor_stats_path}")
+        return
 
-        contributors_activity = response.json()
-        print(f"共获取到 {len(contributors_activity)} 个贡献者")
-        return contributors_activity
+    contributor_stats = pd.read_csv(contributor_stats_path)
 
-    def analyze_contributors_activity(self):
-        """分析贡献者活动"""
-        contributors_activity = self.get_contributors_activity()
+    # 设置图表颜色
+    colors = ['#2ecc71', '#3498db', '#e74c3c', '#f1c40f', '#9b59b6', '#95a5a6']
 
-        # 初始化统计数据
-        stats = {
-            'total_contributors': len(contributors_activity),
-            'contributors': Counter(),
-            'activity_by_month': Counter(),
-            'contributor_activity': Counter()
-        }
+    # 1. 贡献者贡献分布（饼图）
+    plt.figure(figsize=(10, 8))
+    plt.pie(contributor_stats['contributions'],
+            labels=contributor_stats['login'],
+            autopct='%1.1f%%',
+            textprops={'fontsize': 8},
+            colors=colors)
+    plt.title('Contributor Contribution Distribution', pad=20)
+    plt.savefig(os.path.join(output_dir, 'contributor_distribution.png'))  # 保存图片
+    plt.show()
 
-        contributor_data = []
+    # 2. 贡献者贡献排名（柱状图）
+    plt.figure(figsize=(12, 6))
+    top_contributors = contributor_stats.nlargest(10, 'contributions')  # 取贡献最多的前10名
+    sns.barplot(x='login', y='contributions', data=top_contributors, palette=colors)
+    plt.title('Top 10 Contributors by Contributions', pad=20)
+    plt.xlabel('Contributor')
+    plt.ylabel('Number of Contributions')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.savefig(os.path.join(output_dir, 'top_contributors.png'))  # 保存图片
+    plt.show()
 
-        for contributor in contributors_activity:
-            try:
-                contributor_info = self._parse_contributor(contributor)
-                # 更新统计信息
-                self._update_stats(stats, contributor_info)
-                contributor_data.append(contributor_info)
-
-            except Exception as e:
-                print(f"处理贡献者 {contributor['login']} 时出错: {str(e)}")
-                continue
-
-        print(f"\n成功处理 {len(contributor_data)} 个贡献者活动数据")
-        return stats, pd.DataFrame(contributor_data)
-
-    def _parse_contributor(self, contributor):
-        """解析单个贡献者的信息"""
-        login = contributor['login']
-        contributions = contributor['contributions']
-        contributor_info = {
-            'login': login,
-            'contributions': contributions
-        }
-
-        return contributor_info
-
-    def _update_stats(self, stats, contributor_info):
-        """更新统计信息"""
-        try:
-            stats['contributors'][contributor_info['login']] += contributor_info['contributions']
-            stats['contributor_activity'][contributor_info['login']] += contributor_info['contributions']
-        except Exception as e:
-            print(f"更新统计信息时出错: {str(e)}")
-
-    def visualize_contributor_activity(self, data_dir):
-        """可视化Github贡献者活动数据"""
-        # 设置样式
-        plt.style.use('seaborn')
-        plt.rcParams['font.family'] = 'DejaVu Sans'  # 更通用的字体
-
-        # 读取和清理数据
-        contributor_stats = pd.read_csv(f"{data_dir}/contributor_stats.csv")
-        contributor_stats = self.clean_data(contributor_stats)
-
-        # 设置图表颜色
-        colors = ['#2ecc71', '#3498db', '#e74c3c', '#f1c40f', '#9b59b6', '#95a5a6']
-
-        # 1. 贡献者分布
-        plt.figure(figsize=(12, 8))
-        plt.pie(contributor_stats['contributions'],
-                labels=contributor_stats['login'],
-                autopct='%1.1f%%',
-                textprops={'fontsize': 8},
-                colors=colors)
-        plt.title('Contributor Distribution', pad=20)
-        plt.show()
-
-        # 2. 贡献者活动趋势
+    # 3. 贡献者活动趋势（折线图）
+    # 假设数据中有日期字段（需要根据实际数据调整）
+    if 'date' in contributor_stats.columns:
         plt.figure(figsize=(15, 6))
-        contributor_stats['month'] = pd.to_datetime(contributor_stats['date']).dt.to_period('M')
-        monthly_activity = contributor_stats.groupby(contributor_stats['month']).size()
+        contributor_stats['date'] = pd.to_datetime(contributor_stats['date'])
+        contributor_stats['month'] = contributor_stats['date'].dt.to_period('M')
+        monthly_activity = contributor_stats.groupby('month').size()
 
         plt.plot(range(len(monthly_activity)), monthly_activity.values,
                  marker='o', linewidth=2, markersize=8, color='#3498db')
@@ -121,9 +70,13 @@ class GitHubContributorActivityAnalyzer:
                    rotation=45)
         plt.grid(True, alpha=0.3)
         plt.tight_layout()
+        plt.savefig(os.path.join(output_dir, 'monthly_activity_trend.png'))  # 保存图片
         plt.show()
+    else:
+        print("数据中没有日期字段，无法绘制活动趋势图。")
 
-        # 3. 贡献者时间分布
+    # 4. 贡献者贡献时间分布（24小时）
+    if 'date' in contributor_stats.columns:
         plt.figure(figsize=(12, 6))
         contributor_stats['hour'] = pd.to_datetime(contributor_stats['date']).dt.hour
         sns.histplot(data=contributor_stats, x='hour', bins=24, color='#3498db')
@@ -131,74 +84,19 @@ class GitHubContributorActivityAnalyzer:
         plt.xlabel('Hour of Day')
         plt.ylabel('Number of Contributions')
         plt.grid(True, alpha=0.3)
+        plt.savefig(os.path.join(output_dir, 'contributor_time_distribution.png'))  # 保存图片
         plt.show()
-
-        # 4. 代码贡献统计
-        plt.figure(figsize=(10, 6))
-        changes = {
-            'Total Contributions': contributor_stats['contributions'].sum(),
-        }
-        bars = plt.bar(changes.keys(), changes.values(), color=colors[:3])
-        plt.title('Code Contributions Statistics', pad=20)
-        plt.ylabel('Count')
-
-        # Add value labels
-        for bar in bars:
-            height = bar.get_height()
-            plt.text(bar.get_x() + bar.get_width() / 2., height,
-                     f'{int(height):,}',
-                     ha='center', va='bottom')
-
-        plt.grid(True, alpha=0.3)
-        plt.show()
-
-    def clean_data(self, contributor_stats):
-        """清理数据中的中文"""
-        # 清理贡献者活动中的中文信息，如果需要的话
-        return contributor_stats
-
-    def save_results(self, stats, df, output_dir):
-        """保存分析结果"""
-        os.makedirs(output_dir, exist_ok=True)
-
-        # 保存原始数据
-        df.to_csv(f"{output_dir}/contributor_details.csv", index=False)
-
-        # 保存统计数据
-        summary_data = {
-            'total_contributors': stats['total_contributors'],
-            'avg_contributions': sum(stats['contributors'].values()) / len(stats['contributors']) if stats['contributors'] else 0
-        }
-        pd.DataFrame([summary_data]).to_csv(f"{output_dir}/summary.csv", index=False)
-
-        # 保存各类统计数据
-        for name, data in {
-            'contributors': stats['contributors'],
-            'activity_by_month': stats['activity_by_month'],
-            'contributor_activity': stats['contributor_activity']
-        }.items():
-            pd.DataFrame(list(data.items()), columns=['Contributor', 'Activity Count']).to_csv(f"{output_dir}/{name}.csv", index=False)
-
-        print(f"\n分析结果已保存到: {output_dir}")
+    else:
+        print("数据中没有日期字段，无法绘制时间分布图。")
 
 
 def main():
-    data_dir = "D:/test/analysis_results"
-    owner = "openfga"
+    # 设置数据目录
     repo = "openfga"
-    token = "your_github_token_here"  # 在此处插入GitHub的token
-
-    analyzer = GitHubContributorActivityAnalyzer(owner, repo, token)
-
-    # 执行贡献者活动分析
-    stats, df = analyzer.analyze_contributors_activity()
+    data_dir = f"D:/test/{repo}_contributor_analysis"
 
     # 可视化贡献者活动数据
-    analyzer.visualize_contributor_activity(data_dir)
-
-    # 保存结果
-    output_dir = f"D:/test/{repo}_contributor_analysis"
-    analyzer.save_results(stats, df, output_dir)
+    visualize_contributor_activity(data_dir)
 
 
 if __name__ == "__main__":
