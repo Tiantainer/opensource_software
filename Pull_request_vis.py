@@ -5,12 +5,17 @@ import os
 
 
 class PRVisualizer:
-    def __init__(self, data_dir):
+    def __init__(self, data_dir, output_dir):
         """
         初始化可视化器
         :param data_dir: 包含PR数据的目录
+        :param output_dir: 保存图片的目录
         """
         self.data_dir = data_dir
+        self.output_dir = output_dir
+
+        # 创建输出目录
+        os.makedirs(self.output_dir, exist_ok=True)
 
         # 读取数据文件
         self.pr_details = pd.read_csv(os.path.join(data_dir, 'open_pr_details.csv'))
@@ -30,6 +35,7 @@ class PRVisualizer:
         plt.title('PR Age Distribution')
         plt.xlabel('Age (days)')
         plt.ylabel('Count')
+        plt.savefig(os.path.join(self.output_dir, 'pr_age_distribution.png'))  # 保存图片
         plt.show()
 
     def show_author_distribution(self):
@@ -38,6 +44,7 @@ class PRVisualizer:
         data = self.authors.sort_values('Count', ascending=False)
         plt.pie(data['Count'], labels=data['Name'], autopct='%1.1f%%')
         plt.title('PR Authors Distribution')
+        plt.savefig(os.path.join(self.output_dir, 'author_distribution.png'))  # 保存图片
         plt.show()
 
     def show_label_distribution(self):
@@ -48,6 +55,7 @@ class PRVisualizer:
         plt.title('PR Labels Distribution')
         plt.xlabel('Count')
         plt.tight_layout()
+        plt.savefig(os.path.join(self.output_dir, 'label_distribution.png'))  # 保存图片
         plt.show()
 
     def show_pr_size_distribution(self):
@@ -66,6 +74,7 @@ class PRVisualizer:
         ax2.set_xlabel('Number of Lines')
         ax2.legend(['Additions', 'Deletions'])
         plt.tight_layout()
+        plt.savefig(os.path.join(self.output_dir, 'pr_size_distribution.png'))  # 保存图片
         plt.show()
 
     def show_review_activity(self):
@@ -85,6 +94,7 @@ class PRVisualizer:
         ax2.set_ylabel('Number of Review Comments')
         plt.xticks(rotation=45)
         plt.tight_layout()
+        plt.savefig(os.path.join(self.output_dir, 'review_activity.png'))  # 保存图片
         plt.show()
 
     def show_timeline(self):
@@ -103,6 +113,7 @@ class PRVisualizer:
         plt.xticks(rotation=45)
         plt.grid(True)
         plt.tight_layout()
+        plt.savefig(os.path.join(self.output_dir, 'pr_timeline.png'))  # 保存图片
         plt.show()
 
     def show_changes_heatmap(self):
@@ -120,18 +131,20 @@ class PRVisualizer:
         sns.heatmap(changes_data, annot=True, fmt='.0f', cmap='YlOrRd')
         plt.title('PR Changes Heatmap')
         plt.tight_layout()
+        plt.savefig(os.path.join(self.output_dir, 'changes_heatmap.png'))  # 保存图片
         plt.show()
 
 
 def main():
-    # 设置数据目录
+    # 设置数据目录和输出目录
     repo = "openfga"
     data_dir = f"D:/test/{repo}_open_pr_analysis"
+    output_dir = f"D:/test/{repo}_visualization_output"
 
     # 创建可视化器
-    visualizer = PRVisualizer(data_dir)
+    visualizer = PRVisualizer(data_dir, output_dir)
 
-    # 显示每个图表
+    # 显示每个图表并保存
     print("\n显示PR年龄分布...")
     visualizer.show_pr_age_distribution()
 
@@ -156,4 +169,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
