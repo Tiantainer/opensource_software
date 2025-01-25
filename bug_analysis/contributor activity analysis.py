@@ -1,22 +1,14 @@
-import matplotlib.pyplot as plt
-import pandas as pd
-from datetime import datetime
+def contributor_activity_analysis(pr_data):
+    """
+    计算每个贡献者的活动情况，分析哪些贡献者提交了最多的PR。
+    :param pr_data: PR详细数据，来自analyze_open_prs方法返回的DataFrame
+    :return: 每个贡献者的PR数量
+    """
+    contributor_count = pr_data['author'].value_counts()
+    print("\n=== 贡献者活动分析 ===")
+    print(f"\n活跃贡献者 PR 数量:")
+    for author, count in contributor_count.items():
+        print(f"{author}: {count} PRs")
 
-# 加载提交历史数据
-commits = pd.read_csv('commits_history.csv')  # 替换为实际数据路径
+    return contributor_count
 
-# 解析提交日期
-commits['date'] = pd.to_datetime(commits['date'])
-
-# 按日期分组，统计每一天的提交数
-commits_by_date = commits.groupby(commits['date'].dt.date).size()
-
-# 绘制贡献者活动随时间变化的图表
-plt.figure(figsize=(10, 6))
-commits_by_date.plot(kind='line')
-plt.title('贡献者活动随时间变化')
-plt.xlabel('日期')
-plt.ylabel('提交数')
-plt.xticks(rotation=45)
-plt.tight_layout()
-plt.show()
