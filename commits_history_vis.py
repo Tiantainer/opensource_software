@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 def translate_chinese_to_english(text):
     """将所有中文文本转换为英文"""
@@ -46,6 +47,10 @@ def visualize_git_analysis(data_dir):
     # 设置图表颜色
     colors = ['#2ecc71', '#3498db', '#e74c3c', '#f1c40f', '#9b59b6', '#95a5a6']
 
+    # 创建保存图片的目录
+    output_dir = os.path.join(data_dir, "visualization_results")
+    os.makedirs(output_dir, exist_ok=True)
+
     # 1. Contributor Distribution
     plt.figure(figsize=(12, 8))
     plt.pie(author_stats['Commits'],
@@ -54,6 +59,7 @@ def visualize_git_analysis(data_dir):
             textprops={'fontsize': 8},
             colors=colors)
     plt.title('Contributor Distribution', pad=20)
+    plt.savefig(os.path.join(output_dir, 'contributor_distribution.png'))  # 保存图片
     plt.show()
 
     # 2. Commit Type Distribution
@@ -64,6 +70,7 @@ def visualize_git_analysis(data_dir):
             autopct='%1.1f%%',
             colors=colors)
     plt.title('Commit Type Distribution', pad=20)
+    plt.savefig(os.path.join(output_dir, 'commit_type_distribution.png'))  # 保存图片
     plt.show()
 
     # 3. Monthly Commit Trend
@@ -82,6 +89,7 @@ def visualize_git_analysis(data_dir):
                rotation=45)
     plt.grid(True, alpha=0.3)
     plt.tight_layout()
+    plt.savefig(os.path.join(output_dir, 'monthly_commit_trend.png'))  # 保存图片
     plt.show()
 
     # 4. Commit Time Distribution
@@ -92,6 +100,7 @@ def visualize_git_analysis(data_dir):
     plt.xlabel('Hour of Day')
     plt.ylabel('Number of Commits')
     plt.grid(True, alpha=0.3)
+    plt.savefig(os.path.join(output_dir, 'commit_time_distribution.png'))  # 保存图片
     plt.show()
 
     # 5. Code Changes Statistics
@@ -113,6 +122,7 @@ def visualize_git_analysis(data_dir):
                  ha='center', va='bottom')
 
     plt.grid(True, alpha=0.3)
+    plt.savefig(os.path.join(output_dir, 'code_changes_statistics.png'))  # 保存图片
     plt.show()
 
     # 6. Top 10 Contributors Activity
@@ -133,6 +143,7 @@ def visualize_git_analysis(data_dir):
     plt.ylabel('Month')
     plt.xticks(rotation=45, ha='right')
     plt.tight_layout()
+    plt.savefig(os.path.join(output_dir, 'top_10_contributors_activity.png'))  # 保存图片
     plt.show()
 
     # 7. Code Changes by Top Contributors
@@ -156,6 +167,7 @@ def visualize_git_analysis(data_dir):
 
     plt.grid(True, alpha=0.3)
     plt.tight_layout()
+    plt.savefig(os.path.join(output_dir, 'code_changes_by_top_contributors.png'))  # 保存图片
     plt.show()
 
     # 8. Monthly Code Changes Trend
@@ -180,6 +192,7 @@ def visualize_git_analysis(data_dir):
                rotation=45)
     plt.grid(True, alpha=0.3)
     plt.tight_layout()
+    plt.savefig(os.path.join(output_dir, 'monthly_code_changes_trend.png'))  # 保存图片
     plt.show()
 
 
@@ -190,4 +203,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
