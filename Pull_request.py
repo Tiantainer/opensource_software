@@ -256,7 +256,7 @@ def main():
     repo = "openfga"
 
     # GitHub token，运行时一定要换成自己的token，token在GitHub上生成
-    token = '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'  # 替换为你的GitHub token
+    token = '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'  # 替换为你的GitHub token
 
     # 创建分析器
     analyzer = GitHubPRAnalyzer(owner, repo, token)
@@ -274,4 +274,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
