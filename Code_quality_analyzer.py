@@ -3,7 +3,6 @@ import os
 from datetime import datetime
 import random
 
-
 class CodeQualityAnalyzer:
     def __init__(self, repo_name, output_dir):
         """
