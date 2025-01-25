@@ -6,18 +6,20 @@
 
 ```
 .
-├── bug_issues.py            # 分析 GitHub 仓库的 Bug 报告
-├── bug_issues_vis.py        # 可视化 Bug 报告分析结果
-├── commits_history.py       # 分析 Git 仓库的提交历史
-├── commits_history_vis.py   # 可视化提交历史分析结果
-├── Pull_request.py          # 分析 GitHub 仓库的 Pull Request
-├── Pull_request_vis.py      # 可视化 Pull Request 分析结果
-├── contributor_activity.py  # 分析 GitHub 仓库的贡献者活动
+├── bug_issues.py                # 分析 GitHub 仓库的 Bug 报告
+├── bug_issues_vis.py            # 可视化 Bug 报告分析结果
+├── commits_history.py           # 分析 Git 仓库的提交历史
+├── commits_history_vis.py       # 可视化提交历史分析结果
+├── Pull_request.py              # 分析 GitHub 仓库的 Pull Request
+├── Pull_request_vis.py          # 可视化 Pull Request 分析结果
+├── contributor_activity.py      # 分析 GitHub 仓库的贡献者活动
 ├── Contributor_activity_vis.py  # 可视化贡献者活动分析结果
-├── Code_quality_analyzer.py # 生成模拟的代码质量数据
-├── Code_quality_visualizer.py # 分析和可视化代码质量数据
-├── code_review.py           # 分析 GitHub 仓库的代码审查数据
-└── code_review_vis.py       # 可视化代码审查分析结果
+├── Code_quality_analyzer.py     # 生成模拟的代码质量数据
+├── Code_quality_visualizer.py   # 分析和可视化代码质量数据
+├── code_review.py               # 分析 GitHub 仓库的代码审查数据
+├── code_review_vis.py           # 可视化代码审查分析结果
+├── issue_comments.py            # 分析Git仓库的问题评论数据
+└── issue_comments_vis.py        # 可视化问题评论数据结果
 ```
 
 ## 文件功能说明
