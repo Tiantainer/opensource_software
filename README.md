@@ -15,7 +15,9 @@
 ├── contributor_activity.py  # 分析 GitHub 仓库的贡献者活动
 ├── Contributor_activity_vis.py  # 可视化贡献者活动分析结果
 ├── Code_quality_analyzer.py # 生成模拟的代码质量数据
-└── Code_quality_visualizer.py # 分析和可视化代码质量数据
+├── Code_quality_visualizer.py # 分析和可视化代码质量数据
+├── code_review.py           # 分析 GitHub 仓库的代码审查数据
+└── code_review_vis.py       # 可视化代码审查分析结果
 ```
 
 ## 文件功能说明
@@ -112,6 +114,7 @@
   - 分析代码质量数据并生成模块统计、贡献者统计、问题类型分布等。
   - 保存分析结果为 CSV 文件。
 - **依赖库**: `pandas`, `os`
+
 
 ---
 
