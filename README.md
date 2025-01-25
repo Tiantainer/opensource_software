@@ -1,6 +1,6 @@
 # 开源软件基础项目
 
-本项目包含十个 Python 文件，用于分析和可视化 GitHub 仓库的提交历史、Bug 报告、Pull Request（PR）数据、贡献者活动以及代码质量。以下是每个文件的详细说明以及如何运行这些代码的指南。
+本项目包含12个 Python 文件，用于分析和可视化 GitHub 仓库的提交历史、Bug 报告、Pull Request（PR）数据、贡献者活动、代码质量以及代码审查数据。以下是每个文件的详细说明以及如何运行这些代码的指南。
 
 ## 文件结构
 
@@ -115,6 +115,23 @@
   - 保存分析结果为 CSV 文件。
 - **依赖库**: `pandas`, `os`
 
+### 11. `code_review.py`
+- **功能**: 分析 GitHub 仓库的代码审查数据。
+- **主要功能**:
+  - 获取指定仓库的 Pull Request 审查数据。
+  - 统计审查者、审查状态、审查时间等信息。
+  - 生成模拟的代码审查数据。
+  - 保存分析结果为 CSV 文件。
+- **依赖库**: `requests`, `pandas`, `random`, `datetime`, `os`, `time`
+
+### 12. `code_review_vis.py`
+- **功能**: 可视化代码审查分析结果。
+- **主要功能**:
+  - 绘制审查状态分布条形图。
+  - 绘制审查者活动分布柱状图（前 10 名）。
+  - 绘制审查时间趋势折线图。
+  - 绘制审查评论长度分布直方图。
+- **依赖库**: `pandas`, `matplotlib`, `seaborn`, `os`
 
 ---
 
@@ -218,6 +235,23 @@ token = 'your_github_token_here'
    python Code_quality_visualizer.py
    ```
 3. 分析结果将保存到 `D:/test/openfga_code_quality/analysis_results` 目录中。
+
+#### 运行 `code_review.py`
+1. 打开终端或命令行。
+2. 导航到项目目录。
+3. 运行以下命令：
+   ```bash
+   python code_review.py
+   ```
+4. 分析结果将保存到 `D:/test/openfga_code_review_analysis` 目录中。
+
+#### 运行 `code_review_vis.py`
+1. 确保已经运行过 `code_review.py` 并生成了分析结果。
+2. 运行以下命令：
+   ```bash
+   python code_review_vis.py
+   ```
+3. 可视化结果将通过 `matplotlib` 显示。
 
 ---
 
