@@ -19,20 +19,36 @@ class GitHubContributorAnalyzer:
         self.base_url = f'https://api.github.com/repos/{owner}/{repo}'
 
     def get_contributors(self):
-        """获取仓库的所有贡献者"""
-        print(f"开始获取 {self.owner}/{self.repo} 的贡献者活动...")
+    """获取仓库的所有贡献者"""
+    print(f"开始获取 {self.owner}/{self.repo} 的贡献者活动数据...")
 
-        contributors = []
+    contributors = []
+    page = 1
+    per_page = 100  # 每页返回100个贡献者
+
+    while True:
         url = f'{self.base_url}/contributors'
-        response = requests.get(url, headers=self.headers)
+        params = {
+            'page': page,
+            'per_page': per_page
+        }
+        response = requests.get(url, headers=self.headers, params=params)
 
         if response.status_code != 200:
             print(f"获取数据失败: {response.status_code}")
-            return []
+            break
 
-        contributors = response.json()
-        print(f"共获取到 {len(contributors)} 个贡献者")
-        return contributors
+        page_contributors = response.json()
+        if not page_contributors:
+            break
+
+        contributors.extend(page_contributors)
+        page += 1
+        time.sleep(1)  # 避免触发API限制
+
+    print(f"共获取到 {len(contributors)} 个贡献者")
+    return contributors
+
 
     def analyze_contributors(self):
         """分析贡献者活动"""
