@@ -1,0 +1,2140 @@
+,date,author,message,files_changed,insertions,deletions,hash,year_month,commit_type,hour
+0,2025-01-17 23:15:39+00:00,Maria Ines Parnisari,chore: minor updates to code comments in cache controller (#2212),2,31,14,6d2f070,2025-01,其他,23
+1,2025-01-17 21:23:40+00:00,Adrian Tam,fix(InMemoryCacheController): incorrect timestamp comparison for partial invalidation (#2216),3,61,18,6950951,2025-01,Bug修复,21
+2,2025-01-17 20:41:26+00:00,Justin Cohen,perf: make computation of cache keys faster (#2193),14,585,272,f49924a,2025-01,其他,20
+3,2025-01-17 20:15:09+00:00,Maria Ines Parnisari,test: build storage wrapper in Check unit tests (#2220),3,70,107,b91da19,2025-01,测试,20
+4,2025-01-16 21:49:34+00:00,Maria Ines Parnisari,chore: move cached iterators & wrappers (#2219),14,2619,2614,f00569d,2025-01,其他,21
+5,2025-01-16 20:48:21+00:00,Maria Ines Parnisari,test: shuffle order of tuples when writing them (#2218),4,11,5,c9412f7,2025-01,测试,20
+6,2025-01-15 18:45:55+00:00,Adrian Tam,chore: add debug message to cache controller (#2199),11,157,22,4979ef7,2025-01,Bug修复,18
+7,2025-01-14 00:17:26+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 4 updates (#2211)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,12,12,40cf003,2025-01,其他,0
+8,2025-01-13 21:25:16+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 4 updates (#2210)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",4,6,6,0199bd6,2025-01,其他,21
+9,2025-01-13 21:10:20+00:00,Adrian Tam,"fix: cache controller not invalidating stale entry (#2190)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",6,247,133,cfd7556,2025-01,Bug修复,21
+10,2025-01-13 20:38:41+00:00,Justin Cohen,"docs: update changelog to prep for v1.8.4 (#2209)
+
+Co-authored-by: Raghd Hamzeh <raghd.hamzeh@openfga.dev>",1,9,1,dc1a480,2025-01,文档,20
+11,2025-01-13 15:22:20+00:00,Adrian Tam,fix: iterator need to be flushed after invalidation (#2198),2,124,18,a4491e4,2025-01,Bug修复,15
+12,2025-01-12 23:37:31+00:00,Joshua Jones,chore: replace sprintf in cache code (#2207),2,47,8,67206f1,2025-01,其他,23
+13,2025-01-12 00:04:28+00:00,Joshua Jones,chore: remove dead cache key code (#2206),6,520,988,f05b67a,2025-01,其他,0
+14,2025-01-09 21:15:34+00:00,Joshua Jones,avoid mutating reference input (#2203),1,4,1,67dcf3d,2025-01,其他,21
+15,2025-01-09 19:22:46+00:00,Joshua Jones,test: add error test cases to the hasher Write* functions in the keys package (#2201),4,300,13,3f5b60e,2025-01,测试,19
+16,2025-01-08 22:28:32+00:00,Maria Ines Parnisari,chore: introduce new ordered combined iterator (#2197),2,370,0,a19aeca,2025-01,其他,22
+17,2025-01-08 20:30:47+00:00,Joshua Jones,rework cache key hash generation (#2194),5,384,21,e1d332f,2025-01,其他,20
+18,2025-01-07 16:52:29+00:00,Adrian Tam,chore: bump api to bring fix for read api validation (#2195),3,4,3,9ec0ab1,2025-01,Bug修复,16
+19,2025-01-06 22:07:57+00:00,dependabot[bot],"chore(deps): bump go.opentelemetry.io/proto/otlp from 1.4.0 to 1.5.0 in the dependencies group (#2192)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,12,12,ab3ed12,2025-01,其他,22
+20,2025-01-06 16:31:48+00:00,Zack Liston,"fix: cache-controller flags not respecting the environment variables (#2184)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: Maria Ines Parnisari <maineparnisari@gmail.com>",2,8,0,4bf4c88,2025-01,Bug修复,16
+21,2025-01-03 17:25:34+00:00,Justin Cohen,"docs: update changelog to prep for v1.8.3 (#2186)
+
+Co-authored-by: José Padilla <jose.padilla@okta.com>",1,11,4,21757d5,2025-01,文档,17
+22,2025-01-03 17:14:47+00:00,Justin Cohen,test: batchCheck CachedIterator integration test (#2187),3,156,0,94f69c0,2025-01,测试,17
+23,2025-01-02 14:23:56+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 5 updates (#2183)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,21,21,8430bd2,2025-01,其他,14
+24,2024-12-30 21:10:41+00:00,Justin Cohen,chore: bump api proto ref (#2185),2,3,3,6d405b3,2024-12,其他,21
+25,2024-12-30 20:29:14+00:00,Justin Cohen,feat: add additional separator in contextualTuple cache key (#2173),1,16,2,7f80a40,2024-12,新功能,20
+26,2024-12-20 17:32:31+00:00,Adrian Tam,chore: bump x/net version to v0.33.0 (#2181),2,3,3,dcf7d00,2024-12,其他,17
+27,2024-12-19 17:30:31+00:00,Maria Ines Parnisari,refactor: authorization error (#2136),2,78,39,565eacb,2024-12,重构,17
+28,2024-12-19 16:03:02+00:00,Maria Ines Parnisari,refactor: cache settings (#2149),16,454,269,ed24275,2024-12,重构,16
+29,2024-12-18 20:19:35+00:00,Maria Ines Parnisari,refactor: iterators (#2178),2,62,41,5101f14,2024-12,重构,20
+30,2024-12-18 18:35:35+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 6 updates (#2177)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,18,18,2cd3e90,2024-12,其他,18
+31,2024-12-18 15:30:03+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 4 updates (#2176)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",3,5,5,a7d8a17,2024-12,其他,15
+32,2024-12-18 14:41:47+00:00,Maria Ines Parnisari,"test: shuffle order of tuples when writing them, and shuffle ctx tuples (#2175)",4,35,15,066b5d1,2024-12,测试,14
+33,2024-12-18 12:32:42+00:00,Karl Persson,feat: filter stores by name (#2103),11,155,45,9425224,2024-12,新功能,12
+34,2024-12-17 16:14:08+00:00,Justin Cohen,"fix: update check cache key logic (#2160)
+
+Co-authored-by: Dan Cech <dcech@grafana.com>",3,200,7,31a3354,2024-12,Bug修复,16
+35,2024-12-17 15:39:46+00:00,Yamil Asusta,feat: observability for fastpathv2 (#2171),3,31,18,0db549d,2024-12,新功能,15
+36,2024-12-17 15:01:58+00:00,Yamil Asusta,feat: normalize nested/recursive usage (#2172),5,868,859,bf46c3e,2024-12,新功能,15
+37,2024-12-16 22:27:53+00:00,dependabot[bot],chore(deps): bump grpc-ecosystem/grpc-health-probe from v0.4.35 to v0.4.36 in the dependencies group (#2170),2,2,2,59da649,2024-12,其他,22
+38,2024-12-16 15:08:17+00:00,Adrian Tam,chore: refactor check fastpath v2 left channels (#2167),2,50,34,55c0a94,2024-12,重构,15
+39,2024-12-13 20:42:56+00:00,Justin Cohen,docs: bump changelog in prep for 1.8.2 (#2166),1,6,1,2c188cd,2024-12,文档,20
+40,2024-12-13 16:21:19+00:00,Justin Cohen,chore: bump proto definitions for batch check API fix (#2165),2,3,3,642e0e3,2024-12,Bug修复,16
+41,2024-12-12 20:19:55+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 8 updates (#2163)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,46,41,001950e,2024-12,其他,20
+42,2024-12-12 19:53:26+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 8 updates (#2164)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",6,18,18,10b591c,2024-12,其他,19
+43,2024-12-12 19:40:25+00:00,dependabot[bot],"chore(deps): bump golang.org/x/crypto from 0.29.0 to 0.31.0 (#2162)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,9,9,ac23d46,2024-12,其他,19
+44,2024-12-12 16:09:26+00:00,Justin Cohen,perf: use `strings.builder` when generating check cache key (#2161),2,15,10,ccc06b5,2024-12,其他,16
+45,2024-12-11 20:00:54+00:00,Alexander Zobnin,refactor: resolution depth in Check API (#2159),12,109,111,ebbf2d4,2024-12,重构,20
+46,2024-12-11 18:04:28+00:00,Adrian Tam,perf: cache controller async invalidation (#2124),4,57,51,c9bea07,2024-12,其他,18
+47,2024-12-10 21:18:36+00:00,Adrian Tam,fix: enforce order by object id for ReadStartingWithUser (#2158),6,49,4,ac7df57,2024-12,Bug修复,21
+48,2024-12-10 17:54:25+00:00,Adrian Tam,"fix: fastpath v2 tuples not iterated correctly for intersection and exclusion (#2157)
+
+Co-authored-by: Yamil Asusta <hello@yamilasusta.com>",3,292,4,5bd446f,2024-12,Bug修复,17
+49,2024-12-09 21:56:57+00:00,Adrian Tam,chore: expose cache controller configuration to allow use as stand alone binary (#2155),5,218,24,b4fc477,2024-12,其他,21
+50,2024-12-09 21:22:08+00:00,Yamil Asusta,"feat: fast path support on set operations within usersets (#2140)
+
+Co-authored-by: José Padilla <jose.padilla@okta.com>",10,552,23,a941221,2024-12,新功能,21
+51,2024-12-09 19:59:01+00:00,Justin Cohen,docs: add batch check env vars to config.json (#2152),2,20,0,bf45ec9,2024-12,文档,19
+52,2024-12-09 18:07:31+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 4 updates (#2147)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,18,18,aabe2ec,2024-12,其他,18
+53,2024-12-06 20:57:37+00:00,José Padilla,fix: wait for cached iters on close (#2145),11,142,17,9e40246,2024-12,Bug修复,20
+54,2024-12-06 16:46:01+00:00,Maria Ines Parnisari,"fix: composition of database decorators (#2126)
+
+Co-authored-by: José Padilla <jose.padilla@okta.com>",22,337,203,bdeb8ad,2024-12,Bug修复,16
+55,2024-12-06 14:45:26+00:00,Adrian Tam,feat: add metrics on cache controller read changes latency (#2135),3,21,0,4a215cd,2024-12,新功能,14
+56,2024-12-05 21:56:04+00:00,Maria Ines Parnisari,fix: labels of metrics that went past the maximum bucket (#2146),3,18,11,72683cd,2024-12,Bug修复,21
+57,2024-12-05 19:49:07+00:00,Justin Cohen,docs: changelog for v1.8.1 (#2143),1,6,1,e391929,2024-12,文档,19
+58,2024-12-05 16:53:15+00:00,Justin Cohen,feat: handle duplicate checks in BatchCheck (#2102),8,502,339,14d3dc9,2024-12,新功能,16
+59,2024-12-05 00:07:14+00:00,Justin Cohen,feat: add `Duration` to check resolution metadata (#2139),9,73,52,f1e733a,2024-12,新功能,0
+60,2024-12-04 17:18:40+00:00,José Padilla,"switch ccache to theine cache (#2117)
+
+Co-authored-by: Zilvinas Vilutis <cikasfm@gmail.com>",20,226,161,e2f5d68,2024-12,其他,17
+61,2024-12-03 03:43:55+00:00,Maria Ines Parnisari,test: add test for error messages from Write API (#2128),1,55,257,fa518d3,2024-12,测试,3
+62,2024-12-03 01:15:11+00:00,Yamil Asusta,fix: prevent race condition of context cancellation (#2132),2,16,12,15febcd,2024-12,Bug修复,1
+63,2024-12-02 23:02:34+00:00,Vic-Dev,"fix: always return ErrUnauthorizedResponse for access control failures, but log the corresponding error (#2129)",3,57,18,81e9783,2024-12,Bug修复,23
+64,2024-12-02 15:27:11+00:00,Vic-Dev,feat: add a field in log entries when authz calls were made (#2130),4,35,8,736af79,2024-12,新功能,15
+65,2024-11-29 17:44:33+00:00,Ovindu Atukorala,"feat: simplify OIDC token validation errors (#1999)
+
+Co-authored-by: Maria Ines Parnisari <maineparnisari@gmail.com>",4,21,26,773ae8e,2024-11,新功能,17
+66,2024-11-28 21:05:49+00:00,Maria Ines Parnisari,refactor: authorization (#2127),5,11,40,0803009,2024-11,重构,21
+67,2024-11-27 03:47:53+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 14 updates (#2116)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,65,61,8d794a9,2024-11,其他,3
+68,2024-11-26 18:17:56+00:00,Yamil Asusta,"feat: fast path support on set operations within TTUs (#2075)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: Will Vedder <willvedd@gmail.com>",14,2122,31,f2cc953,2024-11,新功能,18
+69,2024-11-25 17:16:18+00:00,Justin Cohen,test: remove duplicate tests (#2115),1,0,169,3391a5c,2024-11,测试,17
+70,2024-11-23 21:41:58+00:00,Yamil Asusta,chore: simplify combinediterator (#2114),1,3,7,b1ae876,2024-11,其他,21
+71,2024-11-22 21:50:39+00:00,Justin Cohen,fix: respect consistency preference in `read` and `listObjects` (#2113),7,209,1,03cc02c,2024-11,Bug修复,21
+72,2024-11-22 20:06:50+00:00,Maria Ines Parnisari,fix: error message when Write fails (#2110),5,6,6,ccbcb94,2024-11,Bug修复,20
+73,2024-11-22 17:37:22+00:00,Maria Ines Parnisari,test: move tests for WriteModel (#2106),8,1249,1635,5402b96,2024-11,测试,17
+74,2024-11-21 20:48:27+00:00,Maria Ines Parnisari,test: move tests for ReadAuthorizationModels (#2107),4,223,227,da6dfcc,2024-11,测试,20
+75,2024-11-16 00:24:44+00:00,José Padilla,chore: make changelog kacl compliant (#1927),2,523,679,499d6cd,2024-11,其他,0
+76,2024-11-15 22:01:13+00:00,José Padilla,perf: remove duplicate data from cached records (#1993),7,946,218,4db9d9a,2024-11,其他,22
+77,2024-11-15 19:42:10+00:00,Maria Ines Parnisari,chore: modification of flags for Check (#2082),8,115,51,df9e932,2024-11,其他,19
+78,2024-11-15 18:10:05+00:00,Maria Ines Parnisari,test: move tests for Assertions (#2089),5,440,339,d52db18,2024-11,测试,18
+79,2024-11-15 17:51:09+00:00,Maria Ines Parnisari,test: move tests for Write (#2091),11,744,1780,4c2ec9e,2024-11,测试,17
+80,2024-11-15 17:20:20+00:00,Maria Ines Parnisari,test: move tests for ReadAuthModel (#2088),9,138,157,1091564,2024-11,测试,17
+81,2024-11-14 21:12:20+00:00,Maria Ines Parnisari,test: move tests for Stores (part 2) (#2092),5,137,101,913adc9,2024-11,测试,21
+82,2024-11-14 20:52:10+00:00,Adrian Tam,perf: shortcut on unconnected graph (#2104),4,704,0,5a07672,2024-11,其他,20
+83,2024-11-13 21:19:06+00:00,Tyler Nix,"feat: add .http file for quick and easy API testing (#2086)
+
+Co-authored-by: Will Vedder <willvedd@gmail.com>",2,403,0,93d8b86,2024-11,新功能,21
+84,2024-11-13 13:28:46+00:00,Maria Ines Parnisari,chore: remove deprecated flags related to dispatch throttling (#2083),8,8,166,6e6281c,2024-11,其他,13
+85,2024-11-12 20:37:20+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 3 updates (#2096)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",3,5,5,4e3c505,2024-11,其他,20
+86,2024-11-12 16:04:17+00:00,Justin Cohen,test: fix flakey expand test (#2095),1,10,33,17bd507,2024-11,Bug修复,16
+87,2024-11-12 15:41:27+00:00,Maria Ines Parnisari,chore: fix 1.62 lint errors (#2090),26,65,65,17dfa69,2024-11,Bug修复,15
+88,2024-11-09 03:07:06+00:00,Maria Ines Parnisari,test: move tests for Stores (#2076),11,283,210,35633f6,2024-11,测试,3
+89,2024-11-08 21:55:07+00:00,Maria Ines Parnisari,test: add test for cache controller feature (#2084),1,64,0,8ceff24,2024-11,新功能,21
+90,2024-11-08 16:28:15+00:00,Justin Cohen,docs: update changelog for v1.8.0 (#2085),1,6,1,0cc569f,2024-11,文档,16
+91,2024-11-08 00:52:18+00:00,José Padilla,chore: generate mocks using mockgen v0.5.0 (#2077),6,15,0,0e865fd,2024-11,其他,0
+92,2024-11-08 00:19:28+00:00,Maria Ines Parnisari,chore: add GCI linter to group import statements (#2074),152,409,367,f1f1b54,2024-11,其他,0
+93,2024-11-07 22:32:22+00:00,Zilvinas Vilutis,don't generate continuation token for empty result (#2081),7,55,19,fc28fa3,2024-11,其他,22
+94,2024-11-07 21:40:14+00:00,Justin Cohen,test: refactor expand test to use full response (#2080),1,34,10,c590b88,2024-11,测试,21
+95,2024-11-07 19:57:49+00:00,Justin Cohen,feat: batch check API (#2039),13,1055,4,62bd2b6,2024-11,新功能,19
+96,2024-11-07 19:39:53+00:00,Justin Cohen,"test: fix order-dependent assertion in expand test (#2079)
+
+Co-authored-by: José Padilla <jose.padilla@okta.com>",1,120,149,e3ea25d,2024-11,Bug修复,19
+97,2024-11-07 17:27:13+00:00,Maria Ines Parnisari,test: fix nil pointer in benchmarks (#2078),1,4,2,f5697dd,2024-11,Bug修复,17
+98,2024-11-06 16:09:40+00:00,Justin Cohen,refactor: break server.go into operation-specific-files (#2071),10,970,808,c604bda,2024-11,重构,16
+99,2024-11-05 22:54:30+00:00,Johannes Gräger,"feat: configurable request context propagation to datastore (#1838)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",8,118,3,f665bc2,2024-11,新功能,22
+100,2024-11-05 22:38:22+00:00,Zilvinas Vilutis,"refactor(!): remove token serialization from datastore (#2064)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",38,546,590,ba9e25d,2024-11,重构,22
+101,2024-11-05 19:28:47+00:00,Adrian Tam,"feat: measurement on root store check + write latency due to authz (#2069)
+
+Co-authored-by: José Padilla <jose.padilla@okta.com>",4,85,1,e14e957,2024-11,新功能,19
+102,2024-11-05 02:08:54+00:00,dependabot[bot],"chore(deps): bump github.com/grpc-ecosystem/grpc-gateway/v2 from 2.22.0 to 2.23.0 in the dependencies group (#2067)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,13,13,c3a39a6,2024-11,其他,2
+103,2024-11-05 00:02:19+00:00,dependabot[bot],"chore(deps): bump anchore/sbom-action from 0.17.5 to 0.17.6 in the dependencies group (#2068)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,086a621,2024-11,其他,0
+104,2024-11-04 23:32:10+00:00,Adrian Tam,perf: enable optimization for nested userset with public wildcard (#2063),6,475,53,3fc5165,2024-11,其他,23
+105,2024-11-04 20:19:46+00:00,Sujitha A V,"feat: add contextual tuples to Expand API (#2045)
+
+Co-authored-by: Maria Ines Parnisari <maineparnisari@gmail.com>",7,215,25,8a246d8,2024-11,新功能,20
+106,2024-10-31 17:30:29+00:00,Maria Ines Parnisari,refactor: resolve check response (#2061),9,106,241,af054d9,2024-10,重构,17
+107,2024-10-30 20:01:07+00:00,Maria Ines Parnisari,refactor: track datastore query count in a new datastore wrapper (#2022),22,342,891,8307264,2024-10,重构,20
+108,2024-10-30 17:13:02+00:00,Zilvinas Vilutis,Add start_time param to changes API (#2020),30,990,127,c279d80,2024-10,其他,17
+109,2024-10-30 15:59:53+00:00,Adrian Tam,chore: move check directly assignable function out to its own function (#2060),3,211,46,dd782e8,2024-10,其他,15
+110,2024-10-30 14:35:06+00:00,Raghd Hamzeh,release: v1.7.0 (#2057),1,15,11,7ddcb0f,2024-10,其他,14
+111,2024-10-29 16:24:04+00:00,Raghd Hamzeh,"fix: dont allow writing >1 module unless w/ store write permissions (#2046)
+
+Co-authored-by: Victoria Johns <vmichellej@gmail.com>",3,241,119,5d5ff7f,2024-10,Bug修复,16
+112,2024-10-29 14:35:22+00:00,Adrian Tam,chore: bump grpc health probe (#2056),1,1,1,25508f0,2024-10,其他,14
+113,2024-10-29 02:20:14+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 6 updates (#2050)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",7,29,29,5876f3d,2024-10,其他,2
+114,2024-10-28 20:44:27+00:00,José Padilla,fix: clone request to avoid data race (#2052),1,3,2,a3091e3,2024-10,Bug修复,20
+115,2024-10-28 19:57:49+00:00,dependabot[bot],"chore(deps): bump grpc-ecosystem/grpc-health-probe from v0.4.33 to v0.4.35 in the dependencies group (#2051)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,7892e09,2024-10,其他,19
+116,2024-10-28 19:32:44+00:00,Adrian Tam,fix: disable fastpath optimization for  nested userset with public wildcard (#2049),6,351,6,558aea1,2024-10,Bug修复,19
+117,2024-10-28 17:55:06+00:00,Justin Cohen,refactor: consolidate check_command error handling (#2044),4,117,49,82059bf,2024-10,重构,17
+118,2024-10-24 18:39:34+00:00,Ewan Harris,test: only listen on localhost to avoid prompting for permission (#2042),5,9,9,f8eac9d,2024-10,测试,18
+119,2024-10-24 17:09:05+00:00,Zilvinas Vilutis,fixed tests after including openfga/api#208 (#2041),1,10,24,1e86401,2024-10,Bug修复,17
+120,2024-10-23 21:49:10+00:00,Raghd Hamzeh,feat: bump api to increase max number of contextual tuples (#2040),3,8,4,8239171,2024-10,新功能,21
+121,2024-10-23 19:48:47+00:00,Vic-Dev,fix: add check for skip authz to all authz check calls (#2033),2,172,70,7805eb4,2024-10,Bug修复,19
+122,2024-10-23 19:34:48+00:00,Yamil Asusta,"perf: add readstartingwithuser iterator cache (#2035)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",7,311,57,8749bc5,2024-10,其他,19
+123,2024-10-23 18:54:44+00:00,Vic-Dev,chore: update changelog to reflect breaking change to ListStores (#2037),1,6,0,b296d72,2024-10,其他,18
+124,2024-10-23 13:44:37+00:00,Yamil Asusta,chore: minor nested improvements (#2038),2,49,38,27292d4,2024-10,其他,13
+125,2024-10-22 14:02:50+00:00,dependabot[bot],"chore(deps): bump go.uber.org/mock from 0.4.0 to 0.5.0 in the dependencies group (#2036)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,8,7c2d2eb,2024-10,其他,14
+126,2024-10-21 17:00:11+00:00,Maria Ines Parnisari,"fix: blocked goroutine in ListObjects (#2030)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",3,91,54,04bd53a,2024-10,Bug修复,17
+127,2024-10-21 16:37:17+00:00,dwiki arlan,"refactor: split the validation to the server specific and binary (#1998)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",2,473,57,a7a1105,2024-10,重构,16
+128,2024-10-21 15:28:33+00:00,Yamil Asusta,feat: nested fast path refactor  (#2032),12,797,1769,bd64a7e,2024-10,新功能,15
+129,2024-10-21 13:43:41+00:00,Poovamraj T T,fix(test): Fix flaky test in ListObjects dispatch throttling (#2034),1,2,4,29cc468,2024-10,Bug修复,13
+130,2024-10-18 21:35:40+00:00,Justin Cohen,refactor: check command execute params (#2031),5,109,84,d07b904,2024-10,重构,21
+131,2024-10-18 19:29:15+00:00,Adrian Tam,test: add benchmark for ReadChanges (#2029),2,81,0,ae2c7ab,2024-10,测试,19
+132,2024-10-18 17:26:24+00:00,Maria Ines Parnisari,fix: docker setup (#2028),2,4,11,d8c47f8,2024-10,Bug修复,17
+133,2024-10-18 09:41:03+00:00,Poovamraj T T,fix: dispatch counter in ListObjects (#2013),3,49,8,4b24eb3,2024-10,Bug修复,9
+134,2024-10-17 16:52:07+00:00,Justin Cohen,test: reduce max concurrent connections in check benchmarks (#2026),1,9,6,9f47326,2024-10,测试,16
+135,2024-10-17 15:29:47+00:00,Yamil Asusta,Use proper interfaces and cleanup some duplication work (#2027),5,89,90,b6a531d,2024-10,其他,15
+136,2024-10-16 22:40:54+00:00,Justin Cohen,refactor: speed up check benchmark tests part 2 (#2024),4,352,563,904cfde,2024-10,测试,22
+137,2024-10-16 20:32:59+00:00,Maria Ines Parnisari,perf: nested TTUs in Check (#2025),5,373,11,c703a0f,2024-10,其他,20
+138,2024-10-16 16:07:12+00:00,Vic-Dev,feat: access control (#1913),34,3833,274,9875f8b,2024-10,新功能,16
+139,2024-10-16 15:34:47+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 4 updates (#2023)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",4,6,6,d4f6c56,2024-10,其他,15
+140,2024-10-16 15:22:56+00:00,José Padilla,fix: update histogram buckets to distinguish between 0 and 1 (#2018),1,1,1,f01ec6b,2024-10,Bug修复,15
+141,2024-10-16 14:17:18+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 7 updates (#2021)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,47,47,61e94d0,2024-10,其他,14
+142,2024-10-16 14:05:44+00:00,Adrian Tam,perf: do not need to handle direct assignment for nested userset (#2019),2,225,296,6042b86,2024-10,其他,14
+143,2024-10-16 03:09:37+00:00,Justin Cohen,refactor: speed up Check benchmarks (#2017),3,161,100,7911cd6,2024-10,重构,3
+144,2024-10-15 21:40:54+00:00,Maria Ines Parnisari,refactor(Check): make optimization for nested usersets more generic (#2004),4,225,85,600217a,2024-10,重构,21
+145,2024-10-11 14:14:41+00:00,José Padilla,"refactor: simplify lru cache implementation (#2012)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",12,68,70,5ee798e,2024-10,重构,14
+146,2024-10-10 23:34:43+00:00,Siddhant Rai,"chore: thread-safe `ResolveCheckRequest.Clone()` (#2010)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",2,66,1,f9fc877,2024-10,其他,23
+147,2024-10-10 19:31:34+00:00,Yamil Asusta,"feat: Add cache controller (#2006)
+
+Co-authored-by: José Padilla <jose.padilla@okta.com>",17,958,108,a0d0103,2024-10,新功能,19
+148,2024-10-10 00:03:13+00:00,Siddhant Rai,refactor: improve flexibility of the filterTuples function (#1992),2,76,25,2499898,2024-10,重构,0
+149,2024-10-09 23:19:06+00:00,Adrian Tam,"perf: optimize nested userset (#1963)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",15,2303,18,afb8399,2024-10,其他,23
+150,2024-10-09 22:23:15+00:00,Maria Ines Parnisari,docs: update NOTICE file (#2001),1,984,45059,73afbd4,2024-10,文档,22
+151,2024-10-09 22:13:48+00:00,José Padilla,fix: remove flakeyness from TestCheckWithCachedIterator (#1997),1,19,13,a431f37,2024-10,Bug修复,22
+152,2024-10-09 19:00:17+00:00,Andrés Aguiar,Update CODEOWNERS (#2008),1,1,0,ea665b0,2024-10,其他,19
+153,2024-10-07 22:18:58+00:00,Maria Ines Parnisari,chore: refactor reflexive tuple checker into separate function (#1982),5,84,13,693be99,2024-10,重构,22
+154,2024-10-07 21:06:15+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 4 updates (#2002)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,12,12,5df7a9c,2024-10,其他,21
+155,2024-10-07 20:27:56+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 7 updates (#2003)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",7,22,22,12718fb,2024-10,其他,20
+156,2024-10-07 18:53:32+00:00,Maria Ines Parnisari,fix: label ListUsers API calls (#2000),2,8,0,79f0d33,2024-10,Bug修复,18
+157,2024-10-07 17:17:53+00:00,Maria Ines Parnisari,test: add more Check API benchmarks (#1996),1,276,102,19bc329,2024-10,测试,17
+158,2024-10-05 03:10:01+00:00,Piotr Idzik,fix: use proper link to contribution guidelines (#1994),1,2,2,27f2eb2,2024-10,Bug修复,3
+159,2024-10-04 16:57:43+00:00,José Padilla,"feat: cache tuples found while resolving check (#1924)
+
+Co-authored-by: Yamil Asusta <yamil.asusta@okta.com>
+Co-authored-by: Yamil Asusta <hello@yamilasusta.com>",14,1440,41,5ed0286,2024-10,新功能,16
+160,2024-10-04 15:12:56+00:00,Ryan Quinn,"Addition of RELEASES.md (#1923)
+
+Co-authored-by: José Padilla <jose.padilla@okta.com>
+Co-authored-by: José Padilla <jpadilla@webapplicate.com>",2,79,1,071ec5e,2024-10,其他,15
+161,2024-10-03 22:26:38+00:00,Nitheesh Raaja R,test: function `constructAuthorizationModelFromSQLRows` (#1983),2,55,0,8970cac,2024-10,测试,22
+162,2024-10-03 21:44:36+00:00,José Padilla,Update CHANGELOG.md (#1988),1,8,8,de050b4,2024-10,其他,21
+163,2024-10-03 20:39:09+00:00,José Padilla,"docs(v1.6.2): add release notes to CHANGELOG (#1973)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",1,10,1,cf0d8f9,2024-10,文档,20
+164,2024-10-03 19:28:39+00:00,dependabot[bot],"chore(deps): bump grpc-ecosystem/grpc-health-probe from v0.4.29 to v0.4.33 in the dependencies group (#1959)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: José Padilla <jose.padilla@okta.com>",2,2,2,55a1f17,2024-10,其他,19
+165,2024-10-03 16:37:05+00:00,Sarah Funkhouser,"deps: bump go patch version to 1.22.7 (#1987)
+
+Signed-off-by: Sarah Funkhouser <147884153+golanglemonade@users.noreply.github.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",2,2,1,1a4f70a,2024-10,其他,16
+166,2024-10-03 16:27:03+00:00,Yamil Asusta,feat: increase fast path concurrency (#1981),2,94,50,f472215,2024-10,新功能,16
+167,2024-10-02 21:53:02+00:00,Maria Ines Parnisari,fix: amend #1980 (#1986),4,102,16,be41383,2024-10,Bug修复,21
+168,2024-10-02 21:42:32+00:00,Zilvinas Vilutis,test: add tests for `combinedtuplereader.go` (#1968),1,867,0,4199ed2,2024-10,测试,21
+169,2024-10-02 20:50:25+00:00,Yamil Asusta,fix: faster tuple validation when reading from datastore (#1984),10,417,36,c45c5bc,2024-10,Bug修复,20
+170,2024-10-02 16:27:20+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 5 updates (#1985)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",7,19,19,fe5eb52,2024-10,其他,16
+171,2024-10-01 20:56:18+00:00,Maria Ines Parnisari,fix: backwards compatible FindLatestModel storage method (#1980),4,100,2,540b94c,2024-10,Bug修复,20
+172,2024-10-01 18:32:26+00:00,Maria Ines Parnisari,"refactor: introduce Check command (#1857)
+
+Co-authored-by: José Padilla <jose.padilla@okta.com>",9,524,168,6be4642,2024-10,重构,18
+173,2024-10-01 18:21:47+00:00,Yamil Asusta,feat!: update ReadChanges interface for additional query patterns (#1976),12,209,39,e3cc28a,2024-10,新功能,18
+174,2024-10-01 16:53:20+00:00,Yamil Asusta,"chore: Rename test name for TestResolveComputedRelation (#1978)
+
+Co-authored-by: José Padilla <jose.padilla@okta.com>",1,1,1,bee8868,2024-10,测试,16
+175,2024-10-01 16:43:40+00:00,José Padilla,fix: close cache once (#1977),2,40,1,ab80b54,2024-10,Bug修复,16
+176,2024-10-01 15:03:17+00:00,José Padilla,chore: run matrix memory tests once (#1975),1,3,5,f37cbdf,2024-10,测试,15
+177,2024-10-01 14:51:09+00:00,José Padilla,"fix: combinedIterator must stop all iterators (#1974)
+
+Co-authored-by: Yamil Asusta <hello@yamilasusta.com>",2,80,36,253f7fd,2024-10,Bug修复,14
+178,2024-09-30 19:12:16+00:00,Yamil Asusta,Minor perf improvements for fast path (#1972),6,144,142,2677047,2024-09,其他,19
+179,2024-09-28 01:51:08+00:00,Dan Cech,chore: reduce diffs between storage implementations (#1953),6,457,370,4241592,2024-09,其他,1
+180,2024-09-27 22:57:34+00:00,Maria Ines Parnisari,"feat: minor improvements in tracing of Check API (#1964)
+
+Co-authored-by: José Padilla <jose.padilla@okta.com>",4,47,18,6e62e62,2024-09,新功能,22
+181,2024-09-27 18:44:33+00:00,Adrian Tam,"feat: identify model optimizable for recursive ttu (#1954)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",4,415,24,f6d0552,2024-09,新功能,18
+182,2024-09-25 17:33:36+00:00,José Padilla,chore: remove check tracker (#1960),11,4,659,b02ef36,2024-09,其他,17
+183,2024-09-25 13:33:52+00:00,Maria Ines Parnisari,"fix: goroutine leak in Check (#1962)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",5,83,45,5d57215,2024-09,Bug修复,13
+184,2024-09-25 01:25:31+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 3 updates (#1958)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,25,12,92295ce,2024-09,其他,1
+185,2024-09-23 16:25:37+00:00,Zilvinas Vilutis,chore: Unify shell run blocks in README.md (#1939),1,33,33,70b677a,2024-09,其他,16
+186,2024-09-23 14:16:30+00:00,Justin Cohen,chore: remove deprecated memory_ballast extension (#1942),2,4,7,a55a470,2024-09,其他,14
+187,2024-09-20 23:47:06+00:00,Adrian Tam,"chore: identify recursive userset model that can be optimized (#1946)
+
+Co-authored-by: Yamil Asusta <hello@yamilasusta.com>",16,481,66,67abe97,2024-09,其他,23
+188,2024-09-20 18:37:22+00:00,Dan Cech,chore: use backend-specific HandleSQLError implementations (#1943),6,183,161,6af9f15,2024-09,其他,18
+189,2024-09-20 17:38:29+00:00,Dan Cech,fix: handle all permutations of sqlite busy/locked errors (#1936),2,24,2,6349f72,2024-09,Bug修复,17
+190,2024-09-19 21:26:47+00:00,dependabot[bot],"chore(deps): bump github/codeql-action from 3.26.6 to 3.26.8 in the dependencies group across 1 directory (#1951)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,a8a51c1,2024-09,其他,21
+191,2024-09-19 19:04:45+00:00,ChinoUkaegbu,"docs: Remove specific Go version in README.md (#1947)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",1,1,1,4e8e803,2024-09,文档,19
+192,2024-09-19 17:15:53+00:00,Dan Cech,chore: fix changelog headings (#1948),1,14,14,2bb894d,2024-09,Bug修复,17
+193,2024-09-19 14:52:21+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 11 updates (#1941)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,42,55,71521d0,2024-09,其他,14
+194,2024-09-18 19:57:50+00:00,Dan Cech,chore: switch to local HandleSQLError function for SQLite (#1938),2,58,47,7e5ac36,2024-09,其他,19
+195,2024-09-16 21:21:27+00:00,Adrian Tam,chore: add trace for consumeUsersets and produceUsersets (#1934),1,6,0,3cd4fe8,2024-09,其他,21
+196,2024-09-13 17:38:33+00:00,Dan Cech,tets: extend list users test timeout (#1929),1,4,0,a2df781,2024-09,测试,17
+197,2024-09-13 16:32:45+00:00,Siddhant Khare,fix: Update signal handling in Run function (#1928),2,3,1,9afb023,2024-09,Bug修复,16
+198,2024-09-13 14:27:05+00:00,Maria Ines Parnisari,"refactor: remove unused channels in SQL iterators (#1922)
+
+Co-authored-by: José Padilla <jose.padilla@okta.com>",2,20,24,971992a,2024-09,重构,14
+199,2024-09-12 20:56:01+00:00,José Padilla,docs(v1.6.1): add v1.6.1 release notes to CHANGELOG (#1925),1,18,5,b985c58,2024-09,文档,20
+200,2024-09-12 16:57:16+00:00,Dan Cech,Extend request timeout to 10s for slow tests (#1926),3,12,0,7be1b5b,2024-09,测试,16
+201,2024-09-12 01:04:13+00:00,Dan Cech,feat: add SQLite support (#1615),32,1870,18,f3be13c,2024-09,新功能,1
+202,2024-09-09 19:29:53+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 5 updates (#1919)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,48,48,d07302b,2024-09,其他,19
+203,2024-09-09 18:44:07+00:00,dependabot[bot],"chore(deps): bump snyk/actions from 9213221444c2dc9e8b2502c1e857c26d851e84a7 to cdb760004ba9ea4d525f2e043745dfe85bb9077e in the dependencies group (#1918)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,7420b13,2024-09,其他,18
+204,2024-09-09 13:27:40+00:00,Jim Anderson,"chore: update to latest openfga/api (#1915)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",2,3,3,7dfc0ff,2024-09,测试,13
+205,2024-09-09 07:58:29+00:00,Siddhant Khare,"refactor: remove unused `emptyTupleIterator` (#1917)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",2,0,75,81222f5,2024-09,重构,7
+206,2024-09-06 22:24:38+00:00,Maria Ines Parnisari,ci: reorganize 'main' workflow and delete unused workflow (#1912),3,22,161,b8787d5,2024-09,其他,22
+207,2024-09-06 21:25:21+00:00,Yamil Asusta,"perf:  stream dispatches for TTU and userset slowpath (#1888)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",5,1220,50,f4e6828,2024-09,其他,21
+208,2024-09-06 18:02:23+00:00,José Carlos Chávez,"fix: makes Logger.With immutable. (#1906)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",3,22,9,3f4b983,2024-09,Bug修复,18
+209,2024-09-06 15:35:55+00:00,Joshua Jones,"test: add an intersection test for TypeSystem (#1896)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: José Padilla <jose.padilla@okta.com>",1,183,0,bae2788,2024-09,测试,15
+210,2024-09-06 15:11:02+00:00,Will Vedder,feat: Dispatch throttling metrics (#1863),7,184,2,a53f29e,2024-09,新功能,15
+211,2024-09-06 13:25:54+00:00,Adrian Tam,"feat: add stats on number of allowed response in check (#1911)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",2,11,0,44ff208,2024-09,新功能,13
+212,2024-09-05 18:54:37+00:00,Raghd Hamzeh,feat: add support for context in assertions API (#1907),5,87,3,cac89fd,2024-09,新功能,18
+213,2024-09-04 22:43:17+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 4 updates (#1908)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,21,21,7ec186e,2024-09,其他,22
+214,2024-09-04 17:51:11+00:00,Maria Ines Parnisari,"fix: requests cancelled by client should be 4xx, not 5xx (#1905)",8,19,18,ce16562,2024-09,Bug修复,17
+215,2024-09-04 16:01:58+00:00,Will Vedder,Adding stack trace to panic handlers (#1904),2,12,2,fa79965,2024-09,其他,16
+216,2024-09-04 15:49:43+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 2 updates (#1900)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,3,a56f415,2024-09,其他,15
+217,2024-09-04 14:59:13+00:00,Ewan Harris,ci: add permissions block to changelog enforcement (#1899),1,3,0,c415f00,2024-09,其他,14
+218,2024-08-30 23:04:42+00:00,Jeremy Morony,chore: update security self assessment (#1897),1,1,1,a324840,2024-08,其他,23
+219,2024-08-30 21:57:08+00:00,Maria Ines Parnisari,chore: add v1.6.0 release notes to CHANGELOG (#1898),1,27,3,5efeccf,2024-08,其他,21
+220,2024-08-30 20:41:24+00:00,Maria Ines Parnisari,feat: remove Check optimizations experimental flag (#1895),11,18,41,42d22d4,2024-08,新功能,20
+221,2024-08-30 19:50:49+00:00,Joshua Jones,"chore: add tests for TypeSystem type creation (#1887)
+
+Co-authored-by: Sergiu Ghitea <28300158+sergiught@users.noreply.github.com>",1,478,0,cd50d7e,2024-08,测试,19
+222,2024-08-30 18:24:31+00:00,Ewan Harris,test: add cycle tests to the test matrix (#1894),1,66,0,3d83acd,2024-08,测试,18
+223,2024-08-30 17:52:33+00:00,Ewan Harris,"ci: add action to enforce adding changelog entries (#1893)
+
+Co-authored-by: Will Vedder <willvedd@gmail.com>",1,13,0,28495e0,2024-08,其他,17
+224,2024-08-30 17:00:26+00:00,Maria Ines Parnisari,test: run ListUsers and ListObects tests as part of the test matrix (#1891),5,233,96,a4fdfd9,2024-08,测试,17
+225,2024-08-30 13:46:55+00:00,Adrian Tam,refactor: split Check into multiple files (#1883),9,1222,990,c2ef51f,2024-08,重构,13
+226,2024-08-29 19:38:07+00:00,Maria Ines Parnisari,refactor: internal errors (#1858),4,47,26,545b359,2024-08,重构,19
+227,2024-08-29 18:48:09+00:00,Adrian Tam,test: add unit test for consume usersets (#1860),1,371,17,f578351,2024-08,测试,18
+228,2024-08-29 15:46:22+00:00,Maria Ines Parnisari,test: use different store per test in the test matrix (#1890),3,250,141,23e48b7,2024-08,测试,15
+229,2024-08-29 14:16:36+00:00,Raghd Hamzeh,"feat: enable consistency options support by default & disable associated exp flag (#1889)
+
+Co-authored-by: Ewan Harris <ewan.harris@okta.com>
+Co-authored-by: Will Vedder <willvedd@gmail.com>",9,22,275,15a2a97,2024-08,新功能,14
+230,2024-08-29 02:23:31+00:00,Maria Ines Parnisari,chore: standardize text of 'missing context' error in ListUsers (#1884),2,31,24,8129fed,2024-08,其他,2
+231,2024-08-28 16:33:39+00:00,Ewan Harris,test: add tests for Check (usersets) (#1869),2,1001,0,0a610a9,2024-08,测试,16
+232,2024-08-27 22:49:28+00:00,Maria Ines Parnisari,test: add tests for Check of complexity 4 (#1866),2,311,0,47fb83b,2024-08,测试,22
+233,2024-08-27 21:35:17+00:00,Yamil Asusta,"test: add tests for Check (directs) (#1851)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",1,621,0,9dce113,2024-08,测试,21
+234,2024-08-27 19:00:07+00:00,Maria Ines Parnisari,test: add tests for Check (ttu) (#1872),1,560,0,40c20c9,2024-08,测试,19
+235,2024-08-27 14:25:20+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 8 updates (#1879)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,50,50,6df7c40,2024-08,其他,14
+236,2024-08-27 02:25:28+00:00,Adrian Tam,tests: add complexity 3 nested test (#1877),1,72,0,86200b9,2024-08,测试,2
+237,2024-08-27 02:08:06+00:00,Adrian Tam,"test: add tests for CheckAssociatedObjects (#1855)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",2,449,37,d0aae8a,2024-08,测试,2
+238,2024-08-26 22:37:27+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 3 updates (#1878)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,4,4,172b7ac,2024-08,其他,22
+239,2024-08-26 20:36:53+00:00,Adrian Tam,tests: run integration matrix test on experimental perf. optimization (#1880),1,18,12,0247eec,2024-08,测试,20
+240,2024-08-26 18:02:06+00:00,Maria Ines Parnisari,perf: tuple validation (#1825),4,85,29,dc6f9d2,2024-08,其他,18
+241,2024-08-26 17:42:18+00:00,Joshua Jones,"chore: refactor typesystem function that flattens a userset, and add tests (#1859)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>
+Co-authored-by: Yamil Asusta <hello@yamilasusta.com>",2,224,18,55ed73e,2024-08,测试,17
+242,2024-08-26 13:20:05+00:00,Adrian Tam,tests: integration test of complexity 3 (#1865),2,665,0,7c41a66,2024-08,测试,13
+243,2024-08-23 03:55:19+00:00,Ewan Harris,fix: set consistency when calling ResolveCheck from TrackerCheckResolver (#1868),1,1,9,9c9115a,2024-08,Bug修复,3
+244,2024-08-21 15:33:50+00:00,dependabot[bot],"chore(deps): bump github/codeql-action from 3.26.2 to 3.26.3 in the dependencies group (#1861)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,0f22352,2024-08,其他,15
+245,2024-08-21 06:05:53+00:00,Maria Ines Parnisari,chore: update bug report template (#1856),1,2,70,319b81b,2024-08,Bug修复,6
+246,2024-08-21 02:31:01+00:00,Adrian Tam,test: TTU test for integration (#1862),2,198,1,d3a5137,2024-08,测试,2
+247,2024-08-21 01:09:50+00:00,Joe Chen,chore: add `NewWithDB` to allow accepting an established `*sql.DB` (#1688),2,12,4,4b4c067,2024-08,其他,1
+248,2024-08-16 17:46:59+00:00,lalalalatt,"feat(server): log query duration (#1807)
+
+Co-authored-by: peterxcli <peterxcli@gmail.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",3,12,5,b40a1e7,2024-08,新功能,17
+249,2024-08-16 17:24:13+00:00,Maria Ines Parnisari,fix!: set a maximum limit on bytes to the WriteAssertions API (#1847),3,157,4,865238d,2024-08,Bug修复,17
+250,2024-08-15 17:53:46+00:00,Yamil Asusta,Add memory test matrix step one (#1846),3,451,0,4539148,2024-08,测试,17
+251,2024-08-15 17:20:15+00:00,Adrian Tam,chore: reafactor iter read starting from user (#1853),2,137,27,3ba9fca,2024-08,其他,17
+252,2024-08-15 13:11:43+00:00,Adrian Tam,fix: correct docker file syntax (#1852),1,1,1,f75e4f8,2024-08,Bug修复,13
+253,2024-08-15 04:28:40+00:00,Adrian Tam,fix: inefficient userfilter when there are public wildcard (#1848),2,76,22,5b3f007,2024-08,Bug修复,4
+254,2024-08-15 04:01:58+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 6 updates (#1850)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",4,9,9,4fb8389,2024-08,其他,4
+255,2024-08-15 03:37:38+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 20 updates (#1849)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,104,94,8fd5a5b,2024-08,其他,3
+256,2024-08-15 03:30:32+00:00,dependabot[bot],"chore(deps): bump chainguard/static from `d751850` to `5e9c881` in the dependencies group (#1835)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,e7a6de4,2024-08,其他,3
+257,2024-08-15 03:23:00+00:00,Lam Tran,"chore: upgrade go 1.22.6 (#1831)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",2,3,3,ffe54df,2024-08,其他,3
+258,2024-08-14 21:35:24+00:00,Joshua Jones,"fix: allow configuration of logging paths and defaults to stdout (#1830)
+
+Co-authored-by: Yamil Asusta <hello@yamilasusta.com>",1,21,0,77d4c98,2024-08,Bug修复,21
+259,2024-08-14 18:30:32+00:00,Adrian Tam,"fix: produceUsersets to respect max batch size (#1843)
+
+Co-authored-by: Yamil Asusta <yamil.asusta@okta.com>",2,269,2,a154268,2024-08,Bug修复,18
+260,2024-08-14 18:10:16+00:00,Adrian Tam,"test: add unit test around buildUsersetDetails (#1840)
+
+Co-authored-by: Yamil Asusta <yamil.asusta@okta.com>",2,359,31,c35f72a,2024-08,测试,18
+261,2024-08-14 17:57:33+00:00,Adrian Tam,"chore: refactor code to abstract out tupleIDInSortedSet (#1844)
+
+Co-authored-by: Yamil Asusta <yamil.asusta@okta.com>",2,96,25,ae4eaf9,2024-08,重构,17
+262,2024-08-14 17:05:39+00:00,Adrian Tam,"fix: ttu to userset check (#1833)
+
+Co-authored-by: Yamil Asusta <yamil.asusta@okta.com>",8,820,540,07a48b5,2024-08,Bug修复,17
+263,2024-08-14 16:51:37+00:00,Joshua Jones,"chore: refactor TypeSystem::IsDirectlyRelated for more fine-grained testing. (#1839)
+
+Co-authored-by: Sergiu Ghitea <28300158+sergiught@users.noreply.github.com>
+Co-authored-by: Yamil Asusta <hello@yamilasusta.com>",2,180,16,2f90c84,2024-08,测试,16
+264,2024-08-14 16:29:07+00:00,José Padilla,"perf: enable optimizations for Check (#1842)
+
+Co-authored-by: Sergiu Ghitea <28300158+sergiught@users.noreply.github.com>",10,52,26,8543ca2,2024-08,其他,16
+265,2024-08-14 13:33:11+00:00,Adrian Tam,chore: fix lint errors (#1845),3,4,4,a21b3ec,2024-08,Bug修复,13
+266,2024-08-14 00:14:30+00:00,Maria Ines Parnisari,docs(v1.5.9): add v1.5.9 release notes to CHANGELOG (#1841),1,10,1,3993c7f,2024-08,文档,0
+267,2024-08-13 20:00:48+00:00,Maria Ines Parnisari,feat: do not apply performance optimizations in Check (#1837),2,16,22,b499fdd,2024-08,新功能,20
+268,2024-08-08 14:31:33+00:00,Adrian Tam,"chore!: add Head for iterator (#1816)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",8,1618,282,8d0a4f3,2024-08,其他,14
+269,2024-08-08 10:30:22+00:00,Poovamraj T T,"add v1.5.8 release notes to CHANGELOG (#1822)
+
+Co-authored-by: Will Vedder <willvedd@gmail.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>
+Co-authored-by: Raghd Hamzeh <raghd.hamzeh@auth0.com>
+Co-authored-by: Raghd Hamzeh <raghd.hamzeh@openfga.dev>",1,21,1,496c72d,2024-08,其他,10
+270,2024-08-07 21:25:01+00:00,Maria Ines Parnisari,feat: support Contextual Tuples in Assertions API (#1821),5,176,111,0779401,2024-08,新功能,21
+271,2024-08-05 20:40:52+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 6 updates (#1820)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",4,8,8,282e346,2024-08,其他,20
+272,2024-08-05 16:50:46+00:00,Will Vedder,fix: do not error if multiple terminal relations exist during fast-path (#1817),2,4,21,8dbdede,2024-08,Bug修复,16
+273,2024-08-05 14:22:45+00:00,Maria Ines Parnisari,"perf(Check): stream userset results (#1804)
+
+Co-authored-by: Yamil Asusta <yamil.asusta@okta.com>
+Co-authored-by: Yamil Asusta <hello@yamilasusta.com>",5,350,93,3b8039d,2024-08,其他,14
+274,2024-08-05 13:18:08+00:00,Maria Ines Parnisari,"chore: remove panics if typesystem missing in ctx (#1809)
+
+Co-authored-by: Yamil Asusta <hello@yamilasusta.com>",7,112,86,d31a27f,2024-08,其他,13
+275,2024-08-05 13:01:11+00:00,Maria Ines Parnisari,"perf: reduce proto conversions (#1818)
+
+Co-authored-by: Yamil Asusta <hello@yamilasusta.com>",4,29,10,37edd89,2024-08,其他,13
+276,2024-08-05 12:50:45+00:00,Will Vedder,fix: connected types consolidate type definitions with and without a condition (#1814),4,340,1,ffe46e1,2024-08,Bug修复,12
+277,2024-08-02 15:38:44+00:00,Will Vedder,"feat: ListUsers dispatch throttling (#1658)
+
+Co-authored-by: Poovamraj T T <poovamraj.thanganadarthiagarajan@okta.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",12,364,7,817293c,2024-08,新功能,15
+278,2024-08-02 01:49:23+00:00,Maria Ines Parnisari,fix: proper nesting of spans in Check API if computed usersets (#1815),1,3,4,fb78181,2024-08,Bug修复,1
+279,2024-08-01 02:55:04+00:00,Maria Ines Parnisari,refactor: remove CycleDetectionCheckResolver in favor of inside Local… (#1805),8,128,320,18f50df,2024-08,重构,2
+280,2024-07-31 18:52:53+00:00,Maria Ines Parnisari,fix: server responds to OS signals quicker (#1811),1,5,8,f10d8e5,2024-07,Bug修复,18
+281,2024-07-31 01:15:05+00:00,Maria Ines Parnisari,"test: remove testcontainers for now, update Docker (#1808)",4,160,118,2b0f083,2024-07,测试,1
+282,2024-07-29 23:58:46+00:00,Joey Yang,"feat: support subject validation when using OIDC AuthN mode (#1784)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: Maria Ines Parnisari <maineparnisari@gmail.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",6,99,6,0f960ed,2024-07,新功能,23
+283,2024-07-29 23:28:37+00:00,dependabot[bot],"chore(deps): bump chainguard/static from `e78eb21` to `d751850` in the dependencies group (#1802)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,2d16175,2024-07,其他,23
+284,2024-07-29 17:14:51+00:00,José Padilla,"feat: log the number of hits on an edge of the authorization model graph (#1785)
+
+Co-authored-by: Steven Meadows <steven.meadows@okta.com>
+Co-authored-by: Steven Meadows <167243144+smeadows-okta@users.noreply.github.com>
+Co-authored-by: Maria Ines Parnisari <maineparnisari@gmail.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",11,685,10,e8b86e1,2024-07,新功能,17
+285,2024-07-29 14:12:56+00:00,Maria Ines Parnisari,test: amend test (#1798),1,12,1,637dd91,2024-07,测试,14
+286,2024-07-26 20:56:50+00:00,José Padilla,fix: goreleaser docker manifests (#1796),1,18,13,b572902,2024-07,Bug修复,20
+287,2024-07-26 19:35:34+00:00,Adrian Tam,perf: improve userset check performance where child is computed relation (#1793),4,154,83,830f991,2024-07,其他,19
+288,2024-07-26 16:36:30+00:00,Ewan Harris,docs(v1.5.7): add v1.5.7 release notes to CHANGELOG (#1792),1,12,1,6116897,2024-07,文档,16
+289,2024-07-26 15:35:06+00:00,Joshua Jones,fix: flakey test (#1795),1,1,0,6f63495,2024-07,Bug修复,15
+290,2024-07-25 23:27:01+00:00,Maria Ines Parnisari,docs: improve description for caching flag (#1790),2,2,2,d091350,2024-07,文档,23
+291,2024-07-25 20:12:45+00:00,Maria Ines Parnisari,refactor: extract interface for in-memory cache (#1788),8,214,78,5bc7ebb,2024-07,重构,20
+292,2024-07-25 16:27:13+00:00,Yamil Asusta,"fix: computed userset should not be a complete dispatch (#1786)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",3,424,158,99a5b0f,2024-07,Bug修复,16
+293,2024-07-25 01:49:13+00:00,Ewan Harris,"feat!: introduce consistency options for query requests (#1764)
+
+Co-authored-by: Jim Anderson <jim.anderson@okta.com>
+Co-authored-by: Will Vedder <willvedd@gmail.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",45,1136,452,e20b787,2024-07,新功能,1
+294,2024-07-24 17:49:51+00:00,Maria Ines Parnisari,fix: data race on server close (#1789),1,5,5,e69c184,2024-07,Bug修复,17
+295,2024-07-23 02:03:29+00:00,Maria Ines Parnisari,chore: remove deprecated function NewLocalCheckerWithCycleDetection (#1781),4,27,43,cea5aa1,2024-07,其他,2
+296,2024-07-23 01:36:15+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 10 updates (#1780)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",7,25,25,87164fc,2024-07,其他,1
+297,2024-07-23 01:27:18+00:00,dependabot[bot],"chore(deps): bump chainguard/static from `68b8855` to `e78eb21` in the dependencies group across 1 directory (#1770)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,4138ef7,2024-07,其他,1
+298,2024-07-23 01:11:05+00:00,Juan Antonio Osorio,"feat: Publish OpenFGA to GHCR as well (#1775)
+
+Signed-off-by: Juan Antonio Osorio <ozz@stacklok.com>
+Co-authored-by: José Padilla <jose.padilla@okta.com>",2,37,1,ed7bb41,2024-07,新功能,1
+299,2024-07-22 16:57:33+00:00,Yamil Asusta,chore: improve logging output for benchmarks (#1778),2,4,2,ca44adb,2024-07,其他,16
+300,2024-07-22 15:34:03+00:00,Poovamraj T T,chore(refactor): Refactor and unify logic to construct the CheckResolver (#1626),10,218,176,1c7cdaa,2024-07,重构,15
+301,2024-07-22 00:46:55+00:00,Lam Tran,chore: upgrade go1.22 in docker (#1776),1,1,1,09250fe,2024-07,其他,0
+302,2024-07-19 20:24:38+00:00,Will Vedder,refactor: Using typesystem to determine when to apply TTU fast path  (#1765),7,669,119,96f32a8,2024-07,重构,20
+303,2024-07-19 19:40:14+00:00,Maria Ines Parnisari,test: attempt to fix test flakiness in TestServerLogs (#1762),3,13,13,35ba51a,2024-07,Bug修复,19
+304,2024-07-18 19:59:48+00:00,Adrian Tam,tests: add additional test cases (#1773),3,2249,76,b635c7a,2024-07,测试,19
+305,2024-07-17 16:54:25+00:00,Will Vedder,docs(v1.5.6): add v1.5.6 release notes to CHANGELOG (#1774),1,24,1,1f67883,2024-07,文档,16
+306,2024-07-16 14:55:34+00:00,Maria Ines Parnisari,"fix(check,listusers): if TTU relation is undefined, don't error (#1767)",5,97,36,ca319c2,2024-07,Bug修复,14
+307,2024-07-15 14:56:07+00:00,Lam Tran,chore: use `github.com/grpc-ecosystem/go-grpc-middleware/v2/interceptors/recovery` (#1768),3,3,3,b6238a3,2024-07,其他,14
+308,2024-07-15 14:32:23+00:00,Maria Ines Parnisari,perf(check): use a sorted set to store usersets (#1761),10,162,35,45e4e69,2024-07,其他,14
+309,2024-07-12 20:13:54+00:00,Maria Ines Parnisari,fix: ListUsers returns only the first error seen (#1755),6,67,30,5186069,2024-07,Bug修复,20
+310,2024-07-12 01:24:15+00:00,Andrés Aguiar,chore: change link to example for running as a library (#1763),1,2,2,cdd8e8c,2024-07,其他,1
+311,2024-07-11 18:45:50+00:00,Adrian Tam,perf: check improvement in case userset and TTU wildcard (#1760),4,237,29,32c8ecd,2024-07,其他,18
+312,2024-07-10 19:51:30+00:00,Maria Ines Parnisari,"perf: when reading models, skip model validation if the model ID is i… (#1754)",2,281,121,50c540b,2024-07,其他,19
+313,2024-07-10 19:08:55+00:00,Yamil Asusta,"feat: check short circuit for TTU and userset with condition (#1751)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: José Padilla <jose.padilla@okta.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",6,557,244,3304859,2024-07,新功能,19
+314,2024-07-10 14:58:08+00:00,Maria Ines Parnisari,chore: update google.golang.org/grpc to fix GO-2024-2978 (#1756),2,27,28,acfb805,2024-07,Bug修复,14
+315,2024-07-09 18:54:13+00:00,José Padilla,"feat: ttu quick check (#1735)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: Yamil Asusta <hello@yamilasusta.com>
+Co-authored-by: Yamil Asusta <yamil.asusta@okta.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",3,305,158,06e3aa9,2024-07,新功能,18
+316,2024-07-09 01:41:09+00:00,Yamil Asusta,"chore(storage!): readstartingfromuser can now filter based on an optional list (#1742)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: José Padilla <jose.padilla@okta.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",6,58,6,3540b66,2024-07,其他,1
+317,2024-07-08 22:56:45+00:00,José Padilla,"feat: userset short path (#1734)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: Yamil Asusta <hello@yamilasusta.com>
+Co-authored-by: Yamil Asusta <yamil.asusta@okta.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",1,269,80,d32341e,2024-07,新功能,22
+318,2024-07-08 21:24:50+00:00,Lam Tran,chore: exclude mock/test dependencies from go binary (#1744),3,68,68,9777c5a,2024-07,测试,21
+319,2024-07-08 18:02:23+00:00,Yamil Asusta,"chore: TypeSystem methods to determine if Relation resolves to Directly Assignable Types (#1733)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",2,746,1,cace22d,2024-07,其他,18
+320,2024-07-05 16:29:24+00:00,Ilia Aleksin,"feat: upgrade golang-jwt to v5 (#1601)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",7,116,29,869f2eb,2024-07,新功能,16
+321,2024-07-04 17:35:52+00:00,Maria Ines Parnisari,fix: log request id in streaming apis (#1636),2,37,9,6aaad27,2024-07,Bug修复,17
+322,2024-07-04 02:57:00+00:00,Maria Ines Parnisari,chore(minor): improve godoc of splitobject (#1737),2,32,22,30f88bc,2024-07,其他,2
+323,2024-07-04 02:42:45+00:00,Maria Ines Parnisari,chore: update to go 1.22.5 (#1731),3,10,9,b56e095,2024-07,其他,2
+324,2024-07-03 15:19:22+00:00,Will Vedder,"Remove: ListUsers experimental flag (#1730)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",9,4,33,554c155,2024-07,其他,15
+325,2024-07-03 02:15:10+00:00,Siddhant Khare,feat: add security warning for disabled logs (#1705),2,57,0,89241e9,2024-07,新功能,2
+326,2024-06-26 14:20:17+00:00,Siddhant Khare,Update `hashicorp/go-retryablehttp` to v0.7.7 (#1717),2,7,8,ffe0bfd,2024-06,其他,14
+327,2024-06-25 16:43:19+00:00,Will Vedder,fix: ListUsers flaky tests (#1714),2,3,1,6f181a2,2024-06,Bug修复,16
+328,2024-06-24 21:27:34+00:00,Ewan Harris,"ci: move to using goreleaser v2 (#1667)
+
+Co-authored-by: José Padilla <jose.padilla@okta.com>",4,10,12,6081448,2024-06,其他,21
+329,2024-06-24 19:02:55+00:00,00chorch,"Refactor tests dst indentation (#1654)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>
+Co-authored-by: José Padilla <jose.padilla@okta.com>",16,2492,2190,5faf018,2024-06,测试,19
+330,2024-06-24 17:30:38+00:00,00chorch,"Refactor dst indent remaining files needed for #1302 (#1696)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>
+Co-authored-by: José Padilla <jose.padilla@okta.com>",6,402,357,ccc0172,2024-06,重构,17
+331,2024-06-24 14:12:44+00:00,00chorch,"Refactor dst indent inside pkg typesystem (#1694)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>
+Co-authored-by: José Padilla <jose.padilla@okta.com>",2,908,848,dca4bf1,2024-06,重构,14
+332,2024-06-24 12:55:02+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 7 updates (#1698)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: José Padilla <jose.padilla@okta.com>",9,26,26,3ad09ba,2024-06,其他,12
+333,2024-06-21 18:15:59+00:00,Jim Anderson,fix: update to latest openfga/api and remove ObjectOrUserset (#1700),5,3,131,b8a7471,2024-06,Bug修复,18
+334,2024-06-20 17:50:03+00:00,Maria Ines Parnisari,"test: refactor ReadChanges tests (#1684)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",6,357,377,d0d74b9,2024-06,测试,17
+335,2024-06-20 14:11:09+00:00,José Padilla,ci: fix uploading synk results to github (#1697),1,8,1,bd3be8f,2024-06,Bug修复,14
+336,2024-06-18 13:30:52+00:00,Will Vedder,docs(v1.5.5): add v1.5.5 release notes to CHANGELOG (#1693),1,18,1,77c666d,2024-06,文档,13
+337,2024-06-17 17:29:14+00:00,Jonathan Whitaker,ci(pull-requests): run PR workflow on all PRs (#1687),1,0,3,4cfeece,2024-06,其他,17
+338,2024-06-14 18:45:39+00:00,Will Vedder,Remove `excluded_users` from ListUsers response (#1685),10,18,61,abe3043,2024-06,其他,18
+339,2024-06-12 18:58:33+00:00,Maria Ines Parnisari,"test: refactor Read, ReadPage tests (#1680)",8,505,1237,f806299,2024-06,测试,18
+340,2024-06-12 17:07:27+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 2 updates (#1681)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: José Padilla <jose.padilla@okta.com>",2,4,4,9afb7d9,2024-06,其他,17
+341,2024-06-11 21:14:48+00:00,Maria Ines Parnisari,feat: slightly faster in-memory storage (#1138) (#1670),1,41,38,3204eac,2024-06,新功能,21
+342,2024-06-11 15:47:44+00:00,Adrian Tam,test: add additional test for read changes and read (#1678),1,118,0,ad754bd,2024-06,测试,15
+343,2024-06-11 14:39:43+00:00,Jonathan Whitaker,docs: add documentation on Check algorithm (#1360),3,694,0,a08e53e,2024-06,文档,14
+344,2024-06-08 04:20:38+00:00,Chris Moran,feat: configurable max condition evaluation cost (#1631),7,48,2,fc88974,2024-06,新功能,4
+345,2024-06-08 02:59:14+00:00,Maria Ines Parnisari,fix: Read in memory adapter (#1674),2,38,5,ad6546c,2024-06,Bug修复,2
+346,2024-06-08 01:36:32+00:00,Zach Johnson,fix: http otel trace propagation (#1624),3,22,13,9461e67,2024-06,Bug修复,1
+347,2024-06-08 01:17:27+00:00,Jim Anderson,chore: update go version from 1.22.3 to 1.22.4 (#1669),1,1,1,edbee95,2024-06,其他,1
+348,2024-06-06 18:21:17+00:00,Maria Ines Parnisari,"test: add tests that assert on timestamp returned for Read, ReadPage and ReadChanges (#1666)",1,94,0,bd2c87a,2024-06,测试,18
+349,2024-06-05 22:39:35+00:00,Adrian Tam,"fix(test): test should not run with pageSize = 0 (#1660)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",8,53,95,7370c26,2024-06,Bug修复,22
+350,2024-05-30 18:16:42+00:00,Will Vedder,fix: slsa-verify stage during release by adding json file extension (#1653),1,2,2,4b47d50,2024-05,Bug修复,18
+351,2024-05-30 14:59:41+00:00,Maria Ines Parnisari,test: stabilize ReadPage storage tests (#1639),4,33,39,883fb6c,2024-05,测试,14
+352,2024-05-29 22:13:35+00:00,Maria Ines Parnisari,fix: listUsers benchmark scenarios (#1647),1,11,7,c249bea,2024-05,Bug修复,22
+353,2024-05-29 21:22:39+00:00,Will Vedder,"docs(v1.5.4): add v1.5.4 release notes to CHANGELOG (#1644)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",1,33,1,5feb1c8,2024-05,文档,21
+354,2024-05-29 21:14:55+00:00,Jonathan Whitaker,"chore(deps): bump protobuf dependency for openfga/api (#1648)
+
+Co-authored-by: Will Vedder <willvedd@gmail.com>",7,42,34,39589af,2024-05,其他,21
+355,2024-05-29 18:42:29+00:00,Jonathan Whitaker,"chore: revert ""feat: Added Contextual Tuples to Assertions API (#1610)"" (#1646)",4,6,126,8812d3e,2024-05,新功能,18
+356,2024-05-29 17:20:17+00:00,Will Vedder,"ListUsers API (#1433)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>
+Co-authored-by: Poovamraj T T <poovamraj@gmail.com>",31,9902,178,89736da,2024-05,其他,17
+357,2024-05-28 14:55:24+00:00,dependabot[bot],"chore(deps): bump snyk/actions from 8349f9043a8b7f0f3ee8885bf28f0b388d2446e8 to d406fd286b663eb8c6f8adcced4f7bcd199c0a3f in the dependencies group (#1641)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,b0b3501,2024-05,其他,14
+358,2024-05-22 16:46:29+00:00,dependabot[bot],"chore(deps): bump chainguard/static from `873e970` to `288b818` in the dependencies group across 1 directory (#1633)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,7ea96f3,2024-05,其他,16
+359,2024-05-22 16:02:27+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 4 updates (#1630)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",5,8,8,ba10408,2024-05,其他,16
+360,2024-05-20 17:34:59+00:00,Poovamraj T T,"feat: List objects dispatch throttling with seperate queues and configuration (#1571)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",24,1600,426,e8f0200,2024-05,新功能,17
+361,2024-05-20 15:18:50+00:00,dependabot[bot],"chore(deps): bump the dependencies group across 1 directory with 6 updates (#1623)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",9,22,22,225d676,2024-05,其他,15
+362,2024-05-16 18:24:33+00:00,dependabot[bot],"chore(deps): bump chainguard/static from `dea7cbb` to `873e970` in the dependencies group (#1618)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,d4f941f,2024-05,其他,18
+363,2024-05-11 23:35:38+00:00,00chorch,chore(logging): make request_id equal to trace_id to facilitate debug (#1576),4,32,26,57dd34c,2024-05,Bug修复,23
+364,2024-05-10 23:27:00+00:00,Maria Ines Parnisari,chore: fix leak on server validation errors (#1617),2,70,57,37a952c,2024-05,Bug修复,23
+365,2024-05-10 22:22:38+00:00,Maria Ines Parnisari,fix: close in-memory cache of auth models on server close (#1616),5,93,18,045be24,2024-05,Bug修复,22
+366,2024-05-10 18:55:34+00:00,Maria Ines Parnisari,test: fix leak in tests that spin up server with OIDC auth (#1612),2,38,14,e94aae5,2024-05,Bug修复,18
+367,2024-05-10 17:08:59+00:00,Steven Meadows,"feat: Added Contextual Tuples to Assertions API (#1610)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",4,134,16,a717b28,2024-05,新功能,17
+368,2024-05-09 21:31:11+00:00,Maria Ines Parnisari,"fix: close metrics and profiler properly, if enabled, on server shutdown (#1611)",1,22,2,42b087a,2024-05,Bug修复,21
+369,2024-05-09 20:50:43+00:00,Maria Ines Parnisari,feat: log all server settings (except sensitive) on start up (#1609),2,20,16,fb0ed0d,2024-05,新功能,20
+370,2024-05-08 17:51:05+00:00,Maria Ines Parnisari,docs: update flag docs (#1600),3,3,6,aa623fb,2024-05,文档,17
+371,2024-05-08 16:16:01+00:00,Maria Ines Parnisari,test: fix flaky tracing test (#1598),3,32,23,1d7c85d,2024-05,Bug修复,16
+372,2024-05-07 15:42:51+00:00,Adrian Tam,fix: update order of dispatchers (#1608),2,22,22,d6a4c25,2024-05,Bug修复,15
+373,2024-05-06 21:22:27+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 5 updates (#1602)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",9,27,27,d2f9bfc,2024-05,其他,21
+374,2024-05-03 18:32:48+00:00,Maria Ines Parnisari,amend #1593 (#1594),1,12,11,e0314fb,2024-05,其他,18
+375,2024-05-03 17:43:53+00:00,Maria Ines Parnisari,perf: reduce spans in check api (#1589),4,17,25,0da60ee,2024-05,其他,17
+376,2024-05-03 17:27:22+00:00,Maria Ines Parnisari,perf(#1514): avoid calling datastore if context has error (#1593),2,78,6,8b21504,2024-05,其他,17
+377,2024-05-03 01:23:41+00:00,Steven Meadows,chore: exclude mock_check_resolver from code coverage (#1592),1,1,1,2b8d62a,2024-05,其他,1
+378,2024-05-02 15:37:55+00:00,Maria Ines Parnisari,test: always ensure health check (#1588),5,22,21,fa4ff8d,2024-05,测试,15
+379,2024-05-01 23:11:10+00:00,Steven Meadows,refactor: replace hashicorp/go-multierror with errors.Join (#1585),4,28,33,1aace51,2024-05,重构,23
+380,2024-05-01 18:25:35+00:00,Jonathan Whitaker,chore: add test helpers to bootstrap FGA stores and tuple strings (#1586),4,672,431,7296431,2024-05,测试,18
+381,2024-04-30 17:47:46+00:00,Adrian Tam,"feat: allow per request specification of dispatch throttle threshold (#1546)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",11,340,46,2b528ac,2024-04,新功能,17
+382,2024-04-30 17:40:37+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 5 updates (#1580)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",9,19,19,a678c32,2024-04,其他,17
+383,2024-04-29 18:14:28+00:00,Adrian Tam,"feat: return HTTP code 422 if timeout due to throttling (#1552)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",19,462,36,bb8a1e0,2024-04,新功能,18
+384,2024-04-29 16:16:11+00:00,Maria Ines Parnisari,chore: remove old parser (#1578),7,71,66,e2418d0,2024-04,其他,16
+385,2024-04-29 15:55:19+00:00,Poovamraj T T,Remove deprecated metric `request_duration_by_query_count_ms` (#1579),3,2,36,5e9af41,2024-04,其他,15
+386,2024-04-26 00:09:10+00:00,Maria Ines Parnisari,chore: add more abac tests (#1566),3,240,214,abf5664,2024-04,测试,0
+387,2024-04-25 20:21:16+00:00,Steven Mwadows,panic recovery handlers (#1557),3,234,2,d280b06,2024-04,其他,20
+388,2024-04-25 16:23:14+00:00,Maria Ines Parnisari,chore: run goroutine leak detector on benchmarks (#1569),3,28,4,6478cef,2024-04,其他,16
+389,2024-04-24 21:54:09+00:00,Maria Ines Parnisari,fix: prevent panic on server close if caching is enabled (#1568),2,26,1,d50b2fe,2024-04,Bug修复,21
+390,2024-04-24 18:23:41+00:00,Maria Ines Parnisari,chore: add benchmark for model validation (#1565),1,35,0,11d631d,2024-04,其他,18
+391,2024-04-24 14:39:29+00:00,Sergiu Ghitea,[GH-598] chore: update linter config and fix issues (#1547),54,226,190,b0cd32d,2024-04,Bug修复,14
+392,2024-04-23 18:55:47+00:00,Maria Ines Parnisari,fix(break): ensure usersets are self defining (#1521),9,489,22,4984d1a,2024-04,Bug修复,18
+393,2024-04-23 18:42:13+00:00,Maria Ines Parnisari,chore: update grafana dashboard metrics (#1558),1,367,129,24d04f8,2024-04,其他,18
+394,2024-04-23 18:00:51+00:00,Maria Ines Parnisari,fix: stricter validation during ListObjects read of tuples (#1563),4,95,11,2f6af5f,2024-04,Bug修复,18
+395,2024-04-23 02:37:34+00:00,dependabot[bot],"chore(deps): bump grpc-ecosystem/grpc-health-probe from v0.4.25 to v0.4.26 in the dependencies group (#1562)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,b5c641c,2024-04,其他,2
+396,2024-04-22 18:48:29+00:00,dependabot[bot],"chore(deps): bump github.com/pressly/goose/v3 from 3.19.2 to 3.20.0 in the dependencies group (#1560)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,5,69,65daf9a,2024-04,其他,18
+397,2024-04-22 18:17:05+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 4 updates (#1559)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",9,20,20,5fe78b6,2024-04,其他,18
+398,2024-04-19 15:46:56+00:00,Maria Ines Parnisari,chore: add store_id as span attribute for check (#1554),4,21,11,1e0b064,2024-04,其他,15
+399,2024-04-19 15:21:23+00:00,dependabot[bot],"chore(deps): bump github.com/docker/docker from 26.0.1+incompatible to 26.0.2+incompatible (#1553)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,3,bee6c3a,2024-04,其他,15
+400,2024-04-18 20:54:29+00:00,Maria Ines Parnisari,perf: don't create a span for EvaluateCondition if the tuple doesn't h… (#1550),1,44,41,3d2d54b,2024-04,其他,20
+401,2024-04-17 22:41:18+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 7 updates (#1535)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",2,27,27,916e54b,2024-04,其他,22
+402,2024-04-17 17:25:49+00:00,Jonathan Whitaker,"test: add a test for race conditions stemming from CachedCheckResolver (#1543)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",1,62,0,9ac5204,2024-04,测试,17
+403,2024-04-16 22:49:32+00:00,Maria Ines Parnisari,docs(v1.5.3): add v1.5.3 release notes to CHANGELOG (#1540),1,23,1,ebf3998,2024-04,文档,22
+404,2024-04-16 22:34:30+00:00,Jonathan Whitaker,fix: CachedCheckResolver data race issues (#1541),1,2,1,b2fdf4b,2024-04,Bug修复,22
+405,2024-04-16 21:27:19+00:00,Jonathan Whitaker,"Merge pull request from GHSA-8cph-m685-6v6r
+
+* fix: error handling leading to false positives
+
+* test: add a failing test due to Check and ListObjects differences
+
+* test: change test expectation for ListObjects assertion
+
+* fix: union CheckFuncReducer and associated tests
+
+* fix: intersection CheckFuncReducer
+
+* fix: exclusion CheckFuncReducer
+
+* fix: rewire the cycle detection mechanics to avoid error propagation
+
+* test: add more edge case tests for cyclical evaluations
+
+* test: rename new test that was poorly named
+
+* chore: revert minor change that was unintended
+
+* chore: tidy up changes and drop commented out code
+
+* chore: minor touchups based on some feedback
+
+* test: add test for CloneResolveCheckResponse
+
+* test: add more tests for error around intersection
+
+* test: more test assertions around cloned cached response
+
+* test: add unit test to make sure we cache CycleDetected
+
+* test: add more assertions around CycleDetected field
+
+* chore: rename test names
+
+* chore: fix datastore query count under reporting in intersection reducer",11,1253,281,b6a6d99,2024-04,Bug修复,21
+406,2024-04-16 13:23:53+00:00,Adrian Tam,feat: add grpc tag to indicate request had been throttled (#1531),3,16,2,6829520,2024-04,新功能,13
+407,2024-04-15 20:03:35+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 6 updates (#1536)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",6,13,13,d12d58b,2024-04,其他,20
+408,2024-04-15 19:22:30+00:00,dependabot[bot],"chore(deps): bump chainguard/static from `8665c8a` to `dea7cbb` in the dependencies group (#1537)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,b1e42ef,2024-04,其他,19
+409,2024-04-15 16:29:28+00:00,Maria Ines Parnisari,chore: bump to go 1.21.9 and update deps (#1523),2,65,63,b1511b2,2024-04,其他,16
+410,2024-04-12 18:52:56+00:00,Maria Ines Parnisari,test: add Expand tests (#1522),1,307,393,2cdbb76,2024-04,测试,18
+411,2024-04-11 19:09:45+00:00,Juan Antonio Osorio,"chore: move `MustDefaultConfigWithRandomPorts` and `TCPRandomPort` to `testutils` package (#1529)
+
+Signed-off-by: Juan Antonio Osorio <ozz@stacklok.com>",5,55,53,332db55,2024-04,测试,19
+412,2024-04-10 22:48:38+00:00,Ewan Harris,feat: remove experimentals for modular models/schema 1.2 (#1520),5,14,79,48b5992,2024-04,新功能,22
+413,2024-04-05 23:27:42+00:00,Maria Ines Parnisari,fix: check cycle detection with exclusion (#1517),4,67,13,ab0d835,2024-04,Bug修复,23
+414,2024-04-04 23:17:09+00:00,Maria Ines Parnisari,revert #780 (homebrew bump after every release) (#1513),1,1,11,3098e01,2024-04,其他,23
+415,2024-04-03 20:44:31+00:00,José Padilla,docs(v1.5.2): add v1.5.2 release notes to CHANGELOG (#1510),1,20,2,5ffe6ce,2024-04,文档,20
+416,2024-04-03 14:22:12+00:00,Jonathan Whitaker,chore(deps): bump grpc-health-probe in Goreleaser built image (#1507),4,16,12,6e60c44,2024-04,其他,14
+417,2024-04-02 22:38:36+00:00,Jonathan Whitaker,revert #1066 (#1506),5,5,459,f26528f,2024-04,其他,22
+418,2024-04-02 17:50:19+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1499)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,ea01dff,2024-04,其他,17
+419,2024-03-28 21:35:36+00:00,Jonathan Whitaker,"fix: ensure usersets are self defining (#1066)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>
+Co-authored-by: Will Vedder <willvedd@gmail.com>",5,459,5,5e767ca,2024-03,Bug修复,21
+420,2024-03-28 01:31:38+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 6 updates (#1493)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",6,11,11,b1d0619,2024-03,其他,1
+421,2024-03-27 22:11:04+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1489)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,2713709,2024-03,其他,22
+422,2024-03-26 21:05:27+00:00,Will Vedder,"`TypedPublicWildcard` function for creating wildcard tuples from type strings (#1490)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",4,16,5,2a0d873,2024-03,其他,21
+423,2024-03-26 20:20:10+00:00,Maria Ines Parnisari,docs: add CONTRIBUTING guide (#1290),1,57,0,687a3de,2024-03,文档,20
+424,2024-03-26 09:50:42+00:00,Sergiu Ghitea,refactor: improve makefile commands (#1454),6,128,103,a6e0545,2024-03,重构,9
+425,2024-03-22 17:32:04+00:00,Andrés Aguiar,chore: update SECURITY-INSIGHTS (#1483),1,20,9,1fd71eb,2024-03,其他,17
+426,2024-03-21 21:00:21+00:00,Will Vedder,"Revert ""CI: Add workflow to update NOTICE file"" (#1480)",1,0,53,e95aa72,2024-03,其他,21
+427,2024-03-21 19:31:25+00:00,Adrian Tam,fix: correct default dispatch throttle enabled (#1479),1,1,1,3540168,2024-03,Bug修复,19
+428,2024-03-21 18:22:02+00:00,Siddhant Khare,"ci: Add workflow to update NOTICE file periodically (#1458)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",1,53,0,95fc354,2024-03,其他,18
+429,2024-03-21 17:50:55+00:00,Rui Chen,"release: add homebrew release job (#780)
+
+Signed-off-by: Rui Chen <rui@chenrui.dev>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>
+Co-authored-by: Will Vedder <willvedd@gmail.com>",1,12,0,629c27d,2024-03,其他,17
+430,2024-03-21 16:51:55+00:00,dependabot[bot],"chore(deps): bump github.com/docker/docker from 25.0.4+incompatible to 25.0.5+incompatible (#1476)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,5,0285556,2024-03,其他,16
+431,2024-03-21 16:40:18+00:00,Maria Ines Parnisari,test: attempt at preventing 'bind: address already in use' (#1468),8,86,66,d5ed934,2024-03,测试,16
+432,2024-03-21 15:56:30+00:00,José Padilla,bump: slsa actions to v1.10.0 (#1478),1,3,3,27a1af0,2024-03,其他,15
+433,2024-03-20 22:16:11+00:00,Maria Ines Parnisari,fix(check): count of datastore reads (#1452),2,73,4,e324539,2024-03,Bug修复,22
+434,2024-03-20 22:00:07+00:00,Louis,docs: update security-self-assessment.md (#1456),1,1,267,b6f3d4a,2024-03,文档,22
+435,2024-03-20 21:04:33+00:00,Maria Ines Parnisari,test: fix data race in ReverseExpand test (#1474),2,7,6,425b1f4,2024-03,Bug修复,21
+436,2024-03-20 16:05:18+00:00,Poovamraj T T,"docs(v1.5.1): add v1.5.1 release notes to CHANGELOG (#1469)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",1,27,1,8526d52,2024-03,文档,16
+437,2024-03-19 17:49:30+00:00,Adrian Tam,refactor: consolidate dispatch counter (#1466),5,37,42,47265bb,2024-03,重构,17
+438,2024-03-19 17:39:41+00:00,Maria Ines Parnisari,test: don't os.Exit on test failure (#1465),3,14,36,3de63da,2024-03,测试,17
+439,2024-03-19 16:33:09+00:00,Ewan Harris,feat: support schema version 1.2 for modular models (#1443),10,209,48,6a74f0f,2024-03,新功能,16
+440,2024-03-19 14:44:24+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1461)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,d7cd331,2024-03,其他,14
+441,2024-03-18 21:54:38+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 5 updates (#1462)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",9,24,24,4e3a562,2024-03,其他,21
+442,2024-03-18 20:50:11+00:00,Adrian Tam,"feat: dispatch throttling (#1440)
+
+Co-authored-by: Poovamraj T T <poovamraj@gmail.com>",16,649,23,29f74de,2024-03,新功能,20
+443,2024-03-18 17:02:39+00:00,Maria Ines Parnisari,fix: mysql data race (#1459),2,3,1,27cc2f8,2024-03,Bug修复,17
+444,2024-03-18 16:36:29+00:00,Maria Ines Parnisari,refactor: distinguish Check request metadata and response metadata (#1453),9,136,141,343adc7,2024-03,重构,16
+445,2024-03-15 18:53:23+00:00,Maria Ines Parnisari,"Revert ""ci: add stale bot to comment on stale PRs and issues (#1186)"" (#1455)",1,0,22,bd3f531,2024-03,其他,18
+446,2024-03-14 20:11:50+00:00,Poovamraj T T,deprecate: Deprecate `request_duration_by_query_count_ms` in favour of `request_duration_ms` (#1450),3,37,3,af6209b,2024-03,其他,20
+447,2024-03-14 18:25:07+00:00,Yann D'Isanto,feat: support issuer aliases (#1354),7,170,48,9358a33,2024-03,新功能,18
+448,2024-03-13 21:23:54+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 7 updates (#1446)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,47,47,bbbc8fd,2024-03,其他,21
+449,2024-03-13 21:17:40+00:00,Raghd Hamzeh,"chore: update codeowners (#1447)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",1,1,1,11b9a5c,2024-03,其他,21
+450,2024-03-13 21:01:24+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1436)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: José Padilla <jose.padilla@okta.com>",1,1,1,dab6f8e,2024-03,其他,21
+451,2024-03-13 20:19:16+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 3 updates (#1437)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: José Padilla <jose.padilla@okta.com>",3,4,4,b7ca373,2024-03,其他,20
+452,2024-03-13 18:30:55+00:00,Poovamraj T T,"feat: Add Dispatch metrics as dimension to request duration metrics (#1444)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",12,130,36,0efd724,2024-03,新功能,18
+453,2024-03-13 18:12:34+00:00,Lam Tran,"test: apply testcontainers for mysql and postgres (#1425)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",4,122,171,7a170a8,2024-03,测试,18
+454,2024-03-13 17:34:59+00:00,Maria Ines Parnisari,chore: remove unused code (#1442),2,0,75,3ddd6e8,2024-03,其他,17
+455,2024-03-11 15:55:35+00:00,Andrés Aguiar,chore: minor fixes (#1435),1,5,7,5039e0d,2024-03,Bug修复,15
+456,2024-03-08 23:07:53+00:00,Maria Ines Parnisari,test: fix order of assertions (#1432),1,1,1,819402f,2024-03,Bug修复,23
+457,2024-03-08 21:18:29+00:00,Maria Ines Parnisari,style: enable misspell linter (#1430),4,18,7,1644de5,2024-03,其他,21
+458,2024-03-08 20:49:23+00:00,Poovamraj T T,feat: add dispatch count for list objects (#1427),4,236,7,8c5f520,2024-03,新功能,20
+459,2024-03-08 01:19:46+00:00,Edwin Marrima,"test: add unit tests to OIDC middleware (#1417)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",2,248,3,f27a553,2024-03,测试,1
+460,2024-03-07 19:58:48+00:00,Maria Ines Parnisari,fix: HasEntrypoints issues #1385 and #1260 (#1422),2,63,56,35854ad,2024-03,Bug修复,19
+461,2024-03-06 17:56:45+00:00,Maria Ines Parnisari,chore(break): remove some duplicate code and unused code (#1424),2,17,314,d3a0016,2024-03,其他,17
+462,2024-03-06 17:35:01+00:00,Maria Ines Parnisari,docs: Check (#1407),3,27,13,d7f7747,2024-03,文档,17
+463,2024-03-06 16:19:28+00:00,Maria Ines Parnisari,chore: update to go 1.21.8 (#1423),3,5,5,870a390,2024-03,其他,16
+464,2024-03-05 20:43:03+00:00,Maria Ines Parnisari,ci: fix upload of coverage to codecov (#1421),2,4,2,bbfa9f0,2024-03,Bug修复,20
+465,2024-03-04 22:26:23+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 4 updates (#1416)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",6,8,8,c0c9b4c,2024-03,其他,22
+466,2024-03-04 22:02:18+00:00,Matthieu Evrin,"enhancement: Refactor NewLogger with options builder pattern (#1413)
+
+Signed-off-by: mevrin <matthieu.evrin@gmail.com>
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",1,48,8,d0513c4,2024-03,重构,22
+467,2024-03-04 21:54:18+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 3 updates (#1415)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,12,11,00d212a,2024-03,其他,21
+468,2024-03-04 21:37:43+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1418)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,428d603,2024-03,其他,21
+469,2024-03-04 21:22:24+00:00,Adrian Tam,fix: handle invalid condition tuple error (#1420),2,69,0,b8252ce,2024-03,Bug修复,21
+470,2024-03-03 22:52:15+00:00,Andrés Aguiar,chore: link to better scorecard visualization (#1412),1,1,1,c3a3a2e,2024-03,其他,22
+471,2024-03-02 02:21:42+00:00,Evan Sims,"ci: exclude tests from code scanners (#1408)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",2,9,0,f29260f,2024-03,测试,2
+472,2024-03-02 02:16:54+00:00,Lam Tran,"chore: enable protogetter linter (#1378)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",57,439,438,7bb7fe4,2024-03,其他,2
+473,2024-03-01 22:30:44+00:00,Maria Ines Parnisari,test: add tests for typesystem.hasEntrypoints (#1404),3,634,17,0f21366,2024-03,测试,22
+474,2024-03-01 20:28:30+00:00,Will Vedder,docs(v1.5.0): add v1.5.0 release notes to CHANGELOG (#1411),1,52,1,61b87fb,2024-03,文档,20
+475,2024-02-29 17:11:02+00:00,Adrian Tam,test: update FindLatestAuthorizationModelTest to test 3 authz models (#1406),1,68,3,792cd4e,2024-02,测试,17
+476,2024-02-28 19:28:51+00:00,Will Vedder,"Dispatch count to resolution metadata (#1343)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",5,236,2,4fd659e,2024-02,其他,19
+477,2024-02-28 19:22:36+00:00,Will Vedder,Adding tests for CycleDetectionCheckResolver (#1389),1,62,0,5c0a874,2024-02,测试,19
+478,2024-02-28 14:01:25+00:00,Will Vedder,Adding tracing to CycleDetectionCheckResolver (#1388),1,10,1,52bf086,2024-02,其他,14
+479,2024-02-28 01:29:03+00:00,Raghd Hamzeh,chore: point to our community page instead of discord (#1403),5,24,24,db52ff6,2024-02,其他,1
+480,2024-02-26 23:59:50+00:00,Adrian Tam,"perf!: FindLatestAuthorizationModelID changes to FindLatestAuthorizationModel (#1387)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",14,197,168,3fef489,2024-02,测试,23
+481,2024-02-26 20:09:19+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1392)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,314357d,2024-02,其他,20
+482,2024-02-26 19:44:07+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 7 updates (#1393)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,36,38,d7ce249,2024-02,其他,19
+483,2024-02-26 19:07:56+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 3 updates (#1397)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",4,5,5,b794707,2024-02,其他,19
+484,2024-02-26 18:11:37+00:00,José Padilla,chore: copy grpc-health-probe from a build stage (#1391),1,2,1,b25609c,2024-02,其他,18
+485,2024-02-26 16:12:52+00:00,Lam Tran,refactor: remove duplicate unix signal (#1390),1,1,1,1653851,2024-02,重构,16
+486,2024-02-23 16:44:32+00:00,Jonathan Whitaker,"test: add more check tests that exercise potential deadlock scenarios (#1384)
+
+Co-authored-by: Will Vedder <willvedd@gmail.com>",2,257,1,2a609db,2024-02,测试,16
+487,2024-02-21 19:54:58+00:00,Andrés Aguiar,chore(docs): update docker badge in the README (#1383),1,2,1,ff4686a,2024-02,文档,19
+488,2024-02-20 20:08:23+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 4 updates (#1379)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,12,12,7847fe5,2024-02,其他,20
+489,2024-02-20 19:55:10+00:00,Maria Ines Parnisari,ci: add dependabot to /tools folder (#1381),1,8,0,abf36c6,2024-02,其他,19
+490,2024-02-20 16:00:26+00:00,Maria Ines Parnisari,"build: update tools/go.mod to 1.21.7 (#1373)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",1,1,1,d01f12c,2024-02,其他,16
+491,2024-02-20 15:48:15+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1380)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,a660cb4,2024-02,其他,15
+492,2024-02-19 15:31:48+00:00,Maria Ines Parnisari,fix: leaking goroutines in tests if server didn't start properly (#1377),3,9,6,53977e2,2024-02,Bug修复,15
+493,2024-02-17 13:24:21+00:00,Evan Sims,docs: add Docker guidance for `OPENFGA_HTTP_ADDR` (#1370),1,3,0,365fcaa,2024-02,文档,13
+494,2024-02-16 23:26:27+00:00,Jonathan Whitaker,"treat cycles as falsy outcome in intersection and exclusion CheckFuncReducers (#1372)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",3,434,12,1843929,2024-02,其他,23
+495,2024-02-16 22:01:04+00:00,Will Vedder,"Ignore cycle errors in union reducer (#1371)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",3,182,11,30e84b8,2024-02,其他,22
+496,2024-02-16 20:00:48+00:00,Jonathan Whitaker,chore: remove SingleflightCheckResolver and add CycleDetectionCheckResolver (#1375),15,396,457,a0cd000,2024-02,其他,20
+497,2024-02-16 15:26:23+00:00,Maria Ines Parnisari,test: remove duplicate helper (#1374),3,11,32,80b005a,2024-02,测试,15
+498,2024-02-16 14:22:13+00:00,Maria Ines Parnisari,test: use t.Cleanup everywhere (#1356),19,175,269,7044050,2024-02,测试,14
+499,2024-02-15 20:45:17+00:00,Maria Ines Parnisari,test: fix 'subtest may have called FailNow on a parent test' (#1367),5,54,60,5e76d78,2024-02,Bug修复,20
+500,2024-02-15 19:59:49+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1364)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,b8a7129,2024-02,其他,19
+501,2024-02-15 15:41:49+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 4 updates (#1369)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",4,5,5,074f426,2024-02,其他,15
+502,2024-02-15 13:26:00+00:00,Maria Ines Parnisari,chore: move gateway from internal/ to pkg/ (#1368),9,97,84,fdf51f6,2024-02,其他,13
+503,2024-02-13 18:58:21+00:00,Lam Tran,"test: use t.Cleanup func to stop mock tracing server (#1351)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",3,10,12,a6e0009,2024-02,测试,18
+504,2024-02-12 16:37:11+00:00,Raj Saxena,"Add an optional way to override timestamp format in json logs (#1330)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",8,41,8,a0779c4,2024-02,其他,16
+505,2024-02-12 16:05:00+00:00,Will Vedder,test: Improving reliability of `TestEvaluateWithInterruptCheckFrequency` (#1361),1,23,8,baf3b41,2024-02,测试,16
+506,2024-02-09 18:23:09+00:00,Will Vedder,"test: SingleflightCheckResolver testing, improve reliability and strength (#1349)",1,123,143,7bdf339,2024-02,测试,18
+507,2024-02-09 16:51:34+00:00,Lam Tran,"chore(deps): upgrade otel dependencies (#1350)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",2,21,21,cd47d5c,2024-02,其他,16
+508,2024-02-09 16:35:15+00:00,Lam Tran,refactor: use zap.ParseAtomicLevel to parse log level from string (#1352),1,4,17,f69d740,2024-02,重构,16
+509,2024-02-09 13:04:51+00:00,Maria Ines Parnisari,"chore: ""deadline exceeded"" errors thrown by the datastore will be shown as internal server errors (#1345)",6,61,18,a9330c5,2024-02,其他,13
+510,2024-02-09 03:00:40+00:00,Lam Tran,chore: upgrade go 1.21.7 (#1337),3,4,4,c0cc137,2024-02,其他,3
+511,2024-02-09 02:28:15+00:00,Maria Ines Parnisari,test: don't panic if ListStores fails (#1348),1,5,5,69903fb,2024-02,测试,2
+512,2024-02-08 15:17:06+00:00,Maria Ines Parnisari,test: fix data race in ReverseExpand test (#1347),1,6,4,7af07ed,2024-02,Bug修复,15
+513,2024-02-08 13:20:59+00:00,Maria Ines Parnisari,chore: fix testifylint errors on tests (#1346),7,70,49,855eb39,2024-02,Bug修复,13
+514,2024-02-06 02:55:23+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1342)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,3,bbb4a07,2024-02,其他,2
+515,2024-02-06 00:19:21+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 5 updates (#1340)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",5,10,10,4bbeef3,2024-02,其他,0
+516,2024-02-05 19:59:26+00:00,Will Vedder,"feat: adding tracing + attributes to all check resolvers (#1331)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",4,60,28,aef0911,2024-02,新功能,19
+517,2024-02-05 13:45:46+00:00,Maria Ines Parnisari,test: improve Check and ListObjects test harness (#1336),4,53,105,60f457e,2024-02,测试,13
+518,2024-02-02 18:44:50+00:00,Evan Sims,chore(deps): update dependencies (#1333),5,133,113,c0eee0d,2024-02,其他,18
+519,2024-02-02 02:14:38+00:00,Raghd Hamzeh,chore(ci): fix semgrep workflow (#1334),1,1,1,f2ddc07,2024-02,Bug修复,2
+520,2024-02-01 17:22:10+00:00,Maria Ines Parnisari,test: add more tests for ReadPage correctness (#1332),3,207,13,29d9c34,2024-02,测试,17
+521,2024-01-31 01:40:52+00:00,Maria Ines Parnisari,test: add tests for storage.ReadPage (#1325),5,127,17,3b91aa0,2024-01,测试,1
+522,2024-01-30 21:22:04+00:00,Will Vedder,"SingleflightCheckResolver (#1313)
+
+Co-authored-by: Jonathan Whitaker <jon.whitaker@auth0.com>
+Co-authored-by: Sergiu Ghitea <28300158+sergiught@users.noreply.github.com>",6,290,17,3cde6d6,2024-01,其他,21
+523,2024-01-30 19:23:53+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 6 updates (#1324)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",5,10,10,cacc775,2024-01,其他,19
+524,2024-01-29 20:19:22+00:00,Maria Ines Parnisari,test: reorganization. update `make unit-test` to `make test` (#1267),7,2032,2047,ad04038,2024-01,测试,20
+525,2024-01-29 17:56:36+00:00,Maria Ines Parnisari,docs: document usage as library (#871) (#1155),3,96,13,1869b32,2024-01,文档,17
+526,2024-01-29 17:36:27+00:00,José Padilla,chore: update grpc-health-probe (#1321),2,2,2,0590992,2024-01,其他,17
+527,2024-01-26 15:47:21+00:00,Sergiu Ghitea,docs(v1.4.3): add v1.4.3 release notes to CHANGELOG (#1320),1,24,1,59527d9,2024-01,文档,15
+528,2024-01-25 22:10:51+00:00,Jonathan Whitaker,fix: handle ReverseExpand channel closure correctly (#1315),9,347,212,908ac85,2024-01,Bug修复,22
+529,2024-01-24 22:25:49+00:00,Maria Ines Parnisari,feat: new server.Stop() to close all server resources (#1318),6,29,6,4f23096,2024-01,新功能,22
+530,2024-01-24 21:55:24+00:00,Maria Ines Parnisari,perf: remove redundant map.Clone calls in model validation (#1281),3,6,8,a4e94d5,2024-01,其他,21
+531,2024-01-24 21:17:28+00:00,Maria Ines Parnisari,test: amend #1316 (#1317),4,20,19,e8bdd09,2024-01,测试,21
+532,2024-01-24 00:33:59+00:00,Maria Ines Parnisari,test: prepare codebase to introduce goroutine leak detector (#1316),15,140,121,2a65e6e,2024-01,测试,0
+533,2024-01-22 17:46:21+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1306)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,14f9c3d,2024-01,其他,17
+534,2024-01-22 17:08:58+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 5 updates (#1311)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",4,7,7,14efde0,2024-01,其他,17
+535,2024-01-15 21:34:46+00:00,Sergiu Ghitea,docs: update storage package documentation (#1280),27,470,207,b1e0b5e,2024-01,文档,21
+536,2024-01-10 22:26:52+00:00,Will Vedder,Fix: contextual tuple sorting for cache key  (#1299),3,73,12,53deb4c,2024-01,Bug修复,22
+537,2024-01-10 19:12:07+00:00,Sergiu Ghitea,"docs: update middleware package documentation (#1285)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",11,48,26,38a7eba,2024-01,文档,19
+538,2024-01-10 16:57:09+00:00,Adrian Tam,chore: convert to panic on unexpected edge in reverse expand (#1304),3,22,19,a6bb8fb,2024-01,其他,16
+539,2024-01-10 16:51:28+00:00,Will Vedder,docs(v1.4.2): add v1.4.2 release notes to CHANGELOG (#1303),1,17,8,c154ba0,2024-01,文档,16
+540,2024-01-10 15:39:02+00:00,Maria Ines Parnisari,chore: update gomock library (#1292),13,86,108,408d562,2024-01,其他,15
+541,2024-01-09 21:19:44+00:00,Adrian Tam,fix: goroutine leaks in reverse expand (#1297),4,140,9,8189a69,2024-01,Bug修复,21
+542,2024-01-09 19:29:55+00:00,Jonathan Whitaker,chore: improve metrics test and update `v1.4.1` CHANGELOG details (#1300),3,44,19,8373f83,2024-01,测试,19
+543,2024-01-08 23:21:32+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 3 updates (#1294)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,19,19,2fd138b,2024-01,其他,23
+544,2024-01-08 19:37:09+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 2 updates (#1295)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,3,d816c0e,2024-01,其他,19
+545,2024-01-08 19:21:20+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1293)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,4ecd613,2024-01,其他,19
+546,2024-01-04 19:38:25+00:00,Jonathan Whitaker,docs(v1.4.1): add `v1.4.1` release notes to CHANGELOG (#1288),1,20,1,7a8772b,2024-01,文档,19
+547,2024-01-04 16:18:39+00:00,Sergiu Ghitea,chore: reduce complexity of storage.memory.findAuthorizationModelByID (#1284),1,15,19,72ef582,2024-01,其他,16
+548,2024-01-03 21:43:08+00:00,José Padilla,"feat: support cancellation/timeouts on condition evaluation (#1237)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",6,173,35,ee1cdd6,2024-01,新功能,21
+549,2024-01-03 21:14:30+00:00,Maria Ines Parnisari,test: pass in conditions in tests (#1278),12,153,319,68dfc32,2024-01,测试,21
+550,2024-01-03 20:43:35+00:00,Sergiu Ghitea,"chore: update github issue templates (#1262)
+
+Co-authored-by: Raghd Hamzeh <raghd.hamzeh@auth0.com>",4,208,61,19be529,2024-01,其他,20
+551,2024-01-03 17:34:56+00:00,Jonathan Whitaker,"fix: resolve exclusion more deterministically in Check resolution (#1239)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",5,163,57,fa080db,2024-01,Bug修复,17
+552,2024-01-03 17:18:32+00:00,Maria Ines Parnisari,"test: ensure service is up before testing Check, ListObjects, and WriteModel (#1269)",8,92,73,92324d8,2024-01,测试,17
+553,2024-01-02 17:33:23+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1276)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,d897d39,2024-01,其他,17
+554,2024-01-02 17:14:06+00:00,Jonathan Whitaker,"chore: add more Condition metrics and specific `metrics` package (#1248)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>
+Co-authored-by: Raghd Hamzeh <raghd.hamzeh@auth0.com>
+Co-authored-by: Sergiu Ghitea <28300158+sergiught@users.noreply.github.com>",3,89,17,dfcbd61,2024-01,其他,17
+555,2024-01-02 16:52:23+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1277)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,13,13,304af16,2024-01,其他,16
+556,2023-12-27 16:13:58+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 2 updates (#1272)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,6,6,21e84f2,2023-12,其他,16
+557,2023-12-27 16:06:46+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1274)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,6eaf9e4,2023-12,其他,16
+558,2023-12-27 15:58:48+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1273)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,48ef772,2023-12,其他,15
+559,2023-12-22 18:57:47+00:00,Maria Ines Parnisari,perf: less goroutines in ListObjects API (#1173),1,31,28,fb521d3,2023-12,其他,18
+560,2023-12-22 18:32:51+00:00,Maria Ines Parnisari,chore: bump api and update corresponding tests (#1266),10,506,258,00f9969,2023-12,测试,18
+561,2023-12-22 17:32:49+00:00,Maria Ines Parnisari,"test: assert on response headers (store-id, model-id, request-id) (#1241)",5,130,31,1f55b44,2023-12,测试,17
+562,2023-12-21 21:22:42+00:00,Sergiu Ghitea,docs: update typesystem package documentation (#1264),4,131,61,4cc5c27,2023-12,文档,21
+563,2023-12-21 20:59:13+00:00,Sergiu Ghitea,docs: update encrypter package documentation (#1263),3,22,8,c791a01,2023-12,文档,20
+564,2023-12-21 19:01:32+00:00,Sergiu Ghitea,docs: update encoder package documentation (#1261),4,28,15,1081d60,2023-12,文档,19
+565,2023-12-21 18:22:01+00:00,Will Vedder,test: add`GRPCWriteTest`(#1242),1,122,0,6db6ec4,2023-12,测试,18
+566,2023-12-21 17:59:19+00:00,Maria Ines Parnisari,test: update ListObjects benchmark to use a model that covers more code paths (#1257),1,8,3,cfa2b13,2023-12,测试,17
+567,2023-12-20 21:21:42+00:00,Maria Ines Parnisari,docs: storage interfaces (#1250),4,64,40,78422af,2023-12,文档,21
+568,2023-12-20 17:39:17+00:00,Sergiu Ghitea,chore: establish and enforce a convention for import paths (#1253),107,335,226,164963f,2023-12,其他,17
+569,2023-12-20 17:33:14+00:00,Raghd Hamzeh,chore: change CODEOWNERS team to BE team (#1254),1,1,1,86f0a9d,2023-12,其他,17
+570,2023-12-20 00:29:24+00:00,Jonathan Whitaker,"chore(tracing): add span info for Condition evaluation (#1251)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",5,65,14,cea8e82,2023-12,其他,0
+571,2023-12-19 23:37:04+00:00,Jonathan Whitaker,"docs(godoc): add package doc to `graph` package (#1193)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",1,1,0,195330e,2023-12,文档,23
+572,2023-12-19 18:16:23+00:00,Maria Ines Parnisari,"fix: record span errors in Check, ListObjects and streaming ListObjects (#1231)",4,63,18,5cab5b0,2023-12,Bug修复,18
+573,2023-12-19 16:56:39+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1243)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: José Padilla <jose.padilla@okta.com>",2,2,2,6db2e50,2023-12,其他,16
+574,2023-12-19 16:33:05+00:00,dependabot[bot],"chore(deps): bump golang.org/x/crypto from 0.16.0 to 0.17.0 (#1247)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,3,f495620,2023-12,其他,16
+575,2023-12-18 23:40:01+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 3 updates (#1244)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,4,4,8b8af4d,2023-12,其他,23
+576,2023-12-18 22:49:57+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 4 updates (#1245)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,20,20,0b34068,2023-12,其他,22
+577,2023-12-18 17:01:14+00:00,Maria Ines Parnisari,style: delegates in check (#1240),1,4,16,5e3b35b,2023-12,其他,17
+578,2023-12-15 21:29:09+00:00,Jonathan Whitaker,"chore: add prometheus histogram metric for Condition evaluation cost (#1235)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",15,75,21,9e1f536,2023-12,其他,21
+579,2023-12-15 20:48:12+00:00,Maria Ines Parnisari,fix: #935 (log request validation errors) (#1236),3,100,47,073c82f,2023-12,Bug修复,20
+580,2023-12-14 23:38:58+00:00,Jonathan Whitaker,chore: improve flag descriptions (#1234),1,3,3,d706e2c,2023-12,其他,23
+581,2023-12-14 19:41:45+00:00,Maria Ines Parnisari,fix: missing span in ListObjects (#1233),1,3,0,0573db8,2023-12,Bug修复,19
+582,2023-12-13 16:22:29+00:00,Adrian Tam,feat: extend request_duration_by_query_count_ms to list objects (#1230),1,38,20,2290612,2023-12,新功能,16
+583,2023-12-12 01:42:11+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1226)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",2,2,2,e69d1c4,2023-12,其他,1
+584,2023-12-12 01:36:38+00:00,Adrian Tam,"fix: storage conflict errors return 409 instead of 500 (#1179)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",5,29,25,53a2c72,2023-12,Bug修复,1
+585,2023-12-11 22:48:46+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 3 updates (#1227)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,39,388,1a008fd,2023-12,其他,22
+586,2023-12-11 21:48:05+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 4 updates (#1228)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: José Padilla <jose.padilla@okta.com>",7,13,13,3622f71,2023-12,其他,21
+587,2023-12-11 19:41:57+00:00,José Padilla,chore(deps): bump github.com/grpc-ecosystem/grpc-health-probe (#1229),1,1,1,0cb4d99,2023-12,其他,19
+588,2023-12-11 18:28:15+00:00,José Padilla,docs(release): add v1.4.0 release notes (#1221),1,13,1,eca56d2,2023-12,文档,18
+589,2023-12-11 16:25:36+00:00,Jonathan Whitaker,chore: further constraint RPC max message size (#1222),5,68,4,96b9c61,2023-12,其他,16
+590,2023-12-08 19:44:51+00:00,José Padilla,feat: enable conditions by default (#1220),8,29,399,c01b461,2023-12,新功能,19
+591,2023-12-08 18:03:20+00:00,José Padilla,docs(release): add v1.3.10 release notes (#1218),1,16,1,f53b9d5,2023-12,文档,18
+592,2023-12-08 17:42:11+00:00,José Padilla,chore: bump go to v1.21.5 (#1219),1,1,1,a87ccce,2023-12,其他,17
+593,2023-12-08 17:16:49+00:00,Maria Ines Parnisari,fix: handle floating point conversion errors (#1200),2,84,2,ac3af79,2023-12,Bug修复,17
+594,2023-12-07 22:27:15+00:00,José Padilla,fix: revert assertions tuple key order change (#1217),9,111,21,32ac288,2023-12,Bug修复,22
+595,2023-12-06 00:19:31+00:00,Jonathan Whitaker,docs(release): add `v1.3.9` release details to CHANGELOG (#1214),1,11,1,2b0ec48,2023-12,文档,0
+596,2023-12-06 00:02:17+00:00,Jonathan Whitaker,test(storage): add conformance test for normalized Condition behavior (#1213),3,176,0,978327a,2023-12,测试,0
+597,2023-12-05 21:41:58+00:00,Maria Ines Parnisari,test: add more tests for Write and WriteAuthorizationModel API (#1210),4,1173,986,127b470,2023-12,测试,21
+598,2023-12-05 19:02:17+00:00,José Padilla,fix: handle converting NULL to string condition name (#1212),5,284,33,543df50,2023-12,Bug修复,19
+599,2023-12-05 05:08:45+00:00,José Padilla,chore: remove extraneous param in slsa verification step (#1209),1,1,1,912a350,2023-12,其他,5
+600,2023-12-05 03:59:59+00:00,Stéphane Graber,"pkg/server/commands: Don't crash when processing a a nil set of writes (#1208)
+
+Signed-off-by: Stéphane Graber <stgraber@stgraber.org>",1,5,3,4f769e0,2023-12,其他,3
+601,2023-12-04 22:13:14+00:00,Jonathan Whitaker,"docs(release): add `v1.3.8` release details to CHANGELOG (#1203)
+
+Co-authored-by: José Padilla <jose.padilla@okta.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",1,77,1,0bd6e1b,2023-12,文档,22
+602,2023-12-04 22:06:14+00:00,José Padilla,"feat: attribute-based access control (#1038)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: Matouš Dzivjak <matousdzivjak@gmail.com>
+Co-authored-by: Siddhant Khare <Siddhantkhare2694@gmail.com>
+Co-authored-by: Ilia Aleksin <ilya.alexin@gmail.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.whitaker@auth0.com>",83,10209,3764,aa0c816,2023-12,新功能,22
+603,2023-12-04 21:58:43+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1205)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,9e6c2cb,2023-12,其他,21
+604,2023-12-04 21:48:54+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1204)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,2bb7163,2023-12,其他,21
+605,2023-12-04 15:41:35+00:00,José Padilla,chore: pin actions/stale (#1202),1,2,2,f9aeaad,2023-12,其他,15
+606,2023-12-01 16:51:25+00:00,Maria Ines Parnisari,"perf: different order of contextual tuples results in cache hit, not miss (#1187)
+
+Co-authored-by: Raghd Hamzeh <raghd.hamzeh@auth0.com>",6,244,27,fa07377,2023-12,其他,16
+607,2023-11-30 21:54:30+00:00,José Padilla,fix: correctly set noop trace provider (#1196),1,2,2,0d64d89,2023-11,Bug修复,21
+608,2023-11-29 22:32:34+00:00,Jonathan Whitaker,ci: add stale bot to comment on stale PRs and issues (#1186),1,22,0,4d869e5,2023-11,其他,22
+609,2023-11-29 01:14:53+00:00,Jonathan Whitaker,perf: cancel iteration of tuples if context is cancelled or timed out (#1055),11,151,53,bdf1330,2023-11,其他,1
+610,2023-11-28 22:05:31+00:00,Maria Ines Parnisari,chore: memory storage stores TupleRecords internally (#1180),5,264,60,9ae125b,2023-11,其他,22
+611,2023-11-28 16:27:05+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1175)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,da2dabe,2023-11,其他,16
+612,2023-11-28 03:31:30+00:00,Jonathan Whitaker,feat(readiness): require min datastore schema revision in health check (#1166),12,86,19,b377836,2023-11,新功能,3
+613,2023-11-24 20:54:20+00:00,Maria Ines Parnisari,perf: improve tuple validation by precomputing TTUs (#1171),2,64,22,65283c2,2023-11,其他,20
+614,2023-11-24 18:47:20+00:00,Maria Ines Parnisari,ci: only compare benchmarks if the CPUs are the same (#1170),2,28,4,edaf54b,2023-11,其他,18
+615,2023-11-23 18:12:39+00:00,Maria Ines Parnisari,refactor: ListObjects (#997),3,203,281,19822e2,2023-11,重构,18
+616,2023-11-22 03:33:32+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 2 updates (#1158)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,21,21,710e8c7,2023-11,其他,3
+617,2023-11-21 23:12:20+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 5 updates (#1159)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",4,8,8,e50a479,2023-11,其他,23
+618,2023-11-21 18:28:08+00:00,Ilia Aleksin,"refactor: Option builder for command constructors (#1142)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",29,334,175,d2b5f2d,2023-11,重构,18
+619,2023-11-21 16:20:19+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1160)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,07dfe68,2023-11,其他,16
+620,2023-11-20 19:41:02+00:00,Martin Koppehel,Add env vars and username/password overwrite for migrate tool (#1133),3,59,6,cf5dac7,2023-11,其他,19
+621,2023-11-15 17:36:42+00:00,Maria Ines Parnisari,test: speed up integration tests for mysql and postgres (#1153),2,2,0,c00d8f6,2023-11,测试,17
+622,2023-11-15 16:14:46+00:00,Maria Ines Parnisari,build: openfga depends on otel-collector (#1152),1,3,0,f30990e,2023-11,其他,16
+623,2023-11-14 22:13:34+00:00,Maria Ines Parnisari,test: fix timeouts (#1113),2,2,2,d2ed51c,2023-11,Bug修复,22
+624,2023-11-13 21:27:32+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 2 updates (#1150)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,81,18,2f7b9d2,2023-11,其他,21
+625,2023-11-13 20:14:06+00:00,Jonathan Whitaker,chore(deps): bump open-telemetry packages (#1146),3,95,93,c0a57a3,2023-11,其他,20
+626,2023-11-13 19:21:20+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1149)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,dbd9ce8,2023-11,其他,19
+627,2023-11-13 16:49:54+00:00,Lam Tran,"style: add `mirror` linter (#1144)
+
+Signed-off-by: Lam Tran <lam.tran@spenmo.com>",2,3,2,ca5dde2,2023-11,其他,16
+628,2023-11-13 12:55:47+00:00,Lam Tran,"chore(go): upgrade go 1.21.4 (#1143)
+
+Signed-off-by: Lam Tran <lam.tran@spenmo.com>",2,2,2,e12bd63,2023-11,其他,12
+629,2023-11-09 03:37:58+00:00,Jonathan Whitaker,perf: use Noop TracerProvider if tracing is disabled (#1139),1,14,5,3db6ac7,2023-11,其他,3
+630,2023-11-09 03:26:12+00:00,Maria Ines Parnisari,test: run TestServerMetricsReporting for Postgres and MySQL (#1088),4,41,5,1887ace,2023-11,测试,3
+631,2023-11-08 16:49:24+00:00,Siddhant Khare,Healthcheck in `OpenFGA` Dockerfile  (#1134),2,5,1,8fcaf43,2023-11,其他,16
+632,2023-11-08 14:09:32+00:00,Siddhant Khare,use pinned version for `slsa-github-generator` (#1136),1,1,1,c7458dc,2023-11,其他,14
+633,2023-11-07 15:02:02+00:00,Jonathan Whitaker,"docs(release): `v1.3.7` release notes (#1131)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",1,10,1,0ab4747,2023-11,文档,15
+634,2023-11-07 13:50:29+00:00,Andrés Aguiar,chore: adding SLSA Level 3 Badge (#1135),1,1,0,d26d0d5,2023-11,其他,13
+635,2023-11-07 05:08:05+00:00,José Padilla,chore: run verification with slsa-verifier (#1130),1,27,0,45f2cdd,2023-11,其他,5
+636,2023-11-07 04:54:38+00:00,José Padilla,chore: bump grpc-health-probe to v0.4.22 (#1129),2,2,2,1445f0b,2023-11,其他,4
+637,2023-11-06 23:53:42+00:00,Jonathan Whitaker,docs(changelog): add `v1.3.6` release notes (#1128),1,11,0,b365817,2023-11,文档,23
+638,2023-11-06 23:18:32+00:00,José Padilla,chore: fix snyk job in release workflow (#1127),1,3,0,1f7c4ac,2023-11,Bug修复,23
+639,2023-11-06 22:19:23+00:00,José Padilla,chore: generate slsa provenances on release (#1112),1,92,1,e30face,2023-11,其他,22
+640,2023-11-06 21:04:58+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1123)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",1,1,1,f0cd9be,2023-11,其他,21
+641,2023-11-06 19:55:05+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 3 updates (#1124)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",2,13,10,4bab995,2023-11,其他,19
+642,2023-11-06 19:35:58+00:00,Andrés Aguiar,chore: Update SECURITY-INSIGHTS.yml (#1126),1,2,2,67190e5,2023-11,其他,19
+643,2023-11-06 15:28:01+00:00,Saurabh Kumar,"chore: set jaeger image version to v1.49 (openfga#1102) (#1119)
+
+Co-authored-by: Raghd Hamzeh <raghd.hamzeh@auth0.com>",1,1,1,2caa3dd,2023-11,其他,15
+644,2023-11-06 06:32:33+00:00,Jonathan Whitaker,docs(readme): make codecov link to codecov report (#1122),1,1,1,42a2c5f,2023-11,文档,6
+645,2023-11-06 05:15:18+00:00,Andrés Aguiar,"chore: added additional files for sec insights (#1121)
+
+Co-authored-by: Raghd Hamzeh <raghd.hamzeh@auth0.com>",3,322,2,f83b0c5,2023-11,其他,5
+646,2023-11-03 17:15:01+00:00,Lam Tran,"chore: add testifylint (#1110)
+
+Signed-off-by: Lam Tran <lam.tran@spenmo.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",18,50,49,0d38ae0,2023-11,测试,17
+647,2023-11-03 16:56:08+00:00,José Padilla,chore: pin third party actions (#1111),1,2,2,a364075,2023-11,其他,16
+648,2023-11-02 22:01:33+00:00,Maria Ines Parnisari,style: stricter govet linter (#1106),2,5,8,934e88b,2023-11,其他,22
+649,2023-11-02 02:30:54+00:00,Maria Ines Parnisari,test: add logs to reverse expand test (#1103),1,10,2,54d62eb,2023-11,测试,2
+650,2023-10-31 15:16:13+00:00,Jonathan Whitaker,test(bench): add benchmark for computing Check request cache keys (#1095),1,41,0,17c7f7b,2023-10,测试,15
+651,2023-10-31 04:41:48+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 2 updates (#1094)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,7,7,86c110a,2023-10,其他,4
+652,2023-10-30 22:46:26+00:00,Adrian Tam,test: write and read assertions (#1081),4,267,46,4d83c8c,2023-10,测试,22
+653,2023-10-28 01:04:04+00:00,Maria Ines Parnisari,"test: improve validation tests, remove dead code (#1093)",5,31,73,1a846a4,2023-10,测试,1
+654,2023-10-27 21:23:11+00:00,José Padilla,ci: add missing permission on release job (#1091),1,1,0,a3e1e12,2023-10,其他,21
+655,2023-10-27 21:07:14+00:00,Maria Ines Parnisari,chore: fix docker-compose.yaml (#1092),2,72,70,315d0d5,2023-10,Bug修复,21
+656,2023-10-27 20:12:01+00:00,Sanket Rai,"chore: add docker compose override file for local development (#1015)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",1,8,0,f911df2,2023-10,其他,20
+657,2023-10-27 19:40:59+00:00,Siddhant Khare,chore: remove `check-query-cache` experimental flag (#1071),4,5,9,c461c42,2023-10,其他,19
+658,2023-10-27 16:14:45+00:00,José Padilla,chore: update release notes for v1.3.5 (#1089),1,2,0,657d767,2023-10,其他,16
+659,2023-10-27 02:26:33+00:00,Maria Ines Parnisari,test: Check benchmarks now pass in auth model ID (#1087),1,25,17,9230ef3,2023-10,测试,2
+660,2023-10-27 01:53:24+00:00,Maria Ines Parnisari,test: write one tuple at a time (#1086),1,4,5,f061db0,2023-10,测试,1
+661,2023-10-26 21:52:15+00:00,José Padilla,docs(release): add v1.3.5 release notes (#1083),1,26,1,fed28ea,2023-10,文档,21
+662,2023-10-26 21:43:15+00:00,José Padilla,chore: add scanning of docker image via snyk (#1084),1,14,0,16c526a,2023-10,其他,21
+663,2023-10-26 20:34:23+00:00,Maria Ines Parnisari,fix: ReadChanges sort order (#1079),3,46,2,c785182,2023-10,Bug修复,20
+664,2023-10-26 11:06:40+00:00,José Padilla,"feat: write authz model in a single row (#1030)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",1,4,13,2283740,2023-10,新功能,11
+665,2023-10-24 23:18:36+00:00,Jonathan Whitaker,"fix(list-objects): promptly return if max results are met before deadline (#1064)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",6,308,42,ad4b31f,2023-10,Bug修复,23
+666,2023-10-24 20:20:38+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 4 updates (#1075)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,28,28,631eae3,2023-10,其他,20
+667,2023-10-24 18:25:09+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 3 updates (#1077)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",9,15,15,56ea59e,2023-10,其他,18
+668,2023-10-24 17:49:46+00:00,Ilia Aleksin,fix: protobuf comparison (#1052),5,22,33,bde6a1a,2023-10,Bug修复,17
+669,2023-10-23 23:22:23+00:00,Siddhant Khare,CI: Improve CI Log Traceability by Naming CI Steps (#1073),1,20,11,02f82cd,2023-10,其他,23
+670,2023-10-23 19:30:04+00:00,Maria Ines Parnisari,fix: return all results when `OPENFGA_LIST_OBJECTS_MAX_RESULTS=0` (#1067),3,94,115,b51c465,2023-10,Bug修复,19
+671,2023-10-23 19:00:54+00:00,Matouš Dzivjak,feat(storage): export db metrics from MySQL and Postgres (#1023),8,68,10,49f8326,2023-10,新功能,19
+672,2023-10-20 16:08:02+00:00,Maria Ines Parnisari,fix: amend #1069 (#1070),1,1,1,714697a,2023-10,Bug修复,16
+673,2023-10-20 15:55:24+00:00,Maria Ines Parnisari,ci: fix benchmark reporting (#1069),3,28,23,bc09c33,2023-10,Bug修复,15
+674,2023-10-19 16:51:23+00:00,José Padilla,chore: update goreleaser config (#1046),1,3,6,72ed8a4,2023-10,其他,16
+675,2023-10-17 22:31:43+00:00,Maria Ines Parnisari,docs: add v1.3.4 CHANGELOG release details (#1065),1,22,4,9f60a57,2023-10,文档,22
+676,2023-10-17 04:35:18+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1063)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,8ce2da0,2023-10,其他,4
+677,2023-10-16 15:35:06+00:00,Lam Tran,"style: add linter tagalign (#1062)
+
+Signed-off-by: Lam Tran <lam.tran@spenmo.com>",2,3,3,0958e1d,2023-10,其他,15
+678,2023-10-13 22:19:00+00:00,Jonathan Whitaker,fix: avoid forgotten sender with context cancellation in ReverseExpand (#1061),4,106,25,3c52a99,2023-10,Bug修复,22
+679,2023-10-12 15:32:00+00:00,Jonathan Whitaker,fix: propagate contextual tuples to dispatched Check subproblems (#1059),6,237,17,05a95df,2023-10,Bug修复,15
+680,2023-10-12 15:21:09+00:00,Jonathan Whitaker,chore(dep): bump Go and net package up to avoid govulncheck reports (#1060),2,10,10,56bca5d,2023-10,其他,15
+681,2023-10-10 22:28:27+00:00,Jonathan Whitaker,fix: incorrect string fmt variables in model validation err message (#1057),1,1,1,afe0b3d,2023-10,Bug修复,22
+682,2023-10-10 14:00:55+00:00,Lam Tran,"chore: migrate grpc auth to go-grpc-middleware/v2/interceptors/auth (#1056)
+
+Signed-off-by: Lam Tran <lam.tran@spenmo.com>",5,10,10,8584971,2023-10,其他,14
+683,2023-10-09 22:13:38+00:00,dependabot[bot],chore(deps): bump the dependencies group with 1 update (#1034),2,2,2,7e6a9bf,2023-10,其他,22
+684,2023-10-09 21:07:56+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 3 updates (#1054)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,3,8afb41f,2023-10,其他,21
+685,2023-10-09 15:30:46+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 6 updates (#1053)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,90,83,f9b736b,2023-10,其他,15
+686,2023-10-07 00:35:46+00:00,Raghd Hamzeh,"chore(docs): add security insights (#1050)
+
+Co-authored-by: Andrés Aguiar <andres.aguiar@okta.com>",1,104,0,30214a7,2023-10,文档,0
+687,2023-10-06 22:41:21+00:00,Maria Ines Parnisari,test: add test for datastore.IsReady (#1049),6,45,16,7a2008a,2023-10,测试,22
+688,2023-10-05 21:43:04+00:00,Maria Ines Parnisari,test: add test for ReadChanges when writes happen concurrently (#1041),2,57,3,5256560,2023-10,测试,21
+689,2023-10-05 21:24:52+00:00,Maria Ines Parnisari,"test: in check and listobjects integration tests, pass in auth model … (#1042)",2,24,18,d00ba7e,2023-10,测试,21
+690,2023-10-05 15:15:41+00:00,José Padilla,"docs(release): add v1.3.3 release notes (#1043)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",1,29,3,2b04c25,2023-10,文档,15
+691,2023-10-04 04:11:39+00:00,José Padilla,refactor: move server config defaults (#1036),12,534,500,311f641,2023-10,重构,4
+692,2023-10-03 16:53:50+00:00,José Padilla,feat: limit size in bytes of authz models (#1032),7,67,8,3b4f654,2023-10,新功能,16
+693,2023-10-02 20:46:22+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#1037)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,40845db,2023-10,其他,20
+694,2023-09-29 17:43:09+00:00,José Padilla,feat: persist authz model serialized protobuf (#1028),7,159,188,ff582d0,2023-09,新功能,17
+695,2023-09-29 16:29:00+00:00,Adrian Tam,feat: reduce use of GOB in encoded cache key (#1029),1,14,13,a75d6a2,2023-09,新功能,16
+696,2023-09-28 13:40:58+00:00,José Padilla,chore: enable additional linters (#1017),55,51,190,8dc2ed6,2023-09,其他,13
+697,2023-09-27 15:35:07+00:00,José Padilla,fix: remove unused variable (#1027),1,0,4,a123b6e,2023-09,Bug修复,15
+698,2023-09-26 18:12:49+00:00,Jonathan Whitaker,"Merge pull request from GHSA-2hm9-h873-pgqh
+
+* fix: avoid revisiting computed relations in cycles
+
+* Revert ""fix: avoid revisiting computed relations in cycles""
+
+This reverts commit 5d51d4fdcca1eb240310037c92d9085381866ed4.
+
+* fix: validate against cyclical model definitions more accurately
+
+* chore: drop unused code and wire up visited paths betweeen calls
+
+* chore: touch up tests and restructure visited evaluation paths
+
+* docs(release): add `v1.3.2` release notes to CHANGELOG
+
+* Update CHANGELOG.md
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+
+* docs(release): add additional contributions to v1.3.2 release notes
+
+* docs(release): drop extra link added erroneously
+
+* docs(release): add breaking compability notice
+
+---------
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",11,590,292,7252960,2023-09,Bug修复,18
+699,2023-09-26 13:32:09+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 3 updates (#1020)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,9,9,7bb6f60,2023-09,其他,13
+700,2023-09-26 13:17:50+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 2 updates (#1021)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",9,14,14,86ed887,2023-09,其他,13
+701,2023-09-25 15:36:23+00:00,Lam Tran,"chore: migrate grpc validator to go-grpc-middleware/v2/interceptors/validator (#1019)
+
+Signed-off-by: Lam Tran <lam.tran@spenmo.com>
+Co-authored-by: Raghd Hamzeh <raghd.hamzeh@auth0.com>",1,3,4,23f098d,2023-09,其他,15
+702,2023-09-25 14:17:09+00:00,Sanket Rai,"chore: add workflow to check markdown links (#1016)
+
+Co-authored-by: Raghd Hamzeh <raghd@rhamzeh.com>",4,44,3,409c36b,2023-09,其他,14
+703,2023-09-19 23:52:01+00:00,Jonathan Whitaker,fix: change response code to internal error for concurrency conflicts (#1011),2,44,1,69729ee,2023-09,Bug修复,23
+704,2023-09-19 04:21:06+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 2 updates (#1009)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,6,8,ade6617,2023-09,其他,4
+705,2023-09-18 20:14:56+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 5 updates (#1010)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",5,9,9,dfcfd64,2023-09,其他,20
+706,2023-09-15 21:40:56+00:00,Maria Ines Parnisari,chore: remove unused code in typesystem (#1008),2,64,85,eec8cb0,2023-09,其他,21
+707,2023-09-14 17:46:46+00:00,Maria Ines Parnisari,docs: internals of ListObjects (#934),12,1389,0,639d053,2023-09,文档,17
+708,2023-09-14 17:03:23+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 11 updates (#1003)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.whitaker@auth0.com>",3,103,107,acc3253,2023-09,其他,17
+709,2023-09-13 21:53:33+00:00,Maria Ines Parnisari,style: context storage wrapper (#1006),1,9,14,20719af,2023-09,其他,21
+710,2023-09-13 17:52:48+00:00,Maria Ines Parnisari,chore(refactor): expose validation middleware (#1005),5,115,60,8e9cedb,2023-09,重构,17
+711,2023-09-12 22:33:45+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 6 updates (#1000)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.whitaker@auth0.com>",6,11,9,3c07167,2023-09,其他,22
+712,2023-09-12 22:16:39+00:00,Jonathan Whitaker,"chore: rewire request validation (#998)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",5,129,35,48754de,2023-09,其他,22
+713,2023-09-07 23:00:38+00:00,Maria Ines Parnisari,style: rename connected objects -> reverse expand (#968),8,2218,2247,84c25cf,2023-09,其他,23
+714,2023-09-07 18:09:24+00:00,Maria Ines Parnisari,chore: add bug report template (#992),1,61,0,c6d73f8,2023-09,Bug修复,18
+715,2023-09-07 16:28:37+00:00,Maria Ines Parnisari,test: add logs to debug easily (#995),2,19,16,76f4a5c,2023-09,Bug修复,16
+716,2023-09-06 20:27:28+00:00,Maria Ines Parnisari,test: add integration test for ListObjects (#993),1,34,0,400ae6d,2023-09,测试,20
+717,2023-09-06 13:32:50+00:00,Adrian Tam,feat: add datastore query count for list object on trace and histogram (#959),5,138,42,9d3b8b1,2023-09,新功能,13
+718,2023-09-05 19:25:46+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 1 update (#987)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,dd9745b,2023-09,其他,19
+719,2023-09-05 16:45:14+00:00,dependabot[bot],"chore(deps): bump the dependencies group with 11 updates (#988)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",8,34,34,ce80350,2023-09,其他,16
+720,2023-09-05 15:44:18+00:00,Raghd Hamzeh,"chore: group dependabot dependency upgrades, and bump tp weekly (#984)",1,15,3,169eccb,2023-09,其他,15
+721,2023-09-05 15:30:18+00:00,dependabot[bot],"chore(deps): bump goreleaser/goreleaser-action from 4.3.0 to 4.4.0 (#982)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,927ff0e,2023-09,其他,15
+722,2023-08-30 22:06:49+00:00,Jonathan Whitaker,refactor(validation): move request validations to RPC handlers (#975),2,67,3,f8d36b9,2023-08,重构,22
+723,2023-08-30 04:11:29+00:00,Adrian Tam,feat: add service and method label to datastore_bounded_read_delay_ms (#963),4,154,3,d34c87a,2023-08,新功能,4
+724,2023-08-29 19:55:05+00:00,Maria Ines Parnisari,test: add tests for datastore.Read (#973),2,136,0,294ac8a,2023-08,测试,19
+725,2023-08-28 21:59:26+00:00,Adrian Tam,feat: list objects now limits number of DB reads on every call (#967),4,53,7,55f177a,2023-08,新功能,21
+726,2023-08-28 16:52:08+00:00,Matouš Dzivjak,"feat(tracing): configurable security (#885)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",5,62,8,993c66a,2023-08,新功能,16
+727,2023-08-27 18:23:31+00:00,Lam Tran,"refactor: update jwkRefreshInterval value (#970)
+
+Signed-off-by: Lam Tran <lam.tran@spenmo.com>",1,1,1,d87fd75,2023-08,重构,18
+728,2023-08-27 02:13:35+00:00,Lam Tran,"refactor: use slices and maps packages from go1.21 (#969)
+
+Signed-off-by: Lam Tran <lam.tran@spenmo.com>",3,3,3,7d552b2,2023-08,重构,2
+729,2023-08-25 18:35:13+00:00,Jonathan Whitaker,"docs(release): add `v1.3.1` release notes (#917)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",1,39,1,b418e4d,2023-08,文档,18
+730,2023-08-25 15:48:18+00:00,Maria Ines Parnisari,fix: send 403 instead of 500 when unauthenticated (#966),2,7,0,1d07f74,2023-08,Bug修复,15
+731,2023-08-24 16:22:48+00:00,Adrian Tam,feat: adding check latency histogram with db query count label (#950),12,306,87,74dc4cc,2023-08,新功能,16
+732,2023-08-23 18:58:23+00:00,Adrian Tam,"fix: ListObjects gives non-deterministic results (#921)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",7,311,290,37f48d1,2023-08,Bug修复,18
+733,2023-08-23 14:02:01+00:00,José Padilla,chore: bump go to 1.21 (#952),5,37,8,6b42040,2023-08,其他,14
+734,2023-08-23 02:27:11+00:00,Maria Ines Parnisari,fix: 'bad connection' error when running MySQL tests (#958),2,8,4,6ce7207,2023-08,Bug修复,2
+735,2023-08-22 01:30:24+00:00,Maria Ines Parnisari,fix: log when ListObjects call times out (#953),1,2,5,d7f32b3,2023-08,Bug修复,1
+736,2023-08-17 22:14:15+00:00,Lam Tran,"refactor: use mount type=bind to build openfga binary (#941)
+
+Signed-off-by: Lam Tran <tranngoclam288@gmail.com>",1,9,7,eb44459,2023-08,重构,22
+737,2023-08-17 17:14:26+00:00,Adrian Tam,feat: log user agent (#943),2,69,5,1f9c637,2023-08,新功能,17
+738,2023-08-17 17:06:28+00:00,Jonathan Whitaker,"feat: add CachedCheckResolver for caching Check subproblems (#891)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",13,1146,37,b7bcc84,2023-08,新功能,17
+739,2023-08-15 18:34:10+00:00,Adrian Tam,chore: only run memory check in regular cicd benchmark (#940),3,6,2,4bc5053,2023-08,其他,18
+740,2023-08-14 18:12:15+00:00,Jonathan Whitaker,feat(metrics): add histogram observing the datastore query count (Check) (#924),2,119,2,a1b3c33,2023-08,新功能,18
+741,2023-08-10 20:43:53+00:00,José Padilla,test: assert emitted log during Check request (#926),4,219,53,968f851,2023-08,测试,20
+742,2023-08-09 17:02:16+00:00,Adrian Tam,feat: optimizing check call by pruning user lookup (#932),4,134,41,e2d6ebe,2023-08,新功能,17
+743,2023-08-09 00:21:43+00:00,Gabriel Bussolo,fix: the misconception between 'migration timeout' and 'database connection timeout' (#927),1,1,1,7d9b32b,2023-08,Bug修复,0
+744,2023-08-08 15:18:00+00:00,José Padilla,chore(deps): bump golang.org/x/net to v0.13.0 (#931),2,3,1,88a86ec,2023-08,其他,15
+745,2023-08-07 23:09:11+00:00,dependabot[bot],"chore(deps): bump github.com/jackc/pgx/v5 from 5.3.1 to 5.4.3 (#929)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,3,415787c,2023-08,其他,23
+746,2023-08-07 22:57:58+00:00,dependabot[bot],"chore(deps): bump aws-actions/configure-aws-credentials from 2.0.0 to 2.2.0 (#901)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,26843b4,2023-08,其他,22
+747,2023-08-07 22:46:52+00:00,dependabot[bot],"chore(deps): bump ossf/scorecard-action from 2.1.3 to 2.2.0 (#902)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,8145a5e,2023-08,其他,22
+748,2023-08-07 22:35:49+00:00,dependabot[bot],"chore(deps): bump peter-evans/dockerhub-description from 3.4.1 to 3.4.2 (#903)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,5b26c32,2023-08,其他,22
+749,2023-08-07 22:15:12+00:00,dependabot[bot],"chore(deps): bump docker/setup-buildx-action from 2.8.0 to 2.9.1 (#904)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,005978d,2023-08,其他,22
+750,2023-08-07 19:54:29+00:00,dependabot[bot],"chore(deps): bump goreleaser/goreleaser-action from 4.2.0 to 4.3.0 (#900)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,02945de,2023-08,其他,19
+751,2023-08-07 17:50:46+00:00,dependabot[bot],"chore(deps): bump github.com/tidwall/gjson from 1.14.4 to 1.15.0 (#906)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,3,e96a9fc,2023-08,其他,17
+752,2023-08-07 17:39:16+00:00,dependabot[bot],"chore(deps): bump github.com/docker/docker from 24.0.3+incompatible to 24.0.5+incompatible (#907)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,3,31b63f3,2023-08,其他,17
+753,2023-08-07 17:15:43+00:00,dependabot[bot],"chore(deps): bump github.com/rs/cors from 1.8.3 to 1.9.0 (#908)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,3,6612d29,2023-08,其他,17
+754,2023-08-07 16:57:41+00:00,dependabot[bot],"chore(deps): bump go.opentelemetry.io/proto/otlp from 0.19.0 to 1.0.0 (#909)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,33,6c9692f,2023-08,其他,16
+755,2023-08-07 16:36:19+00:00,dependabot[bot],"chore(deps): bump chainguard/go from `8ed3fdc` to `8ffe97d` (#910)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,0daf66a,2023-08,其他,16
+756,2023-08-07 16:18:34+00:00,dependabot[bot],"chore(deps): bump chainguard/static from `54b5891` to `6b35c7e` (#911)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,5f8ffc2,2023-08,其他,16
+757,2023-08-03 22:07:58+00:00,Maria Ines Parnisari,test: add Check test when resolution is too complex (#923),2,40,3,5bd4899,2023-08,测试,22
+758,2023-08-03 16:59:30+00:00,Maria Ines Parnisari,feat: count how many datastore calls one Check makes (#880),4,349,53,24ab5f2,2023-08,新功能,16
+759,2023-08-03 16:40:15+00:00,Maria Ines Parnisari,ci: make govulncheck optional (#919),1,6,0,e812e74,2023-08,其他,16
+760,2023-08-02 18:10:42+00:00,Jonathan Whitaker,fix: concurrency read settings should be unbounded by default (#916),4,19,6,77f4ab8,2023-08,Bug修复,18
+761,2023-08-01 22:03:12+00:00,Jonathan Whitaker,docs(release): add `v1.3.0` release notes to the CHANGELOG (#912),1,56,1,d88474a,2023-08,文档,22
+762,2023-08-01 17:30:17+00:00,Jonathan Whitaker,chore(dep): swap OpenFGA protobuf dep to manually generated stubs (#898),92,2473,2656,ff41e31,2023-08,其他,17
+763,2023-07-28 22:56:01+00:00,Maria Ines Parnisari,feat: honor MAX_CONCURRENT_READS_FOR_CHECK (#887),5,46,15,9e69c9e,2023-07,新功能,22
+764,2023-07-28 22:04:40+00:00,Jonathan Whitaker,chore: update go-grpc-prometheus middleware to use fork with `grpc_code` (#895),3,4,4,4856180,2023-07,其他,22
+765,2023-07-26 18:38:33+00:00,Azanul Haque,feat: badger for persisting tracing data (#888),1,8,1,6efcac9,2023-07,新功能,18
+766,2023-07-26 15:45:27+00:00,Klaus Viisainen,fix: stop retryablehttp from debug logging (#882),1,6,2,f566113,2023-07,Bug修复,15
+767,2023-07-25 23:08:52+00:00,Maria Ines Parnisari,build: speed up docker builds (#881),1,9,1,5ede653,2023-07,其他,23
+768,2023-07-24 18:56:11+00:00,"Justin ""J.R."" Hill",docs: Use invite link for Discord Server in README (#884),1,1,1,8e3263f,2023-07,文档,18
+769,2023-07-21 17:16:59+00:00,Maria Ines Parnisari,style: naming of connected objects query (#873),5,765,755,454e4e9,2023-07,其他,17
+770,2023-07-17 22:56:13+00:00,Maria Ines Parnisari,"refactor: add constructors for checker, list objects, connected objects (#872)",8,175,82,e9bd83d,2023-07,重构,22
+771,2023-07-14 23:07:15+00:00,Jonathan Whitaker,"refactor: change Server constructor to use options builder pattern (#833)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",4,195,194,7df43a7,2023-07,重构,23
+772,2023-07-14 18:17:39+00:00,Maria Ines Parnisari,"refactor: location of storage wrappers + fix: when server stops, close database connections (#865)",12,237,284,6d84cd6,2023-07,Bug修复,18
+773,2023-07-14 17:56:18+00:00,Maria Ines Parnisari,fix: graphs in Grafana dashboard (#867),1,3,78,df81e2b,2023-07,Bug修复,17
+774,2023-07-14 17:45:58+00:00,Maria Ines Parnisari,feat: add three server settings to control resources used by ListObjects (#864),13,214,106,06b1b91,2023-07,新功能,17
+775,2023-07-12 18:34:13+00:00,Maria Ines Parnisari,refactor: tracer with test (#822),18,1368,1235,5ac6f9b,2023-07,测试,18
+776,2023-07-12 17:08:31+00:00,jingchu000,ci: add build-tags: [functional] to .golangci.yaml (#858),2,11,17,846b777,2023-07,其他,17
+777,2023-07-12 16:53:33+00:00,Maria Ines Parnisari,ci: use govulncheck github action (#862),1,1,4,8da401c,2023-07,其他,16
+778,2023-07-12 16:30:03+00:00,Maria Ines Parnisari,"fix: in ListObjects API, Check calls have now a bounded number of concurrent database reads (#860)",9,306,152,be8b2fa,2023-07,Bug修复,16
+779,2023-07-11 22:54:05+00:00,Maria Ines Parnisari,test: Check concurrency set to 1 causes no deadlock (#859),1,47,0,d236009,2023-07,测试,22
+780,2023-07-10 23:37:51+00:00,Maria Ines Parnisari,test: fix flakiness from singleflight use (#837),3,16,10,addd83d,2023-07,Bug修复,23
+781,2023-07-07 17:28:12+00:00,Adrian Tam,fix: return correct error for list object (#853),2,152,2,c6c54a2,2023-07,Bug修复,17
+782,2023-07-07 15:49:45+00:00,dependabot[bot],"chore(deps): bump docker/build-push-action from 4.0.0 to 4.1.1 (#840)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,dfeb3b5,2023-07,其他,15
+783,2023-07-07 11:36:23+00:00,dependabot[bot],"chore(deps): bump sigstore/cosign-installer from 3.0.5 to 3.1.1 (#841)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,2aca815,2023-07,其他,11
+784,2023-07-07 11:26:06+00:00,dependabot[bot],"chore(deps): bump docker/setup-buildx-action from 2.5.0 to 2.8.0 (#843)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,f5f44d5,2023-07,其他,11
+785,2023-07-07 03:01:04+00:00,dependabot[bot],"chore(deps): bump golangci/golangci-lint-action from 3.4.0 to 3.6.0 (#842)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,4c78a3e,2023-07,其他,3
+786,2023-07-07 02:55:32+00:00,dependabot[bot],"chore(deps): bump actions/checkout from 3.1.0 to 3.5.3 (#844)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",8,11,11,263bfb8,2023-07,其他,2
+787,2023-07-06 21:32:44+00:00,dependabot[bot],"chore(deps): bump google.golang.org/protobuf from 1.30.0 to 1.31.0 (#845)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,3,c2977c4,2023-07,其他,21
+788,2023-07-06 21:18:41+00:00,dependabot[bot],"chore(deps): bump github.com/spf13/viper from 1.15.0 to 1.16.0 (#846)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,14,15,af6b999,2023-07,其他,21
+789,2023-07-06 18:49:55+00:00,dependabot[bot],"chore(deps): bump github.com/hashicorp/go-retryablehttp from 0.7.2 to 0.7.4 (#847)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,3,020e94d,2023-07,其他,18
+790,2023-07-06 18:32:32+00:00,dependabot[bot],"chore(deps): bump github.com/docker/docker from 23.0.6+incompatible to 24.0.3+incompatible (#854)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,3,ee9dcef,2023-07,其他,18
+791,2023-07-06 18:25:33+00:00,dependabot[bot],"chore(deps): bump google.golang.org/grpc from 1.55.0 to 1.56.1 (#849)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,7,7,6bcfa9d,2023-07,其他,18
+792,2023-07-06 16:58:14+00:00,dependabot[bot],"chore(deps): bump chainguard/go from `8454bbb` to `f4db6d6` (#850)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,ebc714e,2023-07,其他,16
+793,2023-07-06 16:52:07+00:00,dependabot[bot],"chore(deps): bump chainguard/static from `ee47224` to `54b5891` (#851)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,c88ba06,2023-07,其他,16
+794,2023-07-05 17:16:28+00:00,Maria Ines Parnisari,chore: add go docs (#838),33,114,84,bb1ed2e,2023-07,文档,17
+795,2023-07-01 03:50:17+00:00,Maria Ines Parnisari,fix: links in readme (#836) (#839),1,3,3,c3e7410,2023-07,Bug修复,3
+796,2023-06-30 20:07:14+00:00,Jonathan Whitaker,"docs: add `v1.2.0` release details to the CHANGELOG (#835)
+
+Co-authored-by: Raghd Hamzeh <raghd.hamzeh@auth0.com>
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",1,98,85,bc6a45a,2023-06,文档,20
+797,2023-06-30 18:26:02+00:00,Adrian Tam,"fix: add in distinguish message for loop (#834)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",3,55,48,e25fcbf,2023-06,Bug修复,18
+798,2023-06-30 01:21:49+00:00,Maria Ines Parnisari,"fix: in sample docker-compose, have OpenFGA use Postgres' max connections (#829)",1,2,0,a7989aa,2023-06,Bug修复,1
+799,2023-06-30 01:14:53+00:00,Jonathan Whitaker,fix: memoize typesystem resolution and model validation (#831),5,288,114,852ae99,2023-06,Bug修复,1
+800,2023-06-30 00:35:04+00:00,Jonathan Whitaker,"chore: drop optimized-list-objects experimental flag and related code (#832)
+
+Remove the. `optimized-list-objects` experimental flag and the code associated with unoptimized ListObjects including the `ListObjectsByType` method in the storage interface.",17,49,581,2af1584,2023-06,其他,0
+801,2023-06-30 00:01:10+00:00,Raghd Hamzeh,"test: re-add complex list objects test, chunking write tuples into 40 (#830)",3,276,12,9aa3fed,2023-06,测试,0
+802,2023-06-29 16:02:04+00:00,Jonathan Whitaker,"feat(perf): ListObjects with Optimizations for Intersection and Exclusion (#797)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",11,1631,251,5c7c5c8,2023-06,新功能,16
+803,2023-06-26 21:39:06+00:00,Jonathan Whitaker,"docs: add `v1.1.1` release notes to the CHANGELOG (#826)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",1,22,1,a989901,2023-06,文档,21
+804,2023-06-26 18:41:36+00:00,Maria Ines Parnisari,"Revert ""chore(tests): add complex list objects test (#823)"" (#824)",1,1,246,9a22140,2023-06,测试,18
+805,2023-06-26 18:12:07+00:00,Jonathan Whitaker,"Merge pull request from GHSA-hr9r-8phq-5x8j
+
+* fix: validate models with no entrypoints correctly
+
+* chore: fix map clone on union case
+
+* fix: clone visited map for base and subtract set in exclusion
+
+* fix: tidy up godoc and resolve issues with tests
+
+* test: drop duplicate test cases
+
+* test: add another valid model to the WriteAuthorizationModel test cases
+
+* fix: add more model validations on empty type name and relations
+
+* fix: add in model validation for check, list object and expand
+
+* chore: fix linter warnings
+
+* chore: fix usage of NewAndValidate
+
+---------
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",12,881,352,087ce39,2023-06,Bug修复,18
+806,2023-06-23 17:12:16+00:00,Raghd Hamzeh,chore(tests): add complex list objects test (#823),1,246,1,d180fc3,2023-06,测试,17
+807,2023-06-22 16:47:29+00:00,Maria Ines Parnisari,feat: update readme (#821),2,19,3,e53b79f,2023-06,新功能,16
+808,2023-06-22 01:01:08+00:00,Yamil Asusta,perf: cache inflight requests for FindLastestAuthorizationModelId (#820),4,44,3,0813713,2023-06,测试,1
+809,2023-06-21 23:11:20+00:00,Maria Ines Parnisari,feat: support ./openfga validate-models (#817),16,949,466,1b00d91,2023-06,新功能,23
+810,2023-06-21 02:30:57+00:00,Liam G,fix: remove unintended newline in error message in model validation (#816),1,1,2,4b366f0,2023-06,Bug修复,2
+811,2023-06-20 17:20:13+00:00,Jonathan Whitaker,chore: bump version of grpc-health-probe (#819),2,2,2,5e8814b,2023-06,其他,17
+812,2023-06-15 22:24:30+00:00,Raghd Hamzeh,chore(legal): exclude notice file from fossa (#815),1,3,1,a90c7c0,2023-06,其他,22
+813,2023-06-13 17:03:17+00:00,Raghd Hamzeh,chore(ci): run PR workflow on merge queue (#813),1,1,0,61864b6,2023-06,其他,17
+814,2023-06-12 15:23:02+00:00,dependabot[bot],"chore(deps): bump go.buf.build/openfga/go/openfga/api from 1.2.50 to 1.2.56 (#755)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,5,e319c62,2023-06,其他,15
+815,2023-06-08 17:39:28+00:00,Maria Ines Parnisari,feat: add --verbose flag to migrate command (#776),2,16,6,7ab00c0,2023-06,新功能,17
+816,2023-06-07 16:00:04+00:00,Jonathan Whitaker,"Revert ""fix: validate models with non-zero entrypoints properly (#802)"" (#807)",3,76,178,d1ff4a5,2023-06,Bug修复,16
+817,2023-06-07 03:06:56+00:00,Harsha Vardhan,"chore: Re implement channels in list objects (#779)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",3,41,46,685b2b6,2023-06,其他,3
+818,2023-06-05 19:36:02+00:00,Jonathan Whitaker,fix: validate models with non-zero entrypoints properly (#802),3,178,76,d3b5eec,2023-06,Bug修复,19
+819,2023-06-02 19:22:42+00:00,Maria Ines Parnisari,test: remove obsolete test file (#782),2,377,442,2c0a0f5,2023-06,测试,19
+820,2023-06-02 17:19:09+00:00,dependabot[bot],"chore(deps): bump go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc from 1.15.1 to 1.16.0 (#791)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.whitaker@auth0.com>",2,27,27,793d297,2023-06,其他,17
+821,2023-06-02 16:46:01+00:00,dependabot[bot],"chore(deps): bump chainguard/static from `d1f2470` to `ee47224` (#786)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,8971b3d,2023-06,其他,16
+822,2023-06-02 16:38:33+00:00,dependabot[bot],"chore(deps): bump github.com/grpc-ecosystem/grpc-gateway/v2 from 2.15.2 to 2.16.0 (#788)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,20,11,5c20b7f,2023-06,其他,16
+823,2023-06-02 00:16:57+00:00,dependabot[bot],"chore(deps): bump chainguard/go from `3689133` to `8454bbb` (#787)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,0303db0,2023-06,其他,0
+824,2023-06-01 22:53:30+00:00,dependabot[bot],"chore(deps): bump github.com/pressly/goose/v3 from 3.10.0 to 3.11.2 (#789)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,26,26,2afdaaa,2023-06,其他,22
+825,2023-06-01 22:44:52+00:00,dependabot[bot],"chore(deps): bump golang.org/x/sync from 0.1.0 to 0.2.0 (#790)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,3,cdcb0f7,2023-06,其他,22
+826,2023-06-01 22:05:51+00:00,dependabot[bot],"chore(deps): bump codecov/codecov-action from 3.1.3 to 3.1.4 (#793)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,1cad9d3,2023-06,其他,22
+827,2023-06-01 21:47:23+00:00,dependabot[bot],"chore(deps): bump actions/setup-go from 4.0.0 to 4.0.1 (#792)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",5,8,8,66d95f9,2023-06,其他,21
+828,2023-06-01 21:22:06+00:00,dependabot[bot],"chore(deps): bump github.com/docker/distribution from 2.8.1+incompatible to 2.8.2+incompatible (#798)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,3,a02a48c,2023-06,其他,21
+829,2023-06-01 21:15:43+00:00,dependabot[bot],"chore(deps): bump golang.org/x/sys from 0.0.0-20210510120138-977fb7262007 to 0.1.0 in /tools (#799)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,2,94555fa,2023-06,其他,21
+830,2023-06-01 21:04:12+00:00,dependabot[bot],"chore(deps): bump sigstore/cosign-installer from 3.0.3 to 3.0.5 (#794)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,7c41969,2023-06,其他,21
+831,2023-06-01 20:54:48+00:00,dependabot[bot],"chore(deps): bump ossf/scorecard-action from 2.1.2 to 2.1.3 (#795)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,8674870,2023-06,其他,20
+832,2023-06-01 20:48:36+00:00,dependabot[bot],"chore(deps): bump github/codeql-action from 2.3.3 to 2.3.6 (#796)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,742f663,2023-06,其他,20
+833,2023-06-01 17:43:35+00:00,Maria Ines Parnisari,refactor: constructor of in-memory storage (#785),6,35,16,f15b5b7,2023-06,重构,17
+834,2023-05-31 19:24:05+00:00,Maria Ines Parnisari,chore: update version of ghcr.io/grpc-ecosystem/grpc-health-probe (#784),2,2,2,fdee9d6,2023-05,其他,19
+835,2023-05-30 19:59:13+00:00,Rui Chen,"docs: add homebrew installation note (#781)
+
+Signed-off-by: Rui Chen <rui@chenrui.dev>",1,9,1,02fe32f,2023-05,文档,19
+836,2023-05-23 16:43:10+00:00,Maria Ines Parnisari,test: add test for WriteAuthorizationModel (#772),1,14,0,18a9ce7,2023-05,测试,16
+837,2023-05-19 19:26:41+00:00,Maria Ines Parnisari,fix: forbid 1.0 models in streaming list objects (#770),3,18,4,6c857c0,2023-05,Bug修复,19
+838,2023-05-19 19:09:56+00:00,Maria Ines Parnisari,test: add more tests for ListObjects (#769),6,113,519,a0d9381,2023-05,测试,19
+839,2023-05-17 22:42:55+00:00,Jonathan Whitaker,ci: update goreleaser token (#766),1,1,1,17d4048,2023-05,其他,22
+840,2023-05-17 21:03:58+00:00,Raghd Hamzeh,chore(docs): add `v1.1.0` release notes to the changelog (#760),1,20,1,ffc1a6c,2023-05,文档,21
+841,2023-05-17 20:52:10+00:00,Jonathan Whitaker,chore: drop 1.0 model support officially (#763),26,664,4505,579173e,2023-05,其他,20
+842,2023-05-16 22:07:14+00:00,Maria Ines Parnisari,fix: race regression in ListObjects introduced in #757 (#762),2,73,6,0f1a5d0,2023-05,Bug修复,22
+843,2023-05-16 17:09:32+00:00,Maria Ines Parnisari,fix: load test workflow token permissions (#761),1,5,4,6fdf670,2023-05,Bug修复,17
+844,2023-05-15 21:54:41+00:00,Maria Ines Parnisari,test: add load testing workflow (#694),1,129,0,2780b2c,2023-05,测试,21
+845,2023-05-15 20:16:34+00:00,Maria Ines Parnisari,"docs: if OPENFGA_LIST_OBJECTS_MAX_RESULTS=0, no limit (#757)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",3,12,5,8f63415,2023-05,文档,20
+846,2023-05-15 19:08:40+00:00,dependabot[bot],"chore(deps): bump go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc from 0.40.0 to 0.41.1 (#747)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,12,12,1031518,2023-05,其他,19
+847,2023-05-15 18:45:03+00:00,dependabot[bot],"chore(deps): bump github.com/docker/docker from 23.0.5+incompatible to 23.0.6+incompatible (#750)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,3,351df7f,2023-05,其他,18
+848,2023-05-15 17:21:20+00:00,dependabot[bot],"chore(deps): bump github.com/go-sql-driver/mysql from 1.7.0 to 1.7.1 (#748)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,3,86de76d,2023-05,其他,17
+849,2023-05-15 16:38:43+00:00,Harsha Vardhan,chore: change usages of karlseguin/ccache to use generics instead of … (#759),4,8,12,fc12092,2023-05,其他,16
+850,2023-05-15 15:52:40+00:00,Maria Ines Parnisari,build: remove dependency pkg/errors (#758),2,2,2,292721d,2023-05,其他,15
+851,2023-05-12 19:47:33+00:00,dependabot[bot],"chore(deps): bump google.golang.org/grpc from 1.54.0 to 1.55.0 (#751)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,5,5,2f3989d,2023-05,其他,19
+852,2023-05-12 19:33:35+00:00,dependabot[bot],"chore(deps): bump goreleaser/goreleaser-action from 2.9.1 to 4.2.0 (#753)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,2,2,1ff6376,2023-05,其他,19
+853,2023-05-12 18:53:32+00:00,dependabot[bot],"chore(deps): bump sigstore/cosign-installer from 3.0.2 to 3.0.3 (#744)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,711a276,2023-05,其他,18
+854,2023-05-12 18:45:04+00:00,dependabot[bot],"chore(deps): bump actions/upload-artifact from 3.1.0 to 3.1.2 (#745)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,5505ee9,2023-05,其他,18
+855,2023-05-12 18:09:07+00:00,dependabot[bot],"chore(deps): bump github/codeql-action from 2.2.4 to 2.3.3 (#742)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,af26305,2023-05,其他,18
+856,2023-05-12 17:51:22+00:00,dependabot[bot],"chore(deps): bump docker/build-push-action from 3.3.1 to 4.0.0 (#752)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",1,1,1,d99e34b,2023-05,其他,17
+857,2023-05-12 17:26:45+00:00,Maria Ines Parnisari,feat: streaming ListObjects has no limit in number of results returned (#733),5,28,24,1be13a8,2023-05,新功能,17
+858,2023-05-12 16:45:36+00:00,Jonathan Whitaker,fix: ensure Check evaluates deterministically on the eval boundary case (#732),3,112,15,6c5456d,2023-05,Bug修复,16
+859,2023-05-12 16:25:19+00:00,Adrian Tam,chore(ci): update github action and docker to use SHA (#739),8,37,37,6b70b06,2023-05,其他,16
+860,2023-05-12 14:39:10+00:00,Raghd Hamzeh,chore(ci): configure dependabot to update github actions (#741),1,4,0,209dd99,2023-05,其他,14
+861,2023-05-11 20:33:54+00:00,Adrian Tam,chore(ci): integrate openssf scorecard (#738),2,74,1,63144d9,2023-05,其他,20
+862,2023-05-11 20:22:15+00:00,Adrian Tam,chore(ci): CICD to use setup-go v4 (#735),5,16,65,b171fcf,2023-05,其他,20
+863,2023-05-11 18:22:24+00:00,Maria Ines Parnisari,"chore: deprecate jaeger exporter, replace with OTLP exporter (#731)",2,6,3,bfdcbca,2023-05,其他,18
+864,2023-05-11 18:01:41+00:00,Maria Ines Parnisari,chore: prune `tools/` dependencies (#734),5,22,1152,66ef52c,2023-05,其他,18
+865,2023-05-10 16:32:23+00:00,Maria Ines Parnisari,refactor: remove `typesystem.allRelations()` (#730),1,7,28,6c07880,2023-05,重构,16
+866,2023-05-09 23:54:38+00:00,Maria Ines Parnisari,feat: less CPU consumption by typesystem class (#726),2,27,21,e58f444,2023-05,新功能,23
+867,2023-05-09 21:06:45+00:00,Adrian Tam,"fix: in write API, if auth model ID not found, throw 400 instead of 500 error (#725)",2,54,1,66e7d5b,2023-05,Bug修复,21
+868,2023-05-09 15:37:45+00:00,dependabot[bot],"chore(deps): bump go.opentelemetry.io/otel/sdk from 1.14.0 to 1.15.1 (#729)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.whitaker@auth0.com>",2,24,24,f6a7925,2023-05,其他,15
+869,2023-05-09 01:00:39+00:00,dependabot[bot],"chore(deps): bump github.com/grpc-ecosystem/go-grpc-middleware/v2 from 2.0.0-rc.4 to 2.0.0-rc.5 (#720)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,3,59a93b4,2023-05,其他,1
+870,2023-05-08 22:34:55+00:00,dependabot[bot],"chore(deps): bump github.com/docker/docker from 23.0.2+incompatible to 23.0.5+incompatible (#723)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",2,3,3,9bd6426,2023-05,其他,22
+871,2023-05-08 22:05:26+00:00,dependabot[bot],"chore(deps): bump github.com/spf13/cobra from 1.6.1 to 1.7.0 (#721)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",2,3,6,3963674,2023-05,其他,22
+872,2023-05-03 17:03:04+00:00,Jonathan Whitaker,ci: add Homebrew release stage to goreleaser's release process (#716),1,28,0,041ef27,2023-05,其他,17
+873,2023-04-25 22:15:19+00:00,Kevin Wooten,"feat(credentials): support explicit datastore username & password configuration points (#651)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: kdubb <787655+kdubb@users.noreply.github.com>",13,196,38,54b79ee,2023-04,新功能,22
+874,2023-04-25 15:19:00+00:00,Adrian Tam,fix: list objects to respect configurable ListObjectsDeadline (#704),3,177,2,5c60d9d,2023-04,Bug修复,15
+875,2023-04-24 21:04:49+00:00,Maria Ines Parnisari,chore: remove storage.ReadTypeDefinition because it's unused (#713),9,18,245,f3c97f1,2023-04,其他,21
+876,2023-04-24 20:47:36+00:00,Maria Ines Parnisari,fix: down script of postgres/003_add_reverse_lookup_index.sql (#705),1,1,1,ff2a4c9,2023-04,Bug修复,20
+877,2023-04-24 20:39:13+00:00,Maria Ines Parnisari,fix: database calls for ListObjects v0 use a new context object to avoid db connection churning (#711),3,17,4,a70c1c8,2023-04,Bug修复,20
+878,2023-04-20 21:46:13+00:00,Maria Ines Parnisari,refactor: #619 (#650),5,62,84,c108f3c,2023-04,重构,21
+879,2023-04-20 15:56:01+00:00,Maria Ines Parnisari,chore: pin MySQL container image to v8 (#701),3,17,17,f336573,2023-04,其他,15
+880,2023-04-20 00:10:03+00:00,Maria Ines Parnisari,test: add tests for rollbacks of database scripts (#695),6,107,24,1179796,2023-04,测试,0
+881,2023-04-19 14:15:53+00:00,Andrés Aguiar,chore(docs): add link to adopters file (#699),1,2,0,008e4bd,2023-04,文档,14
+882,2023-04-18 15:05:58+00:00,Adrian Tam,"docs: add v1.0.1 release details to CHANGELOG (#698)
+
+Co-authored-by: Raghd Hamzeh <raghd.hamzeh@auth0.com>",1,9,1,ead6cea,2023-04,文档,15
+883,2023-04-18 13:17:30+00:00,Jonathan Whitaker,ci: fix image builds with latest chainguard/static image (#697),3,3,3,3c6c096,2023-04,Bug修复,13
+884,2023-04-18 02:30:29+00:00,Maria Ines Parnisari,test: add unit test for wildcard user (#693),1,10,2,b9e8ca5,2023-04,测试,2
+885,2023-04-14 20:32:54+00:00,Adrian Tam,docs: add v1.0.0 release details to CHANGELOG (#692),1,12,1,81ccee7,2023-04,文档,20
+886,2023-04-14 15:24:31+00:00,Maria Ines Parnisari,fix: migration script #3 for mysql (#691),1,1,1,a99210b,2023-04,Bug修复,15
+887,2023-04-12 22:01:28+00:00,Jonathan Whitaker,ci: fix permissions for release workflows (#689),2,6,6,f0d14b7,2023-04,Bug修复,22
+888,2023-04-12 21:45:58+00:00,Jonathan Whitaker,"docs: add `v0.4.3` release details to CHANGELOG (#688)
+
+Co-authored-by: Raghd Hamzeh <raghd.hamzeh@auth0.com>
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>",1,59,1,9923b58,2023-04,文档,21
+889,2023-04-12 20:26:01+00:00,Maria Ines Parnisari,fix: github workflows token permissions (part 2) (#687),2,8,5,84e7fd5,2023-04,Bug修复,20
+890,2023-04-12 19:42:45+00:00,Adrian Tam,feat(performance): postgresql/mysql Read interface to be unordered (#677),11,749,601,8964418,2023-04,新功能,19
+891,2023-04-12 19:34:53+00:00,Maria Ines Parnisari,refactor: use combinedTupleReader (db + contextualTuples) in ListObjects and Check (#665),6,115,214,922ee92,2023-04,重构,19
+892,2023-04-12 18:34:24+00:00,Maria Ines Parnisari,fix: github workflows token permissions (#684),4,13,0,eb46bec,2023-04,Bug修复,18
+893,2023-04-12 16:33:27+00:00,Jonathan Whitaker,ci: add cosign signed release artifacts and SBOM to releases (#683),2,33,6,069c149,2023-04,其他,16
+894,2023-04-06 23:47:27+00:00,Dániel SÜTTŐ,feat: read datastore information from config when migrating database (#655),2,94,0,99f8c02,2023-04,新功能,23
+895,2023-04-06 18:23:43+00:00,Raghd Hamzeh,chore: revise wording of community meetings reference (#680),1,1,1,49fb780,2023-04,其他,18
+896,2023-04-06 17:31:47+00:00,Maria Ines Parnisari,chore: bump to go 1.20 + update go.mod + minimum 76% project coverage (#664),10,294,343,0d97ad1,2023-04,其他,17
+897,2023-04-06 15:19:20+00:00,Andrés Aguiar,Add community meetings to README (#679),1,4,1,6857b6b,2023-04,其他,15
+898,2023-04-04 18:06:45+00:00,Adrian Tam,feat(tests): automatically test contextual tuples (#636),3,250,817,d3946fe,2023-04,新功能,18
+899,2023-04-03 18:04:58+00:00,Maria Ines Parnisari,refactor: test assertions (#666),28,245,403,5963fe3,2023-04,测试,18
+900,2023-04-03 16:54:44+00:00,Jonathan Whitaker,"fix: synchronize access to in memory storage iterators (#587)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",2,35,5,be7a64a,2023-04,Bug修复,16
+901,2023-04-03 16:19:19+00:00,dependabot[bot],"chore(deps): bump go.buf.build/openfga/go/openfga/api from 1.2.49 to 1.2.50 (#674)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",2,3,3,1a337f7,2023-04,其他,16
+902,2023-04-03 16:08:00+00:00,dependabot[bot],"chore(deps): bump github.com/docker/docker from 20.10.23+incompatible to 23.0.2+incompatible (#672)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.whitaker@auth0.com>",5,27,19,6a1a0a3,2023-04,其他,16
+903,2023-04-03 15:32:58+00:00,dependabot[bot],"chore(deps): bump github.com/grpc-ecosystem/go-grpc-middleware from 1.3.0 to 1.4.0 (#671)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,12,6,adcdaae,2023-04,其他,15
+904,2023-04-03 15:25:20+00:00,dependabot[bot],"chore(deps): bump google.golang.org/grpc from 1.53.0 to 1.54.0 (#673)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,14,14,fba14e0,2023-04,其他,15
+905,2023-04-03 15:17:35+00:00,dependabot[bot],"chore(deps): bump google.golang.org/protobuf from 1.28.1 to 1.30.0 (#675)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,3,2,9fd3e18,2023-04,其他,15
+906,2023-03-31 23:33:48+00:00,Maria Ines Parnisari,"feat: if WriteAuthModel does not receive a schema version, default to 1.1 (#669)",3,45,3,0de4c05,2023-03,新功能,23
+907,2023-03-31 21:19:14+00:00,Maria Ines Parnisari,chore: add codecov.yml (#667),1,7,0,2c5dfe2,2023-03,其他,21
+908,2023-03-29 18:02:19+00:00,Jarkko Miettinen,"fix: add a command-line flag to customize service name in traces (#652)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",5,18,4,6e6a941,2023-03,Bug修复,18
+909,2023-03-29 17:49:27+00:00,Maria Ines Parnisari,feat: improve error logging in migrate command (#663),2,10,5,9109cfe,2023-03,新功能,17
+910,2023-03-29 17:09:32+00:00,Adrian Tam,"fix: do not hard-code ports in test (#649)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>",2,25,16,c50df8e,2023-03,Bug修复,17
+911,2023-03-29 13:38:09+00:00,Adrian Tam,fix: update order of middleware (#662),1,2,2,fcacdb5,2023-03,Bug修复,13
+912,2023-03-28 20:02:33+00:00,Maria Ines Parnisari,chore: do not require internet to pull docker images while running tests (#658),2,44,6,bdab1a3,2023-03,测试,20
+913,2023-03-28 01:52:53+00:00,Maria Ines Parnisari,fix: broken unit test (#659),2,41,15,3fe1993,2023-03,Bug修复,1
+914,2023-03-27 18:03:26+00:00,Maria Ines Parnisari,chore(tracing): add span attributes after computing relationship ingresses (#641),3,29,1,32205cc,2023-03,其他,18
+915,2023-03-23 18:13:30+00:00,Jacob Brooks,chore(tests): fix read test error message (#653),1,1,1,53c5b8f,2023-03,Bug修复,18
+916,2023-03-17 18:00:39+00:00,Adrian Tam,chore(docs): add v0.4.2 release notes to the changelog (#647),1,9,1,6e4e76c,2023-03,文档,18
+917,2023-03-17 17:49:05+00:00,Raghd Hamzeh,"chore(ci): remove snyk & fossa ci actions, rely on the integrations (#643)",2,0,75,a7f8614,2023-03,其他,17
+918,2023-03-17 17:36:24+00:00,Adrian Tam,chore: bump grpc healthprobe version (#646),2,2,2,ff7f7dc,2023-03,其他,17
+919,2023-03-17 17:28:03+00:00,Jonathan Whitaker,fix: set correct migrations path for mysql in `openfga migrate` (#644),1,1,1,1431127,2023-03,Bug修复,17
+920,2023-03-17 17:05:55+00:00,Andrés Aguiar,Added ArtifactHub badge (#645),1,2,0,883055a,2023-03,其他,17
+921,2023-03-16 20:29:12+00:00,Adrian Tam,"chore: correct name for calling RelationshipIngresses (#635)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",2,75,75,313f322,2023-03,其他,20
+922,2023-03-16 20:05:05+00:00,Raghd Hamzeh,chore(docs): add `v0.4.1` release notes to the changelog (#638),1,15,1,22b7c1e,2023-03,文档,20
+923,2023-03-16 18:38:57+00:00,Jonathan Whitaker,fix: ConnectedObjects TTU expansion behavior (#637),3,136,26,fab3351,2023-03,Bug修复,18
+924,2023-03-15 16:50:39+00:00,Raghd Hamzeh,chore(docs): add `v0.4.0` release notes to the changelog (#632),1,34,1,588f88d,2023-03,文档,16
+925,2023-03-15 16:16:22+00:00,Jonathan Whitaker,chore: add `timeout` flag to `migrate` command (#634),1,57,67,b7e8198,2023-03,其他,16
+926,2023-03-15 16:08:51+00:00,Craig Pastro,"build: use chainguard images in Dockerfile (#628)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",2,8,8,032663b,2023-03,其他,16
+927,2023-03-15 02:20:55+00:00,Maria Ines Parnisari,"fix: tracing in Check API (#627)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",1,41,22,ff1d199,2023-03,Bug修复,2
+928,2023-03-14 23:26:55+00:00,Adrian Tam,feat: allow schema 1.0 flag (#613),19,539,98,288f58e,2023-03,新功能,23
+929,2023-03-14 19:47:39+00:00,Maria Ines Parnisari,fix: remove sort from ReadUsersetTuples in mysql (#633),1,1,2,c857cbd,2023-03,Bug修复,19
+930,2023-03-14 15:10:37+00:00,Yamil Asusta,fix: remove sort from ReadUsersetTuples (#631),1,1,2,5d1d7cc,2023-03,Bug修复,15
+931,2023-03-13 20:08:39+00:00,Adrian Tam,feat: add version in CLI (#625),2,30,0,13c14a8,2023-03,新功能,20
+932,2023-03-13 18:42:35+00:00,Maria Ines Parnisari,chore: add debug logs to integration tests (#629),3,13,0,a187f5b,2023-03,Bug修复,18
+933,2023-03-13 17:39:29+00:00,Maria Ines Parnisari,chore: refactor typesystem to reduce memory usage (#624),3,24,35,3367054,2023-03,重构,17
+934,2023-03-11 02:31:20+00:00,Adrian Tam,fix: move RunAllTests into non _test.go (#626),6,102,98,42ecb9c,2023-03,Bug修复,2
+935,2023-03-10 22:03:33+00:00,Maria Ines Parnisari,chore: mark benchmark step as failure if status code is not 0 (#617),2,6,2,7080a65,2023-03,其他,22
+936,2023-03-10 18:45:16+00:00,Maria Ines Parnisari,chore: fix list objects test setup (#620),2,38,19,5185d4e,2023-03,Bug修复,18
+937,2023-03-10 17:51:59+00:00,Jonathan Whitaker,chore(test): refactor server tests to use Server constructor (#623),1,47,54,ec5bac3,2023-03,测试,17
+938,2023-03-09 03:04:52+00:00,Adrian Tam,"chore: add additional functional test (#610)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",1,1283,0,acd6a41,2023-03,测试,3
+939,2023-03-08 18:22:06+00:00,Jonathan Whitaker,fix: inject typesystem into context in benchmarks (#614),1,4,0,2be676f,2023-03,Bug修复,18
+940,2023-03-08 00:07:47+00:00,Jonathan Whitaker,fix: reverse expansion with indirect computed userset relationship (#611),3,88,14,1f63f98,2023-03,Bug修复,0
+941,2023-03-07 23:44:24+00:00,Maria Ines Parnisari,chore: make ListObjects tests more readable (#599),4,854,428,9e64689,2023-03,测试,23
+942,2023-03-07 20:08:40+00:00,Maria Ines Parnisari,chore: update otel-collector-config.yaml (#605),4,42,36,4ee63f0,2023-03,其他,20
+943,2023-03-07 18:02:21+00:00,Adrian Tam,"chore: parallelize test (#584)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",6,83,57,5476778,2023-03,测试,18
+944,2023-03-07 15:35:58+00:00,Jonathan Whitaker,chore: fix logging middleware (#608),1,3,2,fa8c519,2023-03,Bug修复,15
+945,2023-03-07 01:59:47+00:00,Adrian Tam,chore: consolidate integration tests between Check and ListObjects APIs (#601),8,5085,3603,affc698,2023-03,测试,1
+946,2023-03-03 21:57:30+00:00,Maria Ines Parnisari,fix: add missing profiler-addr flag (#604),1,4,0,58591cd,2023-03,Bug修复,21
+947,2023-03-03 18:16:33+00:00,Raghd Hamzeh,chore(docs): note that go1.19 is needed for compiling from source (#603),1,1,1,09da083,2023-03,文档,18
+948,2023-03-02 23:33:00+00:00,Maria Ines Parnisari,chore: enhance integration tests for list objects by asserting on the streaming endpoint (#582),2,60,12,49c4e31,2023-03,测试,23
+949,2023-03-02 19:04:20+00:00,Maria Ines Parnisari,fix: read userset tuples with a filter like group#member (#596),3,159,2,8212ed2,2023-03,Bug修复,19
+950,2023-03-02 07:58:04+00:00,Craig Pastro,"refactor: middleware to use grpc-middleware v2 (#569)
+
+Co-authored-by: Jonathan Whitaker <jon.whitaker@auth0.com>",17,506,532,c9d53e9,2023-03,重构,7
+951,2023-03-01 23:47:50+00:00,Maria Ines Parnisari,chore: update linter version (#595),3,174,176,a809bbe,2023-03,其他,23
+952,2023-03-01 22:21:19+00:00,Maria Ines Parnisari,fix: ListObjects should not return objects where Check->false (#577),5,132,27,ebf3a0f,2023-03,Bug修复,22
+953,2023-03-01 20:55:41+00:00,Andrés Aguiar,"Adding FOSSA badge (#594)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",1,1,0,76bc4b1,2023-03,其他,20
+954,2023-03-01 20:48:03+00:00,dependabot[bot],"chore(deps): bump go.opentelemetry.io/otel/sdk from 1.13.0 to 1.14.0 (#592)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",2,3,3,c6f720b,2023-03,其他,20
+955,2023-03-01 20:21:18+00:00,dependabot[bot],"chore(deps): bump github.com/golang-jwt/jwt/v4 from 4.4.3 to 4.5.0 (#590)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",2,3,3,7f5627f,2023-03,其他,20
+956,2023-03-01 19:59:11+00:00,dependabot[bot],"chore(deps): bump go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc from 0.39.0 to 0.40.0 (#593)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,6,6,89967cc,2023-03,其他,19
+957,2023-03-01 19:47:12+00:00,dependabot[bot],"chore(deps): bump go.opentelemetry.io/otel/trace from 1.13.0 to 1.14.0 (#591)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",0,0,0,64646e3,2023-03,其他,19
+958,2023-03-01 19:46:46+00:00,dependabot[bot],"chore(deps): bump go.opentelemetry.io/otel from 1.13.0 to 1.14.0 (#589)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,9,16,d5719cf,2023-03,其他,19
+959,2023-03-01 18:40:47+00:00,Adrian Tam,fix: race condition in memory store list object (#585),1,4,0,dca4b25,2023-03,Bug修复,18
+960,2023-03-01 16:50:20+00:00,dependabot[bot],"chore(deps): bump go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc from 1.12.0 to 1.13.0 (#560)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>
+Co-authored-by: Jonathan Whitaker <jon.whitaker@auth0.com>",2,17,9,53a8e58,2023-03,其他,16
+961,2023-02-28 23:18:12+00:00,dependabot[bot],"chore(deps): bump go.opentelemetry.io/otel/sdk from 1.12.0 to 1.13.0 (#558)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",2,3,3,fcfad88,2023-02,其他,23
+962,2023-02-28 22:26:01+00:00,dependabot[bot],"chore(deps): bump github.com/grpc-ecosystem/grpc-gateway/v2 from 2.15.0 to 2.15.2 (#580)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",2,9,9,2c758a7,2023-02,其他,22
+963,2023-02-28 22:08:38+00:00,dependabot[bot],"chore(deps): bump github.com/jackc/pgx/v5 from 5.3.0 to 5.3.1 (#579)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",2,3,3,53d7697,2023-02,其他,22
+964,2023-02-28 19:50:51+00:00,dependabot[bot],"chore(deps): bump google.golang.org/grpc from 1.52.3 to 1.53.0 (#559)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",2,8,7,41b2e40,2023-02,其他,19
+965,2023-02-28 17:29:58+00:00,Craig Pastro,"fix: list objects null pointer if computed userset does not exist (#572)
+
+Co-authored-by: Maria Ines Parnisari <maria.inesparnisari@okta.com>
+Co-authored-by: Jonathan Whitaker <jon.whitaker@auth0.com>",7,266,34,5472a1d,2023-02,Bug修复,17
+966,2023-02-28 16:17:25+00:00,Craig Pastro,"refactor: move middleware to pkg (#568)
+
+Co-authored-by: Adrian Tam <adrian.tam@okta.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",20,711,711,07d05ac,2023-02,重构,16
+967,2023-02-28 16:05:17+00:00,Jonathan Whitaker,ci: reduce dependabot frequency (#578),1,2,2,1dc3558,2023-02,其他,16
+968,2023-02-27 18:28:04+00:00,Jonathan Whitaker,ci: update nightly release workflow (#574),3,7,24,b1fe566,2023-02,其他,18
+969,2023-02-24 16:37:44+00:00,Adrian Tam,"feat: tuning of OTEL parameters (#570)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",1,20,0,4e8444b,2023-02,新功能,16
+970,2023-02-23 19:05:00+00:00,Maria Ines Parnisari,feat: improve the speed of Check for 1.1 models by using type restrictions (#545),9,123,45,19f6b76,2023-02,新功能,19
+971,2023-02-23 17:58:04+00:00,Maria Ines Parnisari,chore: add benchmarks for Check (#554),4,123,6,eef50a7,2023-02,其他,17
+972,2023-02-22 19:36:33+00:00,Jonathan Whitaker,docs: add `v0.3.7` release notes to the CHANGELOG (#567),1,16,1,db25076,2023-02,文档,19
+973,2023-02-21 23:01:15+00:00,Jonathan Whitaker,fix: propagate contextual tuples to ListObjects with concurrent checks (#565),5,102,94,a383e03,2023-02,Bug修复,23
+974,2023-02-21 17:03:46+00:00,Craig Pastro,"docker: add clock skew adjustment to jaeger (#530)
+
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",1,1,0,64d16a9,2023-02,其他,17
+975,2023-02-21 16:41:36+00:00,dependabot[bot],"chore(deps): bump go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc from 0.38.0 to 0.39.0 (#561)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",2,6,8,f1388f2,2023-02,其他,16
+976,2023-02-21 16:28:14+00:00,Adrian Tam,chore: bump x/net package (#564),2,3,1,1440af0,2023-02,其他,16
+977,2023-02-16 20:46:16+00:00,Adrian Tam,chore: porting of benchmark test for check with new model (#551),6,191,1437,10244c3,2023-02,测试,20
+978,2023-02-16 18:11:23+00:00,Jonathan Whitaker,ci: use native `--chmod` arg in `COPY` command (#553),3,6,4,6e0dd8b,2023-02,其他,18
+979,2023-02-16 17:04:53+00:00,Jonathan Whitaker,ci: fix goreleaser build (#552),4,2,28,a4e18bc,2023-02,Bug修复,17
+980,2023-02-16 01:25:37+00:00,Craig Pastro,refactor: tests can be used as a library (#546),12,4068,4098,ff04f4f,2023-02,测试,1
+981,2023-02-16 00:34:32+00:00,Jonathan Whitaker,ci: fix goreleaser dockerfile (#550),1,1,1,f6c8a33,2023-02,Bug修复,0
+982,2023-02-15 23:38:18+00:00,Jonathan Whitaker,ci: fix goreleaser Dockerfile (#549),1,7,2,2950cc6,2023-02,Bug修复,23
+983,2023-02-15 21:00:20+00:00,Jonathan Whitaker,"docs: add `v0.3.5` release CHANGELOG notes (#543)
+
+Co-authored-by: Raghd Hamzeh <raghd.hamzeh@auth0.com>",1,47,1,3826a25,2023-02,文档,21
+984,2023-02-15 17:19:32+00:00,Jonathan Whitaker,ci: fix goreleaser nightly build by adding build-args (#547),2,10,2,794a2ea,2023-02,Bug修复,17
+985,2023-02-15 16:37:46+00:00,dependabot[bot],"chore(deps): bump github.com/jackc/pgx/v5 from 5.2.0 to 5.3.0 (#537)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>
+Co-authored-by: Jonathan Whitaker <jon.whitaker@auth0.com>",2,15,15,756e991,2023-02,其他,16
+986,2023-02-14 22:33:38+00:00,Jonathan Whitaker,fix: continue Check evaluation search if typed-wildcard doesn't match (#544),2,30,2,bf61b87,2023-02,Bug修复,22
+987,2023-02-14 20:41:26+00:00,Jonathan Whitaker,fix: race creating duplicates in ConnectedObjects reverseExpandDirect (#528),1,2,11,9d821a1,2023-02,Bug修复,20
+988,2023-02-14 19:33:03+00:00,Jonathan Whitaker,"feat: add Prometheus metrics and Grafana integration (#514)
+
+Co-authored-by: Craig Pastro <craig.pastro@okta.com>",21,1453,301,8e39883,2023-02,新功能,19
+989,2023-02-14 18:51:45+00:00,Adrian Tam,fix: error handling for check in auth model id not found (#541),2,56,3,b6e5d9d,2023-02,Bug修复,18
+990,2023-02-14 16:20:02+00:00,Jonathan Whitaker,ci: update goreleaser nightly workflow (#539),1,1,1,5ecb061,2023-02,其他,16
+991,2023-02-13 23:20:32+00:00,dependabot[bot],"chore(deps): bump go.opentelemetry.io/otel/trace from 1.12.0 to 1.13.0 (#535)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>
+Co-authored-by: Craig Pastro <craig.pastro@okta.com>",2,6,6,5c955be,2023-02,其他,23
+992,2023-02-13 22:27:50+00:00,Craig Pastro,feat: store id interceptor (#517),7,258,56,dcee1a7,2023-02,新功能,22
+993,2023-02-13 20:56:13+00:00,Siddhant Khare,"ci:  OpenFGA nightly release :sparkles: (#508)
+
+Signed-off-by: Siddhant Khare <Siddhantkhare2694@gmail.com>
+Co-authored-by: Jonathan Whitaker <jon.b.whitaker@gmail.com>",3,148,4,854518a,2023-02,其他,20
+994,2023-02-13 19:32:34+00:00,Jonathan Whitaker,fix: skip computed relations on tuplesets if they are undefined (#532),3,42,4,3e4e416,2023-02,Bug修复,19
+995,2023-02-13 16:21:38+00:00,Craig Pastro,fix: expose default grpc port in docker-compose.yaml (#529),1,1,0,e743fae,2023-02,Bug修复,16
+996,2023-02-10 19:49:56+00:00,Maria Ines Parnisari,chore: add new span within ListObjects performChecks (#527),1,2,0,be583c1,2023-02,其他,19
+997,2023-02-10 19:40:05+00:00,Maria Ines Parnisari,"fix: stricter validations for authorization models, no cycles allowed and no use of `this` or `self` (#265)
+
+Co-authored-by: Jonathan Whitaker <jon.whitaker@auth0.com>",4,307,16,85b8cc9,2023-02,Bug修复,19
+998,2023-02-10 16:14:45+00:00,Jonathan Whitaker,chore: add tracing to internal ConnectedObjects API (#522),4,77,4,f6adb62,2023-02,其他,16
+999,2023-02-10 15:11:09+00:00,Adrian Tam,chore: update docker compose file to use env variables (#526),0,0,0,6765dff,2023-02,其他,15
